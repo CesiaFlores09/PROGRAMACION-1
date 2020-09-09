@@ -26,5 +26,20 @@
         If optPorcentaje.Checked Then
             lblRespuesta.Text = num2 * num1 / 100
         End If
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 1 'Suma
+                lblRespuesta.Text = num1 + num2
+            Case 2 ' Resta
+                lblRespuesta.Text = num1 - num2
+            Case 3 'Multiplicacion
+                lblRespuesta.Text = num1 * num2
+            Case 4 ' Division
+                lblRespuesta.Text = num1 / num2
+        End Select
+
     End Sub
+
+
+
 End Class

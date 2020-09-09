@@ -35,6 +35,7 @@ Partial Class Form1
         Me.optExponenciacion = New System.Windows.Forms.RadioButton()
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.lblRespuesta = New System.Windows.Forms.Label()
+        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblNum1
@@ -164,11 +165,21 @@ Partial Class Form1
         Me.lblRespuesta.TabIndex = 12
         Me.lblRespuesta.Text = "Respuesta?"
         '
+        'cboOperaciones
+        '
+        Me.cboOperaciones.FormattingEnabled = True
+        Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Suma", "Resta", "Multiplicacion ", "Division"})
+        Me.cboOperaciones.Location = New System.Drawing.Point(505, 152)
+        Me.cboOperaciones.Name = "cboOperaciones"
+        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
+        Me.cboOperaciones.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cboOperaciones)
         Me.Controls.Add(Me.lblRespuesta)
         Me.Controls.Add(Me.btnCalcular)
         Me.Controls.Add(Me.optExponenciacion)
@@ -202,4 +213,5 @@ Partial Class Form1
     Friend WithEvents optExponenciacion As RadioButton
     Friend WithEvents btnCalcular As Button
     Friend WithEvents lblRespuesta As Label
+    Friend WithEvents cboOperaciones As ComboBox
 End Class
