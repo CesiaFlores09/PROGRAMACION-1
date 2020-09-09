@@ -1,14 +1,14 @@
 ﻿Public Class Form1
     Private Sub btnProcesar_Click(sender As Object, e As EventArgs) Handles btnProcesar.Click
-        Dim ntbla, i As SByte
+        Dim ntbla, i As Int64
         ntbla = txtnTabla.Text
+        i = 1
         lstTablas.Items.Clear()
-        If ntbla <= 12 Then
-            For i = 1 To 10
-                lstTablas.Items.Add(ntbla.ToString() + "X" + i.ToString() + "=" + (ntbla * i).ToString())
-            Next
-        Else
-            lstTablas.Items.Add("Por favor ingrese solo tablas menores o iguales a 12.")
-        End If
+
+        Do While i <= 10
+            lstTablas.Items.Add(ntbla.ToString() + "X" + i.ToString() + "=" + (ntbla * i).ToString())
+            i = i + 1
+        Loop
+
     End Sub
 End Class
