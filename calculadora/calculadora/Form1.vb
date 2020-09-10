@@ -1,28 +1,40 @@
 ﻿Public Class Form1
-    Dim objdirecciones = New direcciones
+    Dim objconversor = New conversores
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cboDepto.Items.AddRange(objdirecciones.depto)
+    Private Sub cboTipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboTipo.SelectedIndexChanged
+        cbode.Items.Clear()
+        cbode.Text = ""
+        cbode.Items.AddRange(objconversor.etiquetas(cboTipo.SelectedIndex))
+
+        cboA.Items.Clear()
+        cboA.Text = ""
+        cboA.Items.AddRange(objconversor.etiquetas(cboTipo.SelectedIndex))
     End Sub
 
-    Private Sub cboDepto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboDepto.SelectedIndexChanged
-        cboMun.Items.Clear()
-        cboMun.Text = ""
-        cboMun.Items.AddRange(objdirecciones.mun(cboDepto.SelectedIndex))
+    Private Sub btnConvertir_Click(sender As Object, e As EventArgs) Handles btnConvertir.Click
+        lblRespuesta.Text = objconversor.convertir(cboTipo.SelectedIndex, cbode.SelectedIndex, cboA.SelectedIndex, txtCantidad.Text).ToString() + " " + objconversor.etiquetas(cboTipo.SelectedIndex)(cboA.SelectedIndex)
     End Sub
 End Class
-Class direcciones
-    Public depto() As String = {"Seleccione un depto", "Usulutan", "San Miguel", "La union ", "Morazan"}
-    Public mun()() As String = {
-        New String() {"Seleccione un depto"},
-         New String() {"Seleccioen un Mun", "Usulutan", "Jiquilisco", "Santa Elena", "Santa Maria"},'Uaulutan
-         New String() {"Seleccioen un Mun", "San Miguel", "El Transito", "San Rafael Ote", "San Jorgue"},'San Miguel
-         New String() {"Seleccioen un Mun", "La Union", "SRl", "Anamoros", "Bolivar"},'La Union
-        New String() {"Seleccioen un Mun", "Arambala", "Perquin", "Corinto", "Cacaopera"}'Morazan 
+Class conversores
+    Public etiquetas()() As String = {
+       New String() {"Dolar", "Euro", "Quetzales", "Lempira", "Colon SV", "Cordoba", "Colon CR"},
+       New String() {"Metro", "CM", "Pulgadas", "Pies", "Varas", "Yardas", "Km", "Millas"},
+       New String() {"Libra", "Gramos", "Kilogramos", "Onzas", "Quintales", "Toneladas"},
+       New String() {"MB", "Bit", "Byte", "KB", "GB", "TB"},
+       New String() {"Hora", "Segundos", "Minutos", "Dias", "Semana", "Meses", "Años"}
     }
 
+    Public valores()() As Double = {
+       New Double() {1, 0.85, 7.74, 24.8, 8.75, 34.6, 597.23},
+       New Double() {1, 100, 39.3701, 3.28084, 1.193081929167, 1.09361, 0.001, 0.000621371},
+       New Double() {1, 453.592, 0.453592, 16, 0.01, 0.000453592},
+       New Double() {1, 8000000.0, 1000000, 0, 1000, 0.001, 0.000001},
+     New Double() {1, 3600, 60, 0.0416667, 0.00595238, 0.00136986, 0.000114155}
+    }
 
-
+    Public Function convertir(ByVal tipo As Int16, ByVal de As Int16, ByVal a As Int16, ByVal cantidad As Double)
+        Return valores(tipo)(a) / valores(tipo)(de) * cantidad
+    End Function
 
 End Class
 
