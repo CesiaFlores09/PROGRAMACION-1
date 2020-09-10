@@ -22,64 +22,63 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblNumero = New System.Windows.Forms.Label()
-        Me.txtNumero = New System.Windows.Forms.TextBox()
-        Me.btnCalcular = New System.Windows.Forms.Button()
-        Me.lblIRespusta = New System.Windows.Forms.Label()
+        Me.lblIMun = New System.Windows.Forms.Label()
+        Me.lblDepto = New System.Windows.Forms.Label()
+        Me.cboDepto = New System.Windows.Forms.ComboBox()
+        Me.cboMun = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'lblNumero
+        'lblIMun
         '
-        Me.lblNumero.AutoSize = True
-        Me.lblNumero.Location = New System.Drawing.Point(21, 24)
-        Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(44, 13)
-        Me.lblNumero.TabIndex = 0
-        Me.lblNumero.Text = "Numero"
+        Me.lblIMun.AutoSize = True
+        Me.lblIMun.Location = New System.Drawing.Point(218, 24)
+        Me.lblIMun.Name = "lblIMun"
+        Me.lblIMun.Size = New System.Drawing.Size(28, 13)
+        Me.lblIMun.TabIndex = 7
+        Me.lblIMun.Text = "Mun"
         '
-        'txtNumero
+        'lblDepto
         '
-        Me.txtNumero.Location = New System.Drawing.Point(81, 21)
-        Me.txtNumero.Name = "txtNumero"
-        Me.txtNumero.Size = New System.Drawing.Size(100, 20)
-        Me.txtNumero.TabIndex = 1
+        Me.lblDepto.AutoSize = True
+        Me.lblDepto.Location = New System.Drawing.Point(21, 24)
+        Me.lblDepto.Name = "lblDepto"
+        Me.lblDepto.Size = New System.Drawing.Size(36, 13)
+        Me.lblDepto.TabIndex = 0
+        Me.lblDepto.Text = "Depto"
         '
-        'btnCalcular
+        'cboDepto
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(117, 126)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(106, 45)
-        Me.btnCalcular.TabIndex = 2
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.cboDepto.FormattingEnabled = True
+        Me.cboDepto.Location = New System.Drawing.Point(64, 15)
+        Me.cboDepto.Name = "cboDepto"
+        Me.cboDepto.Size = New System.Drawing.Size(121, 21)
+        Me.cboDepto.TabIndex = 8
         '
-        'lblIRespusta
+        'cboMun
         '
-        Me.lblIRespusta.AutoSize = True
-        Me.lblIRespusta.Location = New System.Drawing.Point(218, 24)
-        Me.lblIRespusta.Name = "lblIRespusta"
-        Me.lblIRespusta.Size = New System.Drawing.Size(93, 13)
-        Me.lblIRespusta.TabIndex = 7
-        Me.lblIRespusta.Text = "Numero Romano?"
+        Me.cboMun.FormattingEnabled = True
+        Me.cboMun.Location = New System.Drawing.Point(252, 21)
+        Me.cboMun.Name = "cboMun"
+        Me.cboMun.Size = New System.Drawing.Size(121, 21)
+        Me.cboMun.TabIndex = 9
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(378, 218)
-        Me.Controls.Add(Me.lblIRespusta)
-        Me.Controls.Add(Me.btnCalcular)
-        Me.Controls.Add(Me.txtNumero)
-        Me.Controls.Add(Me.lblNumero)
+        Me.ClientSize = New System.Drawing.Size(501, 218)
+        Me.Controls.Add(Me.cboMun)
+        Me.Controls.Add(Me.cboDepto)
+        Me.Controls.Add(Me.lblIMun)
+        Me.Controls.Add(Me.lblDepto)
         Me.Name = "Form1"
         Me.Text = "Conversor de numeros decimales a Romanos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblNumero As Label
-    Friend WithEvents txtNumero As TextBox
-    Friend WithEvents btnCalcular As Button
-    Friend WithEvents lblIRespusta As Label
+    Friend WithEvents lblIMun As Label
+    Friend WithEvents lblDepto As Label
+    Friend WithEvents cboDepto As ComboBox
+    Friend WithEvents cboMun As ComboBox
 End Class
