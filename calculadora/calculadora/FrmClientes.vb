@@ -2,7 +2,7 @@
     Dim objconexion As New db_conexion
     Dim dataTable As New DataTable
     Dim posicion As Integer
-
+    Dim accion As String = "nuevo"
     Private Sub FrmClientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         posicion = 0
         obtenerDatos()
@@ -13,14 +13,19 @@
         mostrarDatos()
     End Sub
     Sub mostrarDatos()
-        txtCodigo.Text = dataTable.Rows(posicion).ItemArray(1).ToString()
-        txtNombre.Text = dataTable.Rows(posicion).ItemArray(2).ToString()
-        txtDireccion.Text = dataTable.Rows(posicion).ItemArray(3).ToString()
-        txtTelefono.Text = dataTable.Rows(posicion).ItemArray(4).ToString()
-        txtEmail.Text = dataTable.Rows(posicion).ItemArray(5).ToString()
+        If dataTable.Rows.Count > 0 Then
+            Me.Tag = dataTable.Rows(posicion).ItemArray(0).ToString() 'ID
+            txtCodigo.Text = dataTable.Rows(posicion).ItemArray(1).ToString()
+            txtNombre.Text = dataTable.Rows(posicion).ItemArray(2).ToString()
+            txtDireccion.Text = dataTable.Rows(posicion).ItemArray(3).ToString()
+            txtTelefono.Text = dataTable.Rows(posicion).ItemArray(4).ToString()
+            txtEmail.Text = dataTable.Rows(posicion).ItemArray(5).ToString()
 
-        lblRegistroClientes.Text = posicion + 1 & " de" & dataTable.Rows.Count
-
+            lblRegistroClientes.Text = posicion + 1 & " de" & dataTable.Rows.Count
+        Else
+            limpiarDatosClientes()
+            MessageBox.Show("No hay registros que mostrar", "Registro de clientes", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
 
 
     End Sub
@@ -61,28 +66,60 @@
         If btnAgregar.Text = "Nuevo" Then
             btnAgregar.Text = "Guardar"
             btnModificar.Text = "Cancelar"
+            accion = "nuevo"
+
             habDescontroles(False)
+            limpiarDatosClientes()
+
         Else
+            Dim msg = objconexion.mantenimientoDatosClientes(New String() {
+             Me.Tag, txtCodigo.Text, txtNombre.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text
+            }, accion)
+
+
+            obtenerDatos()
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
-            btnModificar.Text = "Cancelar"
+            btnModificar.Text = "modificar"
+            MessageBox.Show(msg, "Registro de clientes", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
-    Sub habDescontroles(ByVal estado As Boolean)
+    Private Sub habDescontroles(ByVal estado As Boolean)
         grbDatos.Enabled = Not estado
         grbNavegacion.Enabled = estado
         btnEliminar.Enabled = estado
         btnBuscar.Enabled = estado
     End Sub
+    Private Sub limpiarDatosClientes()
+        txtCodigo.Text = ""
+        txtNombre.Text = ""
+        txtDireccion.Text = ""
+        txtTelefono.Text = ""
+        txtEmail.Text = ""
+    End Sub
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If btnModificar.Text = "Modificar" Then
             btnAgregar.Text = "Guardar"
             btnModificar.Text = "Cancelar"
+            accion = "modificar"
             habDescontroles(False)
         Else
+            obtenerDatos()
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
             btnModificar.Text = "Modificar"
+        End If
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        If (MessageBox.Show("Estas seguro de borrar a " + txtNombre.Text, "Registro de clientes",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+            objconexion.mantenimientoDatosClientes(New String() {Me.Tag}, "eliminar")
+            If posicion > 0 Then
+                posicion -= 1
+            End If
+
+            obtenerDatos()
         End If
     End Sub
 End Class
