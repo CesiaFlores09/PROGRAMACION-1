@@ -37,9 +37,9 @@ Public Class db_conexion
                 sql = "DELETE FROM clientes WHERE idclientes='" + datos(0) + "'"
         End Select
         If (executeSql(sql) > 0) Then
-            msg = "Accion relizada con exito"
+            msg = "exito"
         Else
-            msg = "Fallo el proceso, por favor intentelo de nuevo"
+            msg = "error"
 
         End If
         Return msg

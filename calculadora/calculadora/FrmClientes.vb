@@ -10,6 +10,7 @@
     End Sub
     Sub obtenerDatos()
         dataTable = objconexion.obtenerDatos().Tables("clientes")
+        dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("Idclientes")}
         mostrarDatos()
     End Sub
     Sub mostrarDatos()
@@ -75,13 +76,16 @@
             Dim msg = objconexion.mantenimientoDatosClientes(New String() {
              Me.Tag, txtCodigo.Text, txtNombre.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text
             }, accion)
+            If msg = "error" Then
+                MessageBox.Show(msg, "error al intentar guardar el registro, por favor intente nuevamente ", "Registro de clintes", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                obtenerDatos()
+                habDescontroles(True)
+                btnAgregar.Text = "Nuevo"
+                btnModificar.Text = "modificar"
+            End If
 
 
-            obtenerDatos()
-            habDescontroles(True)
-            btnAgregar.Text = "Nuevo"
-            btnModificar.Text = "modificar"
-            MessageBox.Show(msg, "Registro de clientes", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
     Private Sub habDescontroles(ByVal estado As Boolean)
@@ -122,4 +126,14 @@
             obtenerDatos()
         End If
     End Sub
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        Dim objBuscarClientes As New FrmBuscarClientes
+        objBuscarClientes.ShowDialog()
+        If objBuscarClientes._idc > 0 Then
+            posicion = dataTable.Rows.IndexOf(dataTable.Rows.Find(objBuscarClientes._idc))
+            mostrarDatos()
+        End If
+    End Sub
+
 End Class

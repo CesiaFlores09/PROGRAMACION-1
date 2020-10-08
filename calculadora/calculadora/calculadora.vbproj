@@ -96,6 +96,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmBuscarClientes.Designer.vb">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmClientes.Designer.vb">
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarClientes.resx">
+      <DependentUpon>FrmBuscarClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
