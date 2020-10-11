@@ -147,13 +147,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="db_SistemaFacturacion.mdf">
+    <Content Include="bd_empresa.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="db_SistemaFacturacion_log.ldf">
+    <Content Include="bd_empresa_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>db_SistemaFacturacion.mdf</DependentUpon>
+      <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_users_4172317.png" />
+    <None Include="Resources\iconfinder_653_Company_employee_group_people_team_4017596.png" />
+    <None Include="Resources\iconfinder_person-man_1120619.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
