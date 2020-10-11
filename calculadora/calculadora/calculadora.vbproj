@@ -147,6 +147,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bd_empresa.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bd_empresa_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>bd_empresa.mdf</DependentUpon>
+    </Content>
     <Content Include="db_SistemaFacturacion.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
