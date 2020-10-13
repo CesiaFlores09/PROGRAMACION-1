@@ -52,7 +52,7 @@ Partial Class Form1
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EmpresaToolStripMenuItem
@@ -73,7 +73,7 @@ Partial Class Form1
         '
         'EmpleadosToolStripMenuItem
         '
-        Me.EmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_653_Company_employee_group_people_team_4017596
+        Me.EmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_hierarchy_1931214__1_
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
         Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)

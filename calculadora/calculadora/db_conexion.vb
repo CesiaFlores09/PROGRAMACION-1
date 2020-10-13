@@ -26,9 +26,9 @@ Public Class db_conexion
         Dim sql, msg As String
         Select Case accion
             Case "nuevo"
-                sql = "INSERT INTO empleados (codigo,nombre,puesto laboral,direccion,telefono,email) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
+                sql = "INSERT INTO empleados (codigo,nombre,puestolaboral,direccion,telefono,email) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
             Case "modificar"
-                sql = "UPDATE empleados  SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',puesto laboral='" + datos(3) + "',direccion='" + datos(4) + "',telefono='" + datos(5) + "',email='" + datos(6) + "'WHERE idempleados='" + datos(0) + "'"
+                sql = "UPDATE empleados  SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',puestolaboral='" + datos(3) + "',direccion='" + datos(4) + "',telefono='" + datos(5) + "',email='" + datos(6) + "'WHERE idempleados='" + datos(0) + "'"
             Case "eliminar"
                 sql = "DELETE FROM empleados WHERE idempleados='" + datos(0) + "'"
         End Select
