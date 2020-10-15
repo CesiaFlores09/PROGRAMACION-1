@@ -20,6 +20,11 @@ Public Class db_conexion
         micommand.CommandText = "Select * from empleados"
         miadapter.SelectCommand = micommand
         miadapter.Fill(ds, "empleados")
+
+        micommand.CommandText = "Select * from usuario"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "usuario")
+
         Return ds
     End Function
     Public Function mantenimientoDatosEmpleados(ByVal datos As String(), ByVal accion As String)
@@ -39,6 +44,25 @@ Public Class db_conexion
         End If
         Return msg
     End Function
+
+    Public Function mantenimientoDatosUsuarios(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO usuario (nombres,apellidos,clave,email,direccion,telefono,privilegio) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "','" + datos(7) + "')"
+            Case "modificar"
+                sql = "UPDATE usuario  SET nombres='" + datos(1) + "',apellidos='" + datos(2) + "',clave='" + datos(3) + "',email='" + datos(4) + "',direccion='" + datos(5) + "',telefono='" + datos(6) + "',privilegio='" + datos(7) + "'WHERE idusuario='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM usuario WHERE idusuario='" + datos(0) + "'"
+        End Select
+        If (excecuteSql(sql) > 0) Then
+            msg = "Accion realizada con exito"
+        Else
+            msg = "Fallo el proceso, por favor intentelo de nuevo"
+        End If
+        Return msg
+    End Function
+
     Private Function excecuteSql(ByVal sql As String)
         micommand.Connection = miconexion
         micommand.CommandText = sql

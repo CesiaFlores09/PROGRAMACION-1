@@ -70,9 +70,9 @@ Partial Class frmempleados
         Me.grbDatos.Controls.Add(Me.lblCodigo)
         Me.grbDatos.Enabled = False
         Me.grbDatos.Location = New System.Drawing.Point(57, 38)
-        Me.grbDatos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbDatos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbDatos.Name = "grbDatos"
-        Me.grbDatos.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbDatos.Padding = New System.Windows.Forms.Padding(2)
         Me.grbDatos.Size = New System.Drawing.Size(724, 395)
         Me.grbDatos.TabIndex = 0
         Me.grbDatos.TabStop = False
@@ -81,7 +81,7 @@ Partial Class frmempleados
         'txtEmail
         '
         Me.txtEmail.Location = New System.Drawing.Point(160, 336)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(277, 20)
         Me.txtEmail.TabIndex = 12
@@ -89,7 +89,7 @@ Partial Class frmempleados
         'txtTelefono
         '
         Me.txtTelefono.Location = New System.Drawing.Point(160, 278)
-        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(155, 20)
         Me.txtTelefono.TabIndex = 11
@@ -97,7 +97,7 @@ Partial Class frmempleados
         'txtDireccion
         '
         Me.txtDireccion.Location = New System.Drawing.Point(160, 184)
-        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccion.Multiline = True
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(219, 66)
@@ -106,7 +106,7 @@ Partial Class frmempleados
         'txtPuestoLaboral
         '
         Me.txtPuestoLaboral.Location = New System.Drawing.Point(160, 124)
-        Me.txtPuestoLaboral.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPuestoLaboral.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPuestoLaboral.Name = "txtPuestoLaboral"
         Me.txtPuestoLaboral.Size = New System.Drawing.Size(237, 20)
         Me.txtPuestoLaboral.TabIndex = 9
@@ -114,7 +114,7 @@ Partial Class frmempleados
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(160, 76)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(277, 20)
         Me.txtNombre.TabIndex = 8
@@ -122,7 +122,7 @@ Partial Class frmempleados
         'txtCodigo
         '
         Me.txtCodigo.Location = New System.Drawing.Point(160, 34)
-        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(76, 20)
         Me.txtCodigo.TabIndex = 7
@@ -211,9 +211,9 @@ Partial Class frmempleados
         Me.grbNavegacion.Controls.Add(Me.btnAnterior)
         Me.grbNavegacion.Controls.Add(Me.btnPrimero)
         Me.grbNavegacion.Location = New System.Drawing.Point(57, 478)
-        Me.grbNavegacion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbNavegacion.Margin = New System.Windows.Forms.Padding(2)
         Me.grbNavegacion.Name = "grbNavegacion"
-        Me.grbNavegacion.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbNavegacion.Padding = New System.Windows.Forms.Padding(2)
         Me.grbNavegacion.Size = New System.Drawing.Size(342, 81)
         Me.grbNavegacion.TabIndex = 1
         Me.grbNavegacion.TabStop = False
@@ -233,7 +233,7 @@ Partial Class frmempleados
         '
         Me.btnUltimo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUltimo.Location = New System.Drawing.Point(281, 17)
-        Me.btnUltimo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUltimo.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimo.Name = "btnUltimo"
         Me.btnUltimo.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimo.TabIndex = 3
@@ -244,7 +244,7 @@ Partial Class frmempleados
         '
         Me.btnSiguiente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguiente.Location = New System.Drawing.Point(220, 17)
-        Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguiente.Name = "btnSiguiente"
         Me.btnSiguiente.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguiente.TabIndex = 2
@@ -255,7 +255,7 @@ Partial Class frmempleados
         '
         Me.btnAnterior.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnterior.Location = New System.Drawing.Point(65, 17)
-        Me.btnAnterior.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAnterior.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnterior.Name = "btnAnterior"
         Me.btnAnterior.Size = New System.Drawing.Size(56, 49)
         Me.btnAnterior.TabIndex = 1
@@ -266,7 +266,7 @@ Partial Class frmempleados
         '
         Me.btnPrimero.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrimero.Location = New System.Drawing.Point(4, 17)
-        Me.btnPrimero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnPrimero.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimero.Name = "btnPrimero"
         Me.btnPrimero.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimero.TabIndex = 0
@@ -280,9 +280,9 @@ Partial Class frmempleados
         Me.grbEdicion.Controls.Add(Me.btnModificar)
         Me.grbEdicion.Controls.Add(Me.btnAgregar)
         Me.grbEdicion.Location = New System.Drawing.Point(418, 478)
-        Me.grbEdicion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbEdicion.Margin = New System.Windows.Forms.Padding(2)
         Me.grbEdicion.Name = "grbEdicion"
-        Me.grbEdicion.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbEdicion.Padding = New System.Windows.Forms.Padding(2)
         Me.grbEdicion.Size = New System.Drawing.Size(407, 81)
         Me.grbEdicion.TabIndex = 2
         Me.grbEdicion.TabStop = False
@@ -292,7 +292,7 @@ Partial Class frmempleados
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.Location = New System.Drawing.Point(307, 17)
-        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(83, 49)
         Me.btnBuscar.TabIndex = 4
@@ -303,7 +303,7 @@ Partial Class frmempleados
         '
         Me.btnEliminar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(209, 18)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(93, 48)
         Me.btnEliminar.TabIndex = 3
@@ -314,7 +314,7 @@ Partial Class frmempleados
         '
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(96, 17)
-        Me.btnModificar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnModificar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(109, 48)
         Me.btnModificar.TabIndex = 2
@@ -325,9 +325,9 @@ Partial Class frmempleados
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Location = New System.Drawing.Point(11, 17)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(66, 48)
+        Me.btnAgregar.Size = New System.Drawing.Size(81, 48)
         Me.btnAgregar.TabIndex = 1
         Me.btnAgregar.Text = "Nuevo"
         Me.btnAgregar.UseVisualStyleBackColor = True
@@ -341,7 +341,7 @@ Partial Class frmempleados
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmempleados"
         Me.Text = "Registro empleados"
         Me.grbDatos.ResumeLayout(False)
