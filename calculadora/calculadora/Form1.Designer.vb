@@ -81,7 +81,7 @@ Partial Class Form1
         '
         'UsuariosToolStripMenuItem
         '
-        Me.UsuariosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_users_4172317
+        Me.UsuariosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Customers_1218712
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.U), System.Windows.Forms.Keys)

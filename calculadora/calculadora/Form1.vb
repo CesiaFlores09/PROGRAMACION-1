@@ -12,4 +12,10 @@
         objEmpleados.MdiParent = Me
         objEmpleados.Show()
     End Sub
+
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
+        Dim objUsuarios As New frmusuarios
+        objUsuarios.MdiParent = Me
+        objUsuarios.Show()
+    End Sub
 End Class
