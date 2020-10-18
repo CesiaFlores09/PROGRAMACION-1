@@ -63,6 +63,17 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property diferentes_electrodomesticos_equipos_casa_electrica_tienda_minorista_moderna_sala_exposicion_interior_plano_horizontal_48369_26072() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala"& _ 
+                        "-exposicion-interior-plano-horizontal_48369-26072", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_653_Company_employee_group_people_team_4017596() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_653_Company_employee_group_people_team_4017596", resourceCulture)
