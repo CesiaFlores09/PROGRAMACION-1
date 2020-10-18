@@ -26,8 +26,6 @@ Partial Class frmBuscarUsuarios
         Me.btnCancelarUsuario = New System.Windows.Forms.Button()
         Me.btnSeleccionarUsuario = New System.Windows.Forms.Button()
         Me.grdBuscarUsuario = New System.Windows.Forms.DataGridView()
-        Me.txtBuscarUsuario = New System.Windows.Forms.TextBox()
-        Me.lblBuscarUsuario = New System.Windows.Forms.Label()
         Me.idusuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,6 +34,8 @@ Partial Class frmBuscarUsuarios
         Me.direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.privilegio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txtBuscarUsuario = New System.Windows.Forms.TextBox()
+        Me.lblBuscarUsuario = New System.Windows.Forms.Label()
         CType(Me.grdBuscarUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,23 +70,6 @@ Partial Class frmBuscarUsuarios
         Me.grdBuscarUsuario.ReadOnly = True
         Me.grdBuscarUsuario.Size = New System.Drawing.Size(760, 325)
         Me.grdBuscarUsuario.TabIndex = 2
-        '
-        'txtBuscarUsuario
-        '
-        Me.txtBuscarUsuario.Location = New System.Drawing.Point(92, 29)
-        Me.txtBuscarUsuario.Name = "txtBuscarUsuario"
-        Me.txtBuscarUsuario.Size = New System.Drawing.Size(696, 20)
-        Me.txtBuscarUsuario.TabIndex = 3
-        '
-        'lblBuscarUsuario
-        '
-        Me.lblBuscarUsuario.AutoSize = True
-        Me.lblBuscarUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarUsuario.Location = New System.Drawing.Point(25, 32)
-        Me.lblBuscarUsuario.Name = "lblBuscarUsuario"
-        Me.lblBuscarUsuario.Size = New System.Drawing.Size(61, 13)
-        Me.lblBuscarUsuario.TabIndex = 4
-        Me.lblBuscarUsuario.Text = "BUSCAR:"
         '
         'idusuario
         '
@@ -144,6 +127,23 @@ Partial Class frmBuscarUsuarios
         Me.privilegio.HeaderText = "PRIVILEGIO"
         Me.privilegio.Name = "privilegio"
         Me.privilegio.ReadOnly = True
+        '
+        'txtBuscarUsuario
+        '
+        Me.txtBuscarUsuario.Location = New System.Drawing.Point(92, 29)
+        Me.txtBuscarUsuario.Name = "txtBuscarUsuario"
+        Me.txtBuscarUsuario.Size = New System.Drawing.Size(696, 20)
+        Me.txtBuscarUsuario.TabIndex = 3
+        '
+        'lblBuscarUsuario
+        '
+        Me.lblBuscarUsuario.AutoSize = True
+        Me.lblBuscarUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBuscarUsuario.Location = New System.Drawing.Point(25, 32)
+        Me.lblBuscarUsuario.Name = "lblBuscarUsuario"
+        Me.lblBuscarUsuario.Size = New System.Drawing.Size(61, 13)
+        Me.lblBuscarUsuario.TabIndex = 4
+        Me.lblBuscarUsuario.Text = "BUSCAR:"
         '
         'frmBuscarUsuarios
         '

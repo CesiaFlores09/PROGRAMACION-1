@@ -34,4 +34,7 @@
         End If
     End Sub
 
+    Private Sub grdBuscarUsuario_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grdBuscarUsuario.CellContentClick
+
+    End Sub
 End Class

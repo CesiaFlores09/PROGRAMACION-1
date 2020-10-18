@@ -18,4 +18,10 @@
         objUsuarios.MdiParent = Me
         objUsuarios.Show()
     End Sub
+
+    Private Sub ProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedoresToolStripMenuItem.Click
+        Dim objProveedores As New frmProveedores
+        objProveedores.MdiParent = Me
+        objProveedores.Show()
+    End Sub
 End Class

@@ -31,4 +31,12 @@
             seleccionarCliente()
         End If
     End Sub
+
+    Private Sub grbBuscar_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grbBuscar.CellContentClick
+
+    End Sub
+
+    Private Sub txtBuscarEmpleados_TextChanged(sender As Object, e As EventArgs) Handles txtBuscarEmpleados.TextChanged
+
+    End Sub
 End Class

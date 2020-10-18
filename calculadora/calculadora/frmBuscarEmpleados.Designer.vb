@@ -54,7 +54,7 @@ Partial Class frmBuscarEmpleados
         Me.lblBuscarEnpleados.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBuscarEnpleados.Location = New System.Drawing.Point(12, 25)
         Me.lblBuscarEnpleados.Name = "lblBuscarEnpleados"
-        Me.lblBuscarEnpleados.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarEnpleados.Size = New System.Drawing.Size(56, 16)
         Me.lblBuscarEnpleados.TabIndex = 4
         Me.lblBuscarEnpleados.Text = "Buscar:"
         '
