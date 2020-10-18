@@ -69,11 +69,11 @@ Partial Class frmempleados
         Me.grbDatos.Controls.Add(Me.lblNombre)
         Me.grbDatos.Controls.Add(Me.lblCodigo)
         Me.grbDatos.Enabled = False
-        Me.grbDatos.Location = New System.Drawing.Point(57, 38)
+        Me.grbDatos.Location = New System.Drawing.Point(30, 32)
         Me.grbDatos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbDatos.Name = "grbDatos"
         Me.grbDatos.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbDatos.Size = New System.Drawing.Size(724, 395)
+        Me.grbDatos.Size = New System.Drawing.Size(749, 395)
         Me.grbDatos.TabIndex = 0
         Me.grbDatos.TabStop = False
         Me.grbDatos.Text = "Datos de empleados"
@@ -210,7 +210,7 @@ Partial Class frmempleados
         Me.grbNavegacion.Controls.Add(Me.btnSiguiente)
         Me.grbNavegacion.Controls.Add(Me.btnAnterior)
         Me.grbNavegacion.Controls.Add(Me.btnPrimero)
-        Me.grbNavegacion.Location = New System.Drawing.Point(57, 478)
+        Me.grbNavegacion.Location = New System.Drawing.Point(30, 478)
         Me.grbNavegacion.Margin = New System.Windows.Forms.Padding(2)
         Me.grbNavegacion.Name = "grbNavegacion"
         Me.grbNavegacion.Padding = New System.Windows.Forms.Padding(2)
@@ -231,6 +231,7 @@ Partial Class frmempleados
         '
         'btnUltimo
         '
+        Me.btnUltimo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnUltimo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUltimo.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimo.Margin = New System.Windows.Forms.Padding(2)
@@ -238,10 +239,11 @@ Partial Class frmempleados
         Me.btnUltimo.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimo.TabIndex = 3
         Me.btnUltimo.Text = ">|"
-        Me.btnUltimo.UseVisualStyleBackColor = True
+        Me.btnUltimo.UseVisualStyleBackColor = False
         '
         'btnSiguiente
         '
+        Me.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSiguiente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguiente.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(2)
@@ -249,10 +251,11 @@ Partial Class frmempleados
         Me.btnSiguiente.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguiente.TabIndex = 2
         Me.btnSiguiente.Text = ">"
-        Me.btnSiguiente.UseVisualStyleBackColor = True
+        Me.btnSiguiente.UseVisualStyleBackColor = False
         '
         'btnAnterior
         '
+        Me.btnAnterior.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAnterior.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnterior.Location = New System.Drawing.Point(65, 17)
         Me.btnAnterior.Margin = New System.Windows.Forms.Padding(2)
@@ -260,10 +263,11 @@ Partial Class frmempleados
         Me.btnAnterior.Size = New System.Drawing.Size(56, 49)
         Me.btnAnterior.TabIndex = 1
         Me.btnAnterior.Text = "<"
-        Me.btnAnterior.UseVisualStyleBackColor = True
+        Me.btnAnterior.UseVisualStyleBackColor = False
         '
         'btnPrimero
         '
+        Me.btnPrimero.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPrimero.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrimero.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimero.Margin = New System.Windows.Forms.Padding(2)
@@ -271,7 +275,7 @@ Partial Class frmempleados
         Me.btnPrimero.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimero.TabIndex = 0
         Me.btnPrimero.Text = "|<"
-        Me.btnPrimero.UseVisualStyleBackColor = True
+        Me.btnPrimero.UseVisualStyleBackColor = False
         '
         'grbEdicion
         '
@@ -279,7 +283,7 @@ Partial Class frmempleados
         Me.grbEdicion.Controls.Add(Me.btnEliminar)
         Me.grbEdicion.Controls.Add(Me.btnModificar)
         Me.grbEdicion.Controls.Add(Me.btnAgregar)
-        Me.grbEdicion.Location = New System.Drawing.Point(418, 478)
+        Me.grbEdicion.Location = New System.Drawing.Point(376, 478)
         Me.grbEdicion.Margin = New System.Windows.Forms.Padding(2)
         Me.grbEdicion.Name = "grbEdicion"
         Me.grbEdicion.Padding = New System.Windows.Forms.Padding(2)
@@ -290,53 +294,58 @@ Partial Class frmempleados
         '
         'btnBuscar
         '
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnBuscar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(307, 17)
+        Me.btnBuscar.Location = New System.Drawing.Point(320, 17)
         Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(83, 49)
         Me.btnBuscar.TabIndex = 4
         Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
         'btnEliminar
         '
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnEliminar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(209, 18)
+        Me.btnEliminar.Location = New System.Drawing.Point(223, 18)
         Me.btnEliminar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(93, 48)
         Me.btnEliminar.TabIndex = 3
         Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnModificar
         '
+        Me.btnModificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(96, 17)
+        Me.btnModificar.Location = New System.Drawing.Point(110, 17)
         Me.btnModificar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(109, 48)
         Me.btnModificar.TabIndex = 2
         Me.btnModificar.Text = "Modificar"
-        Me.btnModificar.UseVisualStyleBackColor = True
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'btnAgregar
         '
+        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAgregar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(81, 48)
+        Me.btnAgregar.Size = New System.Drawing.Size(95, 48)
         Me.btnAgregar.TabIndex = 1
         Me.btnAgregar.Text = "Nuevo"
-        Me.btnAgregar.UseVisualStyleBackColor = True
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'frmempleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(835, 609)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(796, 609)
         Me.Controls.Add(Me.grbEdicion)
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatos)

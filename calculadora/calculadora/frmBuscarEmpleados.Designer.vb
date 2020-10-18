@@ -43,7 +43,7 @@ Partial Class frmBuscarEmpleados
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarEmpleados.Location = New System.Drawing.Point(85, 21)
         Me.txtBuscarEmpleados.Name = "txtBuscarEmpleados"
-        Me.txtBuscarEmpleados.Size = New System.Drawing.Size(685, 20)
+        Me.txtBuscarEmpleados.Size = New System.Drawing.Size(707, 20)
         Me.txtBuscarEmpleados.TabIndex = 5
         '
         'lblBuscarEnpleados
@@ -70,7 +70,7 @@ Partial Class frmBuscarEmpleados
         Me.grbBuscar.Location = New System.Drawing.Point(15, 47)
         Me.grbBuscar.Name = "grbBuscar"
         Me.grbBuscar.ReadOnly = True
-        Me.grbBuscar.Size = New System.Drawing.Size(773, 355)
+        Me.grbBuscar.Size = New System.Drawing.Size(795, 355)
         Me.grbBuscar.TabIndex = 3
         '
         'idempleados
@@ -130,31 +130,34 @@ Partial Class frmBuscarEmpleados
         '
         Me.btnCancelar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnCancelar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(583, 444)
+        Me.btnCancelar.Location = New System.Drawing.Point(605, 431)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(196, 23)
+        Me.btnCancelar.Size = New System.Drawing.Size(196, 36)
         Me.btnCancelar.TabIndex = 7
         Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = True
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'btnSeleccionar
         '
         Me.btnSeleccionar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSeleccionar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSeleccionar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionar.Location = New System.Drawing.Point(358, 444)
+        Me.btnSeleccionar.Location = New System.Drawing.Point(380, 431)
         Me.btnSeleccionar.Name = "btnSeleccionar"
-        Me.btnSeleccionar.Size = New System.Drawing.Size(196, 23)
+        Me.btnSeleccionar.Size = New System.Drawing.Size(196, 36)
         Me.btnSeleccionar.TabIndex = 6
         Me.btnSeleccionar.Text = "Seleccionar Empleado"
-        Me.btnSeleccionar.UseVisualStyleBackColor = True
+        Me.btnSeleccionar.UseVisualStyleBackColor = False
         '
         'frmBuscarEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 504)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(822, 504)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnSeleccionar)
         Me.Controls.Add(Me.txtBuscarEmpleados)

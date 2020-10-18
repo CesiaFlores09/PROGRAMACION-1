@@ -48,7 +48,7 @@
             posicion -= 1
             mostrarDatos()
         Else
-            MessageBox.Show("Ya te encuentras en el primer registro", "Registro de productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Ya te encuentras en el primer registro", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
@@ -80,7 +80,7 @@
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        If (MessageBox.Show("Estas seguro de borrar a empleado " + txtNombre.Text, " Registro empleado", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+        If (MessageBox.Show("Estas seguro de borrar a empleado " + txtNombre.Text, " Registro empleados", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
 
             objconexion.mantenimientoDatosEmpleados(New String() {Me.Tag}, "eliminar")
             If posicion > 0 Then
@@ -105,7 +105,7 @@
             posicion += 1
             mostrarDatos()
         Else
-            MessageBox.Show("Ya te encuentras en el ultimo registro", "Registro de productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Ya te encuentras en el ultimo registro", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
@@ -128,5 +128,9 @@
             btnModificar.Text = "Modificar"
             MessageBox.Show(msg, "Registro de Productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
+    End Sub
+
+    Private Sub grbDatos_Enter(sender As Object, e As EventArgs) Handles grbDatos.Enter
+
     End Sub
 End Class

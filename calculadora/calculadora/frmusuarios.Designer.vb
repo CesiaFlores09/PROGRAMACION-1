@@ -72,6 +72,7 @@ Partial Class frmusuarios
         '
         'btnBuscarUsuario
         '
+        Me.btnBuscarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnBuscarUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarUsuario.Location = New System.Drawing.Point(307, 17)
         Me.btnBuscarUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -79,10 +80,11 @@ Partial Class frmusuarios
         Me.btnBuscarUsuario.Size = New System.Drawing.Size(83, 49)
         Me.btnBuscarUsuario.TabIndex = 4
         Me.btnBuscarUsuario.Text = "Buscar"
-        Me.btnBuscarUsuario.UseVisualStyleBackColor = True
+        Me.btnBuscarUsuario.UseVisualStyleBackColor = False
         '
         'btnEliminarUsuario
         '
+        Me.btnEliminarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnEliminarUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarUsuario.Location = New System.Drawing.Point(209, 18)
         Me.btnEliminarUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -90,10 +92,11 @@ Partial Class frmusuarios
         Me.btnEliminarUsuario.Size = New System.Drawing.Size(93, 48)
         Me.btnEliminarUsuario.TabIndex = 3
         Me.btnEliminarUsuario.Text = "Eliminar"
-        Me.btnEliminarUsuario.UseVisualStyleBackColor = True
+        Me.btnEliminarUsuario.UseVisualStyleBackColor = False
         '
         'btnModificarUsuario
         '
+        Me.btnModificarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnModificarUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarUsuario.Location = New System.Drawing.Point(96, 17)
         Me.btnModificarUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -101,10 +104,11 @@ Partial Class frmusuarios
         Me.btnModificarUsuario.Size = New System.Drawing.Size(109, 48)
         Me.btnModificarUsuario.TabIndex = 2
         Me.btnModificarUsuario.Text = "Modificar"
-        Me.btnModificarUsuario.UseVisualStyleBackColor = True
+        Me.btnModificarUsuario.UseVisualStyleBackColor = False
         '
         'btnAgregarUsuario
         '
+        Me.btnAgregarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAgregarUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarUsuario.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregarUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -112,7 +116,7 @@ Partial Class frmusuarios
         Me.btnAgregarUsuario.Size = New System.Drawing.Size(81, 48)
         Me.btnAgregarUsuario.TabIndex = 1
         Me.btnAgregarUsuario.Text = "Nuevo"
-        Me.btnAgregarUsuario.UseVisualStyleBackColor = True
+        Me.btnAgregarUsuario.UseVisualStyleBackColor = False
         '
         'grbNavegacionUsuario
         '
@@ -142,6 +146,7 @@ Partial Class frmusuarios
         '
         'btnUltimoUsuario
         '
+        Me.btnUltimoUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnUltimoUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUltimoUsuario.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimoUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -149,10 +154,11 @@ Partial Class frmusuarios
         Me.btnUltimoUsuario.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoUsuario.TabIndex = 3
         Me.btnUltimoUsuario.Text = ">|"
-        Me.btnUltimoUsuario.UseVisualStyleBackColor = True
+        Me.btnUltimoUsuario.UseVisualStyleBackColor = False
         '
         'btnSiguienteUsuario
         '
+        Me.btnSiguienteUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSiguienteUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguienteUsuario.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguienteUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -160,10 +166,11 @@ Partial Class frmusuarios
         Me.btnSiguienteUsuario.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguienteUsuario.TabIndex = 2
         Me.btnSiguienteUsuario.Text = ">"
-        Me.btnSiguienteUsuario.UseVisualStyleBackColor = True
+        Me.btnSiguienteUsuario.UseVisualStyleBackColor = False
         '
         'btnAnteriorUsuario
         '
+        Me.btnAnteriorUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAnteriorUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnteriorUsuario.Location = New System.Drawing.Point(65, 17)
         Me.btnAnteriorUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -171,10 +178,11 @@ Partial Class frmusuarios
         Me.btnAnteriorUsuario.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorUsuario.TabIndex = 1
         Me.btnAnteriorUsuario.Text = "<"
-        Me.btnAnteriorUsuario.UseVisualStyleBackColor = True
+        Me.btnAnteriorUsuario.UseVisualStyleBackColor = False
         '
         'btnPrimeroUsuario
         '
+        Me.btnPrimeroUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPrimeroUsuario.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrimeroUsuario.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroUsuario.Margin = New System.Windows.Forms.Padding(2)
@@ -182,7 +190,7 @@ Partial Class frmusuarios
         Me.btnPrimeroUsuario.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroUsuario.TabIndex = 0
         Me.btnPrimeroUsuario.Text = "|<"
-        Me.btnPrimeroUsuario.UseVisualStyleBackColor = True
+        Me.btnPrimeroUsuario.UseVisualStyleBackColor = False
         '
         'grbDatosUsuario
         '
@@ -359,6 +367,7 @@ Partial Class frmusuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(814, 514)
         Me.Controls.Add(Me.grbEdicionUsuario)
         Me.Controls.Add(Me.grbNavegacionUsuario)

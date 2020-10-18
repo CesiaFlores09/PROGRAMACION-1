@@ -76,7 +76,7 @@ Partial Class frmproveedores
         Me.grbDatosdeProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.grbDatosdeProveedores.Name = "grbDatosdeProveedores"
         Me.grbDatosdeProveedores.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbDatosdeProveedores.Size = New System.Drawing.Size(753, 443)
+        Me.grbDatosdeProveedores.Size = New System.Drawing.Size(753, 433)
         Me.grbDatosdeProveedores.TabIndex = 2
         Me.grbDatosdeProveedores.TabStop = False
         Me.grbDatosdeProveedores.Text = "Registro de proveedores"
@@ -102,7 +102,7 @@ Partial Class frmproveedores
         '
         'txtEmailProveedores
         '
-        Me.txtEmailProveedores.Location = New System.Drawing.Point(160, 416)
+        Me.txtEmailProveedores.Location = New System.Drawing.Point(182, 392)
         Me.txtEmailProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmailProveedores.Name = "txtEmailProveedores"
         Me.txtEmailProveedores.Size = New System.Drawing.Size(277, 20)
@@ -110,7 +110,7 @@ Partial Class frmproveedores
         '
         'txtTelefonoProveedores
         '
-        Me.txtTelefonoProveedores.Location = New System.Drawing.Point(160, 364)
+        Me.txtTelefonoProveedores.Location = New System.Drawing.Point(182, 346)
         Me.txtTelefonoProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTelefonoProveedores.Name = "txtTelefonoProveedores"
         Me.txtTelefonoProveedores.Size = New System.Drawing.Size(155, 20)
@@ -118,7 +118,7 @@ Partial Class frmproveedores
         '
         'txtDireccionProveedores
         '
-        Me.txtDireccionProveedores.Location = New System.Drawing.Point(160, 275)
+        Me.txtDireccionProveedores.Location = New System.Drawing.Point(182, 252)
         Me.txtDireccionProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccionProveedores.Multiline = True
         Me.txtDireccionProveedores.Name = "txtDireccionProveedores"
@@ -127,7 +127,7 @@ Partial Class frmproveedores
         '
         'txtNombreEmpresa
         '
-        Me.txtNombreEmpresa.Location = New System.Drawing.Point(160, 124)
+        Me.txtNombreEmpresa.Location = New System.Drawing.Point(182, 123)
         Me.txtNombreEmpresa.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreEmpresa.Name = "txtNombreEmpresa"
         Me.txtNombreEmpresa.Size = New System.Drawing.Size(237, 20)
@@ -135,7 +135,7 @@ Partial Class frmproveedores
         '
         'txtNombreProveedores
         '
-        Me.txtNombreProveedores.Location = New System.Drawing.Point(160, 76)
+        Me.txtNombreProveedores.Location = New System.Drawing.Point(178, 76)
         Me.txtNombreProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreProveedores.Name = "txtNombreProveedores"
         Me.txtNombreProveedores.Size = New System.Drawing.Size(277, 20)
@@ -143,7 +143,7 @@ Partial Class frmproveedores
         '
         'txtCodigoProveedores
         '
-        Me.txtCodigoProveedores.Location = New System.Drawing.Point(160, 34)
+        Me.txtCodigoProveedores.Location = New System.Drawing.Point(178, 34)
         Me.txtCodigoProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodigoProveedores.Name = "txtCodigoProveedores"
         Me.txtCodigoProveedores.Size = New System.Drawing.Size(76, 20)
@@ -153,7 +153,7 @@ Partial Class frmproveedores
         '
         Me.lblEmailProveedores.AutoSize = True
         Me.lblEmailProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEmailProveedores.Location = New System.Drawing.Point(14, 420)
+        Me.lblEmailProveedores.Location = New System.Drawing.Point(14, 393)
         Me.lblEmailProveedores.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEmailProveedores.Name = "lblEmailProveedores"
         Me.lblEmailProveedores.Size = New System.Drawing.Size(55, 16)
@@ -164,7 +164,7 @@ Partial Class frmproveedores
         '
         Me.lblTelefonoProveedores.AutoSize = True
         Me.lblTelefonoProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTelefonoProveedores.Location = New System.Drawing.Point(14, 364)
+        Me.lblTelefonoProveedores.Location = New System.Drawing.Point(14, 346)
         Me.lblTelefonoProveedores.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTelefonoProveedores.Name = "lblTelefonoProveedores"
         Me.lblTelefonoProveedores.Size = New System.Drawing.Size(87, 16)
@@ -175,7 +175,7 @@ Partial Class frmproveedores
         '
         Me.lblDireccionProveedores.AutoSize = True
         Me.lblDireccionProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccionProveedores.Location = New System.Drawing.Point(14, 303)
+        Me.lblDireccionProveedores.Location = New System.Drawing.Point(14, 264)
         Me.lblDireccionProveedores.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDireccionProveedores.Name = "lblDireccionProveedores"
         Me.lblDireccionProveedores.Size = New System.Drawing.Size(90, 16)
@@ -253,6 +253,7 @@ Partial Class frmproveedores
         '
         'btnUltimoProveedores
         '
+        Me.btnUltimoProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnUltimoProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUltimoProveedores.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimoProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -260,10 +261,11 @@ Partial Class frmproveedores
         Me.btnUltimoProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoProveedores.TabIndex = 3
         Me.btnUltimoProveedores.Text = ">|"
-        Me.btnUltimoProveedores.UseVisualStyleBackColor = True
+        Me.btnUltimoProveedores.UseVisualStyleBackColor = False
         '
         'btnSiguienteProveedores
         '
+        Me.btnSiguienteProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSiguienteProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguienteProveedores.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguienteProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -271,10 +273,11 @@ Partial Class frmproveedores
         Me.btnSiguienteProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguienteProveedores.TabIndex = 2
         Me.btnSiguienteProveedores.Text = ">"
-        Me.btnSiguienteProveedores.UseVisualStyleBackColor = True
+        Me.btnSiguienteProveedores.UseVisualStyleBackColor = False
         '
         'btnAnteriorProveedores
         '
+        Me.btnAnteriorProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAnteriorProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnteriorProveedores.Location = New System.Drawing.Point(65, 17)
         Me.btnAnteriorProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -282,10 +285,11 @@ Partial Class frmproveedores
         Me.btnAnteriorProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorProveedores.TabIndex = 1
         Me.btnAnteriorProveedores.Text = "<"
-        Me.btnAnteriorProveedores.UseVisualStyleBackColor = True
+        Me.btnAnteriorProveedores.UseVisualStyleBackColor = False
         '
         'btnPrimeroProveedores
         '
+        Me.btnPrimeroProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPrimeroProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrimeroProveedores.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -293,7 +297,7 @@ Partial Class frmproveedores
         Me.btnPrimeroProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroProveedores.TabIndex = 0
         Me.btnPrimeroProveedores.Text = "|<"
-        Me.btnPrimeroProveedores.UseVisualStyleBackColor = True
+        Me.btnPrimeroProveedores.UseVisualStyleBackColor = False
         '
         'grbEdicion
         '
@@ -312,6 +316,7 @@ Partial Class frmproveedores
         '
         'btnBuscarProveedores
         '
+        Me.btnBuscarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnBuscarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarProveedores.Location = New System.Drawing.Point(307, 17)
         Me.btnBuscarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -319,10 +324,11 @@ Partial Class frmproveedores
         Me.btnBuscarProveedores.Size = New System.Drawing.Size(83, 49)
         Me.btnBuscarProveedores.TabIndex = 4
         Me.btnBuscarProveedores.Text = "Buscar"
-        Me.btnBuscarProveedores.UseVisualStyleBackColor = True
+        Me.btnBuscarProveedores.UseVisualStyleBackColor = False
         '
         'btnEliminarProveedores
         '
+        Me.btnEliminarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnEliminarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarProveedores.Location = New System.Drawing.Point(209, 18)
         Me.btnEliminarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -330,10 +336,11 @@ Partial Class frmproveedores
         Me.btnEliminarProveedores.Size = New System.Drawing.Size(93, 48)
         Me.btnEliminarProveedores.TabIndex = 3
         Me.btnEliminarProveedores.Text = "Eliminar"
-        Me.btnEliminarProveedores.UseVisualStyleBackColor = True
+        Me.btnEliminarProveedores.UseVisualStyleBackColor = False
         '
         'btnModificarProveedores
         '
+        Me.btnModificarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnModificarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarProveedores.Location = New System.Drawing.Point(96, 17)
         Me.btnModificarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -341,10 +348,11 @@ Partial Class frmproveedores
         Me.btnModificarProveedores.Size = New System.Drawing.Size(109, 48)
         Me.btnModificarProveedores.TabIndex = 2
         Me.btnModificarProveedores.Text = "Modificar"
-        Me.btnModificarProveedores.UseVisualStyleBackColor = True
+        Me.btnModificarProveedores.UseVisualStyleBackColor = False
         '
         'btnAgregarProveedores
         '
+        Me.btnAgregarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAgregarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarProveedores.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -352,13 +360,14 @@ Partial Class frmproveedores
         Me.btnAgregarProveedores.Size = New System.Drawing.Size(81, 48)
         Me.btnAgregarProveedores.TabIndex = 1
         Me.btnAgregarProveedores.Text = "Nuevo"
-        Me.btnAgregarProveedores.UseVisualStyleBackColor = True
+        Me.btnAgregarProveedores.UseVisualStyleBackColor = False
         '
         'frmproveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(906, 533)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(815, 539)
         Me.Controls.Add(Me.grbEdicion)
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatosdeProveedores)
