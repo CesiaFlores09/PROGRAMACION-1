@@ -102,6 +102,12 @@
     <Compile Include="frmBuscarEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBuscarProveedores.Designer.vb">
+      <DependentUpon>frmBuscarProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBuscarUsuarios.Designer.vb">
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,12 @@
       <DependentUpon>frmempleados.vb</DependentUpon>
     </Compile>
     <Compile Include="frmempleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproveedores.Designer.vb">
+      <DependentUpon>frmproveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmproveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmusuarios.Designer.vb">
@@ -144,11 +156,17 @@
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarProveedores.resx">
+      <DependentUpon>frmBuscarProveedores.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarUsuarios.resx">
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmempleados.resx">
       <DependentUpon>frmempleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproveedores.resx">
+      <DependentUpon>frmproveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmusuarios.resx">
       <DependentUpon>frmusuarios.vb</DependentUpon>
@@ -192,6 +210,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala-exposicion-interior-plano-horizontal_48369-26072.jpg" />
     <None Include="Resources\iconfinder_User_Customers_1218712.png" />
     <None Include="Resources\iconfinder_hierarchy_1931214 %281%29.png" />
     <None Include="Resources\iconfinder_hierarchy_1931214.png" />
