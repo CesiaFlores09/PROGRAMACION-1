@@ -70,7 +70,7 @@
             posicion += 1
             mostrarDatos()
         Else
-            MessageBox.Show("Ya te encuentras en el ultimo registro", "Registro de productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Ya te encuentras en el ultimo registro", "Registro de Usuarios", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
@@ -89,7 +89,7 @@
         End If
     End Sub
     Private Sub btnEliminarUsuario_Click(sender As Object, e As EventArgs) Handles btnEliminarUsuario.Click
-        If (MessageBox.Show("Estas seguro de borrar a usuario: " + txtNombreUsuario.Text, " Registro usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
+        If (MessageBox.Show("Estas seguro de borrar a usuario: " + txtNombreUsuario.Text, " Registro Uuarios", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes) Then
 
             objconexion.mantenimientoDatosUsuarios(New String() {Me.Tag}, "eliminar")
             If posicion > 0 Then
