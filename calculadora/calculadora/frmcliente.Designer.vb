@@ -22,6 +22,7 @@ Partial Class frmcliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmcliente))
         Me.grbEdicionCliente = New System.Windows.Forms.GroupBox()
         Me.btnBuscarCliente = New System.Windows.Forms.Button()
         Me.btnEliminarCliente = New System.Windows.Forms.Button()
@@ -56,11 +57,11 @@ Partial Class frmcliente
         Me.grbEdicionCliente.Controls.Add(Me.btnEliminarCliente)
         Me.grbEdicionCliente.Controls.Add(Me.btnModificarCliente)
         Me.grbEdicionCliente.Controls.Add(Me.btnAgregarCliente)
-        Me.grbEdicionCliente.Location = New System.Drawing.Point(477, 604)
-        Me.grbEdicionCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grbEdicionCliente.Location = New System.Drawing.Point(358, 491)
+        Me.grbEdicionCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grbEdicionCliente.Name = "grbEdicionCliente"
-        Me.grbEdicionCliente.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.grbEdicionCliente.Size = New System.Drawing.Size(543, 100)
+        Me.grbEdicionCliente.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbEdicionCliente.Size = New System.Drawing.Size(407, 81)
         Me.grbEdicionCliente.TabIndex = 5
         Me.grbEdicionCliente.TabStop = False
         Me.grbEdicionCliente.Text = "Edicion"
@@ -69,10 +70,10 @@ Partial Class frmcliente
         '
         Me.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnBuscarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(427, 21)
-        Me.btnBuscarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnBuscarCliente.Location = New System.Drawing.Point(320, 17)
+        Me.btnBuscarCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnBuscarCliente.Name = "btnBuscarCliente"
-        Me.btnBuscarCliente.Size = New System.Drawing.Size(111, 60)
+        Me.btnBuscarCliente.Size = New System.Drawing.Size(83, 49)
         Me.btnBuscarCliente.TabIndex = 4
         Me.btnBuscarCliente.Text = "Buscar"
         Me.btnBuscarCliente.UseVisualStyleBackColor = False
@@ -81,10 +82,10 @@ Partial Class frmcliente
         '
         Me.btnEliminarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnEliminarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarCliente.Location = New System.Drawing.Point(297, 22)
-        Me.btnEliminarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEliminarCliente.Location = New System.Drawing.Point(223, 18)
+        Me.btnEliminarCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEliminarCliente.Name = "btnEliminarCliente"
-        Me.btnEliminarCliente.Size = New System.Drawing.Size(124, 59)
+        Me.btnEliminarCliente.Size = New System.Drawing.Size(93, 48)
         Me.btnEliminarCliente.TabIndex = 3
         Me.btnEliminarCliente.Text = "Eliminar"
         Me.btnEliminarCliente.UseVisualStyleBackColor = False
@@ -93,10 +94,10 @@ Partial Class frmcliente
         '
         Me.btnModificarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnModificarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarCliente.Location = New System.Drawing.Point(147, 21)
-        Me.btnModificarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnModificarCliente.Location = New System.Drawing.Point(110, 17)
+        Me.btnModificarCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnModificarCliente.Name = "btnModificarCliente"
-        Me.btnModificarCliente.Size = New System.Drawing.Size(145, 59)
+        Me.btnModificarCliente.Size = New System.Drawing.Size(109, 48)
         Me.btnModificarCliente.TabIndex = 2
         Me.btnModificarCliente.Text = "Modificar"
         Me.btnModificarCliente.UseVisualStyleBackColor = False
@@ -105,10 +106,10 @@ Partial Class frmcliente
         '
         Me.btnAgregarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAgregarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarCliente.Location = New System.Drawing.Point(15, 21)
-        Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAgregarCliente.Location = New System.Drawing.Point(11, 17)
+        Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAgregarCliente.Name = "btnAgregarCliente"
-        Me.btnAgregarCliente.Size = New System.Drawing.Size(127, 59)
+        Me.btnAgregarCliente.Size = New System.Drawing.Size(95, 48)
         Me.btnAgregarCliente.TabIndex = 1
         Me.btnAgregarCliente.Text = "Nuevo"
         Me.btnAgregarCliente.UseVisualStyleBackColor = False
@@ -120,11 +121,11 @@ Partial Class frmcliente
         Me.grbNavegacionCliente.Controls.Add(Me.btnSiguienteCliente)
         Me.grbNavegacionCliente.Controls.Add(Me.btnAnteriorCliente)
         Me.grbNavegacionCliente.Controls.Add(Me.btnPrimeroCliente)
-        Me.grbNavegacionCliente.Location = New System.Drawing.Point(16, 604)
-        Me.grbNavegacionCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grbNavegacionCliente.Location = New System.Drawing.Point(12, 491)
+        Me.grbNavegacionCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grbNavegacionCliente.Name = "grbNavegacionCliente"
-        Me.grbNavegacionCliente.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.grbNavegacionCliente.Size = New System.Drawing.Size(456, 100)
+        Me.grbNavegacionCliente.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbNavegacionCliente.Size = New System.Drawing.Size(342, 81)
         Me.grbNavegacionCliente.TabIndex = 4
         Me.grbNavegacionCliente.TabStop = False
         Me.grbNavegacionCliente.Text = " Navegacion"
@@ -132,9 +133,10 @@ Partial Class frmcliente
         'lblRegistroCliente
         '
         Me.lblRegistroCliente.AutoSize = True
-        Me.lblRegistroCliente.Location = New System.Drawing.Point(179, 63)
+        Me.lblRegistroCliente.Location = New System.Drawing.Point(134, 51)
+        Me.lblRegistroCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRegistroCliente.Name = "lblRegistroCliente"
-        Me.lblRegistroCliente.Size = New System.Drawing.Size(46, 17)
+        Me.lblRegistroCliente.Size = New System.Drawing.Size(36, 13)
         Me.lblRegistroCliente.TabIndex = 4
         Me.lblRegistroCliente.Text = "x de n"
         '
@@ -142,10 +144,10 @@ Partial Class frmcliente
         '
         Me.btnUltimoCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnUltimoCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUltimoCliente.Location = New System.Drawing.Point(375, 21)
-        Me.btnUltimoCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnUltimoCliente.Location = New System.Drawing.Point(281, 17)
+        Me.btnUltimoCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnUltimoCliente.Name = "btnUltimoCliente"
-        Me.btnUltimoCliente.Size = New System.Drawing.Size(75, 60)
+        Me.btnUltimoCliente.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoCliente.TabIndex = 3
         Me.btnUltimoCliente.Text = ">|"
         Me.btnUltimoCliente.UseVisualStyleBackColor = False
@@ -154,10 +156,10 @@ Partial Class frmcliente
         '
         Me.btnSiguienteCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSiguienteCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguienteCliente.Location = New System.Drawing.Point(293, 21)
-        Me.btnSiguienteCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSiguienteCliente.Location = New System.Drawing.Point(220, 17)
+        Me.btnSiguienteCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSiguienteCliente.Name = "btnSiguienteCliente"
-        Me.btnSiguienteCliente.Size = New System.Drawing.Size(75, 60)
+        Me.btnSiguienteCliente.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguienteCliente.TabIndex = 2
         Me.btnSiguienteCliente.Text = ">"
         Me.btnSiguienteCliente.UseVisualStyleBackColor = False
@@ -166,10 +168,10 @@ Partial Class frmcliente
         '
         Me.btnAnteriorCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnAnteriorCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnteriorCliente.Location = New System.Drawing.Point(87, 21)
-        Me.btnAnteriorCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnAnteriorCliente.Location = New System.Drawing.Point(65, 17)
+        Me.btnAnteriorCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnAnteriorCliente.Name = "btnAnteriorCliente"
-        Me.btnAnteriorCliente.Size = New System.Drawing.Size(75, 60)
+        Me.btnAnteriorCliente.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorCliente.TabIndex = 1
         Me.btnAnteriorCliente.Text = "<"
         Me.btnAnteriorCliente.UseVisualStyleBackColor = False
@@ -178,10 +180,10 @@ Partial Class frmcliente
         '
         Me.btnPrimeroCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPrimeroCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrimeroCliente.Location = New System.Drawing.Point(5, 21)
-        Me.btnPrimeroCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnPrimeroCliente.Location = New System.Drawing.Point(4, 17)
+        Me.btnPrimeroCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnPrimeroCliente.Name = "btnPrimeroCliente"
-        Me.btnPrimeroCliente.Size = New System.Drawing.Size(75, 60)
+        Me.btnPrimeroCliente.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroCliente.TabIndex = 0
         Me.btnPrimeroCliente.Text = "|<"
         Me.btnPrimeroCliente.UseVisualStyleBackColor = False
@@ -200,63 +202,64 @@ Partial Class frmcliente
         Me.grbDatos.Controls.Add(Me.lblNombreCliente)
         Me.grbDatos.Controls.Add(Me.lblCodigoCliente)
         Me.grbDatos.Enabled = False
-        Me.grbDatos.Location = New System.Drawing.Point(16, 55)
-        Me.grbDatos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.grbDatos.Location = New System.Drawing.Point(12, 45)
+        Me.grbDatos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grbDatos.Name = "grbDatos"
-        Me.grbDatos.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.grbDatos.Size = New System.Drawing.Size(999, 486)
+        Me.grbDatos.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.grbDatos.Size = New System.Drawing.Size(749, 395)
         Me.grbDatos.TabIndex = 3
         Me.grbDatos.TabStop = False
         Me.grbDatos.Text = "Datos de clientes"
         '
         'txtEmailCliente
         '
-        Me.txtEmailCliente.Location = New System.Drawing.Point(213, 414)
-        Me.txtEmailCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtEmailCliente.Location = New System.Drawing.Point(160, 336)
+        Me.txtEmailCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtEmailCliente.Name = "txtEmailCliente"
-        Me.txtEmailCliente.Size = New System.Drawing.Size(368, 22)
+        Me.txtEmailCliente.Size = New System.Drawing.Size(277, 20)
         Me.txtEmailCliente.TabIndex = 12
         '
         'txtTelefonoCliente
         '
-        Me.txtTelefonoCliente.Location = New System.Drawing.Point(213, 317)
-        Me.txtTelefonoCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTelefonoCliente.Location = New System.Drawing.Point(160, 258)
+        Me.txtTelefonoCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtTelefonoCliente.Name = "txtTelefonoCliente"
-        Me.txtTelefonoCliente.Size = New System.Drawing.Size(205, 22)
+        Me.txtTelefonoCliente.Size = New System.Drawing.Size(155, 20)
         Me.txtTelefonoCliente.TabIndex = 11
         '
         'txtDireccionCliente
         '
-        Me.txtDireccionCliente.Location = New System.Drawing.Point(213, 168)
-        Me.txtDireccionCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtDireccionCliente.Location = New System.Drawing.Point(160, 136)
+        Me.txtDireccionCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtDireccionCliente.Multiline = True
         Me.txtDireccionCliente.Name = "txtDireccionCliente"
-        Me.txtDireccionCliente.Size = New System.Drawing.Size(291, 80)
+        Me.txtDireccionCliente.Size = New System.Drawing.Size(219, 66)
         Me.txtDireccionCliente.TabIndex = 10
         '
         'txtNombreCliente
         '
-        Me.txtNombreCliente.Location = New System.Drawing.Point(213, 94)
-        Me.txtNombreCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreCliente.Location = New System.Drawing.Point(160, 76)
+        Me.txtNombreCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNombreCliente.Name = "txtNombreCliente"
-        Me.txtNombreCliente.Size = New System.Drawing.Size(368, 22)
+        Me.txtNombreCliente.Size = New System.Drawing.Size(277, 20)
         Me.txtNombreCliente.TabIndex = 8
         '
         'txtCodigoCliente
         '
-        Me.txtCodigoCliente.Location = New System.Drawing.Point(213, 42)
-        Me.txtCodigoCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCodigoCliente.Location = New System.Drawing.Point(160, 34)
+        Me.txtCodigoCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCodigoCliente.Name = "txtCodigoCliente"
-        Me.txtCodigoCliente.Size = New System.Drawing.Size(100, 22)
+        Me.txtCodigoCliente.Size = New System.Drawing.Size(76, 20)
         Me.txtCodigoCliente.TabIndex = 7
         '
         'lblEmailCliente
         '
         Me.lblEmailCliente.AutoSize = True
         Me.lblEmailCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEmailCliente.Location = New System.Drawing.Point(19, 412)
+        Me.lblEmailCliente.Location = New System.Drawing.Point(14, 335)
+        Me.lblEmailCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEmailCliente.Name = "lblEmailCliente"
-        Me.lblEmailCliente.Size = New System.Drawing.Size(64, 19)
+        Me.lblEmailCliente.Size = New System.Drawing.Size(55, 16)
         Me.lblEmailCliente.TabIndex = 6
         Me.lblEmailCliente.Text = "EMAIL:"
         '
@@ -264,9 +267,10 @@ Partial Class frmcliente
         '
         Me.lblTelefonoCliente.AutoSize = True
         Me.lblTelefonoCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTelefonoCliente.Location = New System.Drawing.Point(21, 320)
+        Me.lblTelefonoCliente.Location = New System.Drawing.Point(16, 260)
+        Me.lblTelefonoCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblTelefonoCliente.Name = "lblTelefonoCliente"
-        Me.lblTelefonoCliente.Size = New System.Drawing.Size(105, 19)
+        Me.lblTelefonoCliente.Size = New System.Drawing.Size(87, 16)
         Me.lblTelefonoCliente.TabIndex = 5
         Me.lblTelefonoCliente.Text = "TELEFONO:"
         '
@@ -274,9 +278,10 @@ Partial Class frmcliente
         '
         Me.lblDireccionCliente.AutoSize = True
         Me.lblDireccionCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDireccionCliente.Location = New System.Drawing.Point(19, 189)
+        Me.lblDireccionCliente.Location = New System.Drawing.Point(14, 154)
+        Me.lblDireccionCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDireccionCliente.Name = "lblDireccionCliente"
-        Me.lblDireccionCliente.Size = New System.Drawing.Size(107, 19)
+        Me.lblDireccionCliente.Size = New System.Drawing.Size(90, 16)
         Me.lblDireccionCliente.TabIndex = 4
         Me.lblDireccionCliente.Text = "DIRECCION:"
         '
@@ -284,18 +289,20 @@ Partial Class frmcliente
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(456, 226)
+        Me.Label2.Location = New System.Drawing.Point(342, 184)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(0, 22)
+        Me.Label2.Size = New System.Drawing.Size(0, 17)
         Me.Label2.TabIndex = 2
         '
         'lblNombreCliente
         '
         Me.lblNombreCliente.AutoSize = True
         Me.lblNombreCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreCliente.Location = New System.Drawing.Point(19, 94)
+        Me.lblNombreCliente.Location = New System.Drawing.Point(14, 76)
+        Me.lblNombreCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNombreCliente.Name = "lblNombreCliente"
-        Me.lblNombreCliente.Size = New System.Drawing.Size(88, 19)
+        Me.lblNombreCliente.Size = New System.Drawing.Size(75, 16)
         Me.lblNombreCliente.TabIndex = 1
         Me.lblNombreCliente.Text = "NOMBRE:"
         '
@@ -303,21 +310,24 @@ Partial Class frmcliente
         '
         Me.lblCodigoCliente.AutoSize = True
         Me.lblCodigoCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodigoCliente.Location = New System.Drawing.Point(19, 42)
+        Me.lblCodigoCliente.Location = New System.Drawing.Point(14, 34)
+        Me.lblCodigoCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCodigoCliente.Name = "lblCodigoCliente"
-        Me.lblCodigoCliente.Size = New System.Drawing.Size(82, 19)
+        Me.lblCodigoCliente.Size = New System.Drawing.Size(69, 16)
         Me.lblCodigoCliente.TabIndex = 0
         Me.lblCodigoCliente.Text = "CODIGO:"
         '
         'frmcliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1036, 759)
+        Me.ClientSize = New System.Drawing.Size(777, 609)
         Me.Controls.Add(Me.grbEdicionCliente)
         Me.Controls.Add(Me.grbNavegacionCliente)
         Me.Controls.Add(Me.grbDatos)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmcliente"
         Me.Text = "Datos de clientes"
         Me.grbEdicionCliente.ResumeLayout(False)

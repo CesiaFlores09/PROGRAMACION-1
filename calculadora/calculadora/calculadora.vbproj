@@ -228,6 +228,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_user_61842.png" />
     <None Include="Resources\diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala-exposicion-interior-plano-horizontal_48369-26072.jpg" />
     <None Include="Resources\iconfinder_User_Customers_1218712.png" />
     <None Include="Resources\iconfinder_hierarchy_1931214 %281%29.png" />
