@@ -28,6 +28,9 @@ Public Class db_conexion
         micommand.CommandText = "Select * from proveedores"
         miadapter.SelectCommand = micommand
         miadapter.Fill(ds, "proveedores")
+        micommand.CommandText = "Select * from cliente"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "cliente")
 
         Return ds
     End Function
@@ -83,7 +86,23 @@ Public Class db_conexion
         End If
         Return msg
     End Function
-
+    Public Function mantenimientoDatosClientes(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO cliente (codigo,nombre,direccion,telefono,email) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "')"
+            Case "modificar"
+                sql = "UPDATE cliente  SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',direccion='" + datos(3) + "',telefono='" + datos(4) + "',email='" + datos(5) + "'WHERE idcliente='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM cliente WHERE idcliente='" + datos(0) + "'"
+        End Select
+        If (excecuteSql(sql) > 0) Then
+            msg = "Accion realizada con exito"
+        Else
+            msg = "Fallo el proceso, por favor intentelo de nuevo"
+        End If
+        Return msg
+    End Function
     Private Function excecuteSql(ByVal sql As String)
         micommand.Connection = miconexion
         micommand.CommandText = sql

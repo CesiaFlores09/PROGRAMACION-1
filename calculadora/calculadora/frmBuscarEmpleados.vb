@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub btnSeleccionar_Click(sender As Object, e As EventArgs) Handles btnSeleccionar.Click
-        seleccionarCliente()
+        seleccionarEmpleado()
     End Sub
 
     Private Sub filtrarDatosEmpleados(ByVal valor As String)
@@ -15,7 +15,7 @@
         bs.Filter = "codigo like '%" & valor & "%'  or nombre like '%" & valor & "%'"
         grbBuscar.DataSource = bs
     End Sub
-    Private Sub seleccionarCliente()
+    Private Sub seleccionarEmpleado()
         _ide = grbBuscar.CurrentRow.Cells("idempleados").Value.ToString()
         Close()
     End Sub
@@ -28,7 +28,7 @@
     Private Sub txtBuscarEmpleados_KeyUp(sender As Object, e As KeyEventArgs) Handles txtBuscarEmpleados.KeyUp
         filtrarDatosEmpleados(txtBuscarEmpleados.Text)
         If e.KeyCode = 13 Then
-            seleccionarCliente()
+            seleccionarEmpleado()
         End If
     End Sub
 End Class
