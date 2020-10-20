@@ -96,6 +96,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmbuscarcliente.Designer.vb">
+      <DependentUpon>frmbuscarcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmBuscarEmpleados.Designer.vb">
       <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
     </Compile>
@@ -112,6 +118,12 @@
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcliente.Designer.vb">
+      <DependentUpon>frmcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmempleados.Designer.vb">
@@ -153,6 +165,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarcliente.resx">
+      <DependentUpon>frmbuscarcliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarEmpleados.resx">
       <DependentUpon>frmBuscarEmpleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarUsuarios.resx">
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcliente.resx">
+      <DependentUpon>frmcliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmempleados.resx">
       <DependentUpon>frmempleados.vb</DependentUpon>
