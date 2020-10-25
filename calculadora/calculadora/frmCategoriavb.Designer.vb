@@ -22,6 +22,7 @@ Partial Class frmCategoriavb
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCategoriavb))
         Me.grbEdicionCategoria = New System.Windows.Forms.GroupBox()
         Me.btnBuscarCategoria = New System.Windows.Forms.Button()
         Me.btnEliminarCategoria = New System.Windows.Forms.Button()
@@ -217,6 +218,7 @@ Partial Class frmCategoriavb
         Me.Controls.Add(Me.grbDatosCategorias)
         Me.Controls.Add(Me.grbEdicionCategoria)
         Me.Controls.Add(Me.grbNavegacionCategoria)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmCategoriavb"
         Me.Text = "Registro de Categrias"
         Me.grbEdicionCategoria.ResumeLayout(False)

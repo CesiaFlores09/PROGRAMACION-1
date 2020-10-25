@@ -22,6 +22,7 @@ Partial Class frmBuscarcategorias
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuscarcategorias))
         Me.btnCancelarCateforia = New System.Windows.Forms.Button()
         Me.btnSeleccionarCategoria = New System.Windows.Forms.Button()
         Me.txtBuscarctegoria = New System.Windows.Forms.TextBox()
@@ -71,7 +72,7 @@ Partial Class frmBuscarcategorias
         Me.lblBuscarCategoria.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBuscarCategoria.Location = New System.Drawing.Point(43, 30)
         Me.lblBuscarCategoria.Name = "lblBuscarCategoria"
-        Me.lblBuscarCategoria.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarCategoria.Size = New System.Drawing.Size(56, 16)
         Me.lblBuscarCategoria.TabIndex = 19
         Me.lblBuscarCategoria.Text = "Buscar:"
         '
@@ -120,6 +121,7 @@ Partial Class frmBuscarcategorias
         Me.Controls.Add(Me.txtBuscarctegoria)
         Me.Controls.Add(Me.lblBuscarCategoria)
         Me.Controls.Add(Me.grbBuscarCategoria)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBuscarcategorias"
         Me.Text = "Busqueda de Categorias"
         CType(Me.grbBuscarCategoria, System.ComponentModel.ISupportInitialize).EndInit()
