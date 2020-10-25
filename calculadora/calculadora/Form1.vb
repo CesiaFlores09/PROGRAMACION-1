@@ -30,5 +30,15 @@
         objcClientes.Show()
     End Sub
 
+    Private Sub ProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem.Click
+        Dim objProductos As New Frmproductos
+        objProductos.MdiParent = Me
+        objProductos.Show()
+    End Sub
 
+    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem.Click
+        Dim objcategoria As New frmCategoriavb
+        objcategoria.MdiParent = Me
+        objcategoria.Show()
+    End Sub
 End Class

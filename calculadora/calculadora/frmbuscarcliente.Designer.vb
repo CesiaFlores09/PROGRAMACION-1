@@ -43,7 +43,7 @@ Partial Class frmbuscarcliente
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCancelarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnCancelarCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarCliente.Location = New System.Drawing.Point(530, 453)
+        Me.btnCancelarCliente.Location = New System.Drawing.Point(553, 453)
         Me.btnCancelarCliente.Name = "btnCancelarCliente"
         Me.btnCancelarCliente.Size = New System.Drawing.Size(196, 36)
         Me.btnCancelarCliente.TabIndex = 12
@@ -56,7 +56,7 @@ Partial Class frmbuscarcliente
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSeleccionarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSeleccionarCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(303, 453)
+        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(326, 453)
         Me.btnSeleccionarCliente.Name = "btnSeleccionarCliente"
         Me.btnSeleccionarCliente.Size = New System.Drawing.Size(196, 36)
         Me.btnSeleccionarCliente.TabIndex = 11
@@ -69,7 +69,7 @@ Partial Class frmbuscarcliente
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBuscarCliente.Location = New System.Drawing.Point(117, 43)
         Me.txtBuscarCliente.Name = "txtBuscarCliente"
-        Me.txtBuscarCliente.Size = New System.Drawing.Size(609, 20)
+        Me.txtBuscarCliente.Size = New System.Drawing.Size(632, 20)
         Me.txtBuscarCliente.TabIndex = 10
         '
         'lblBuscarCliente
@@ -97,7 +97,7 @@ Partial Class frmbuscarcliente
         Me.grbBuscarCliente.Name = "grbBuscarCliente"
         Me.grbBuscarCliente.ReadOnly = True
         Me.grbBuscarCliente.RowHeadersWidth = 51
-        Me.grbBuscarCliente.Size = New System.Drawing.Size(679, 355)
+        Me.grbBuscarCliente.Size = New System.Drawing.Size(702, 355)
         Me.grbBuscarCliente.TabIndex = 8
         '
         'idcliente
@@ -158,14 +158,14 @@ Partial Class frmbuscarcliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(859, 532)
+        Me.ClientSize = New System.Drawing.Size(882, 532)
         Me.Controls.Add(Me.btnCancelarCliente)
         Me.Controls.Add(Me.btnSeleccionarCliente)
         Me.Controls.Add(Me.txtBuscarCliente)
         Me.Controls.Add(Me.lblBuscarCliente)
         Me.Controls.Add(Me.grbBuscarCliente)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmbuscarcliente"
         Me.Text = "Busqueda de Cliente"
         CType(Me.grbBuscarCliente, System.ComponentModel.ISupportInitialize).EndInit()

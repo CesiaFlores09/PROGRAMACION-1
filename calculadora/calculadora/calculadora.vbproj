@@ -96,6 +96,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBuacarProductovb.Designer.vb">
+      <DependentUpon>frmBuacarProductovb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuacarProductovb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarcategorias.Designer.vb">
+      <DependentUpon>frmBuscarcategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarcategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmbuscarcliente.Designer.vb">
       <DependentUpon>frmbuscarcliente.vb</DependentUpon>
     </Compile>
@@ -120,6 +132,12 @@
     <Compile Include="frmBuscarUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCategoriavb.Designer.vb">
+      <DependentUpon>frmCategoriavb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoriavb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmcliente.Designer.vb">
       <DependentUpon>frmcliente.vb</DependentUpon>
     </Compile>
@@ -130,6 +148,12 @@
       <DependentUpon>frmempleados.vb</DependentUpon>
     </Compile>
     <Compile Include="frmempleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmproductos.Designer.vb">
+      <DependentUpon>Frmproductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmproductos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmproveedores.Designer.vb">
@@ -165,6 +189,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuacarProductovb.resx">
+      <DependentUpon>frmBuacarProductovb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarcategorias.resx">
+      <DependentUpon>frmBuscarcategorias.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarcliente.resx">
       <DependentUpon>frmbuscarcliente.vb</DependentUpon>
     </EmbeddedResource>
@@ -177,11 +207,17 @@
     <EmbeddedResource Include="frmBuscarUsuarios.resx">
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoriavb.resx">
+      <DependentUpon>frmCategoriavb.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcliente.resx">
       <DependentUpon>frmcliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmempleados.resx">
       <DependentUpon>frmempleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmproductos.resx">
+      <DependentUpon>Frmproductos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmproveedores.resx">
       <DependentUpon>frmproveedores.vb</DependentUpon>
@@ -228,6 +264,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_DeleteRed_34218.png" />
+    <None Include="Resources\iconfinder_deliverables_45506.png" />
     <None Include="Resources\iconfinder_user_61842.png" />
     <None Include="Resources\diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala-exposicion-interior-plano-horizontal_48369-26072.jpg" />
     <None Include="Resources\iconfinder_User_Customers_1218712.png" />

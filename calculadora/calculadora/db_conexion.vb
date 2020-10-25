@@ -28,9 +28,22 @@ Public Class db_conexion
         micommand.CommandText = "Select * from proveedores"
         miadapter.SelectCommand = micommand
         miadapter.Fill(ds, "proveedores")
+
         micommand.CommandText = "Select * from cliente"
         miadapter.SelectCommand = micommand
         miadapter.Fill(ds, "cliente")
+
+        micommand.CommandText = "Select * from categoria"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "categoria")
+
+        micommand.CommandText = "
+       Select producto.idproducto,producto.idcategoria,producto.codigo,producto.nombre,producto.marca,
+       producto.medidas,categoria.categoria
+        from producto
+       inner join categoria on (categoria.idcategoria=producto.idcategoria)"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "producto")
 
         Return ds
     End Function
@@ -103,10 +116,53 @@ Public Class db_conexion
         End If
         Return msg
     End Function
+    Public Function mantenimientoDatosProductos(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO producto (idcategoria,codigo,nombre,marca,medidas) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "')"
+            Case "modificar"
+                sql = "UPDATE producto  SET idcategoria='" + datos(1) + "',codigo='" + datos(2) + "',nombre='" + datos(3) + "',marca='" + datos(4) + "',medidas='" + datos(5) + "'WHERE idproducto='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM producto WHERE idproducto='" + datos(0) + "'"
+        End Select
+        If excecuteSql(sql) > 0 Then
+            msg = "Accion realizada con exito"
+        Else
+            msg = "Fallo el proceso, por favor intentelo de nuevo"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosCategoria(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO categoria (categoria) VALUES('" + datos(1) + "')"
+            Case "modificar"
+                sql = "UPDATE categoria  SET categoria='" + datos(1) + "'WHERE idcategoria='" + datos(0) + "'"
+            Case "eliminar"
+                If excecuteSql("select * from producto where idcategoria='" + datos(0) + "'") <= 0 Then
+                    sql = "DELETE FROM categoria WHERE idcategoria='" + datos(0) + "'"
+                End If
+        End Select
+
+        If excecuteSql(sql) > 0 Then
+            msg = "Exito"
+        Else
+            msg = "error"
+        End If
+
+        Return msg
+    End Function
     Private Function excecuteSql(ByVal sql As String)
-        micommand.Connection = miconexion
-        micommand.CommandText = sql
-        Return micommand.ExecuteNonQuery()
+        Try
+            micommand.Connection = miconexion
+            micommand.CommandText = sql
+            Return micommand.ExecuteNonQuery()
+        Catch ex As Exception
+            Return 0
+        End Try
+
     End Function
 
 End Class
