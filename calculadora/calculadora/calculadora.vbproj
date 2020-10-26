@@ -264,6 +264,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_categories_4650511.png" />
+    <None Include="Resources\iconfinder_categories_465051 %281%291.png" />
+    <None Include="Resources\iconfinder_categories_465051 %281%29.png" />
+    <None Include="Resources\iconfinder_categories_465051.png" />
     <None Include="Resources\iconfinder_DeleteRed_34218.png" />
     <None Include="Resources\iconfinder_deliverables_45506.png" />
     <None Include="Resources\iconfinder_user_61842.png" />

@@ -60,7 +60,7 @@ Partial Class Form1
         Me.SalirToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_DeleteRed_34218
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EmpresaToolStripMenuItem
@@ -76,7 +76,7 @@ Partial Class Form1
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'EmpleadosToolStripMenuItem
@@ -84,7 +84,7 @@ Partial Class Form1
         Me.EmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_hierarchy_1931214__1_
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'UsuariosToolStripMenuItem
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.U), System.Windows.Forms.Keys)
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
@@ -102,7 +102,7 @@ Partial Class Form1
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
         Me.ClientesToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'InventarioToolStripMenuItem
@@ -114,6 +114,7 @@ Partial Class Form1
         '
         'CategoriaToolStripMenuItem
         '
+        Me.CategoriaToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_categories_4650511
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Alt) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
