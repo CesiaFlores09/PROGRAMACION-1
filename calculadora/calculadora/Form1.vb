@@ -41,4 +41,10 @@
         objcategoria.MdiParent = Me
         objcategoria.Show()
     End Sub
+
+    Private Sub PedidosAProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidosAProveedoresToolStripMenuItem.Click
+        Dim objfacturapedidos As New frmPeddos
+        objfacturapedidos.MdiParent = Me
+        objfacturapedidos.Show()
+    End Sub
 End Class

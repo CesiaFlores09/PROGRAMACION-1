@@ -87,6 +87,7 @@
 
     Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
         If btnAgregarCliente.Text = "Nuevo" Then
+
             btnAgregarCliente.Text = "Guardar"
             btnModificarCliente.Text = "Cancelar"
             accion = "nuevo"

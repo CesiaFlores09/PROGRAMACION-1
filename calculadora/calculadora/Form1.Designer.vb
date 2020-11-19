@@ -34,25 +34,28 @@ Partial Class Form1
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PedidosAProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ComprasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ArchivoToolStripMenuItem
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_Folder_Paper_Files_File_Case_Browse_Folder_Archive_4265035__1_1
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(80, 24)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'SalirToolStripMenuItem
@@ -66,8 +69,9 @@ Partial Class Form1
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProveedoresToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem})
+        Me.EmpresaToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_Map___Location_Solid_Style_09_2216349
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
         Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'ProveedoresToolStripMenuItem
@@ -108,8 +112,9 @@ Partial Class Form1
         'InventarioToolStripMenuItem
         '
         Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriaToolStripMenuItem, Me.ProductosToolStripMenuItem})
+        Me.InventarioToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_inventory_maintenance_49590
         Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
+        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(92, 24)
         Me.InventarioToolStripMenuItem.Text = "Inventario"
         '
         'CategoriaToolStripMenuItem
@@ -118,7 +123,7 @@ Partial Class Form1
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Alt) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.CategoriaToolStripMenuItem.Text = "Categoria"
         '
         'ProductosToolStripMenuItem
@@ -127,8 +132,25 @@ Partial Class Form1
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'ComprasToolStripMenuItem
+        '
+        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PedidosAProveedoresToolStripMenuItem})
+        Me.ComprasToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_shopping_cart_326700
+        Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
+        Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(81, 24)
+        Me.ComprasToolStripMenuItem.Text = "Pedidos"
+        '
+        'PedidosAProveedoresToolStripMenuItem
+        '
+        Me.PedidosAProveedoresToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_electronic_billing_machine_44639
+        Me.PedidosAProveedoresToolStripMenuItem.Name = "PedidosAProveedoresToolStripMenuItem"
+        Me.PedidosAProveedoresToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
+        Me.PedidosAProveedoresToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.PedidosAProveedoresToolStripMenuItem.Text = "Facturacion Pedidos"
         '
         'Form1
         '
@@ -160,4 +182,6 @@ Partial Class Form1
     Friend WithEvents InventarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PedidosAProveedoresToolStripMenuItem As ToolStripMenuItem
 End Class
