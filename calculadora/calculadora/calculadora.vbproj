@@ -149,6 +149,12 @@
     <Compile Include="frmcliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCompras.Designer.vb">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmempleados.Designer.vb">
       <DependentUpon>frmempleados.vb</DependentUpon>
     </Compile>
@@ -224,6 +230,9 @@
     <EmbeddedResource Include="frmcliente.resx">
       <DependentUpon>frmcliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmempleados.resx">
       <DependentUpon>frmempleados.vb</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +298,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png" />
+    <None Include="Resources\iconfinder__shopify_1249991 %281%29.png" />
+    <None Include="Resources\iconfinder__shopify_1249991.png" />
     <None Include="Resources\iconfinder_shopping-cart_326700.png" />
     <None Include="Resources\iconfinder_cart-5_3338940.png" />
     <None Include="Resources\iconfinder_inventory-maintenance_49590.png" />
