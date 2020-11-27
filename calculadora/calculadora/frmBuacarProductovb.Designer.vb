@@ -66,7 +66,7 @@ Partial Class frmBuacarProductovb
         '
         Me.txtBuscarProducto.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscarProducto.Location = New System.Drawing.Point(143, 6)
+        Me.txtBuscarProducto.Location = New System.Drawing.Point(132, 8)
         Me.txtBuscarProducto.Name = "txtBuscarProducto"
         Me.txtBuscarProducto.Size = New System.Drawing.Size(619, 20)
         Me.txtBuscarProducto.TabIndex = 15
