@@ -50,6 +50,16 @@ Partial Class frmPeddos
         Me.DventasProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DventasProductoTableAdapter = New calculadora.bd_empresaDataSetTableAdapters.DventasProductoTableAdapter()
         Me.DventasProductoDataGridView = New System.Windows.Forms.DataGridView()
+        Me.idDetpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.idpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.idproducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.medidas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PedidosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TipoFacturaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.PagBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
@@ -67,16 +77,6 @@ Partial Class frmPeddos
         Me.btnSiguientePedidos = New System.Windows.Forms.Button()
         Me.btnAnteriorPedidos = New System.Windows.Forms.Button()
         Me.btnPrimeroPedidos = New System.Windows.Forms.Button()
-        Me.idDetpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.idpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.idproducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.medidas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         IdproveedoresLabel = New System.Windows.Forms.Label()
         NfacturaLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
@@ -161,6 +161,8 @@ Partial Class frmPeddos
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.categoriaTableAdapter = Nothing
         Me.TableAdapterManager.clienteTableAdapter = Nothing
+        Me.TableAdapterManager.comprasTableAdapter = Nothing
+        Me.TableAdapterManager.dcomprasTableAdapter = Nothing
         Me.TableAdapterManager.dpedidosTableAdapter = Nothing
         Me.TableAdapterManager.empleadosTableAdapter = Nothing
         Me.TableAdapterManager.pagTableAdapter = Me.PagTableAdapter
@@ -270,11 +272,93 @@ Partial Class frmPeddos
         Me.DventasProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DventasProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idDetpedidos, Me.idpedidos, Me.idproducto, Me.codigo, Me.nombre, Me.cantidad, Me.precio, Me.subtotal, Me.marca, Me.medidas})
         Me.DventasProductoDataGridView.DataSource = Me.DventasProductoBindingSource
-        Me.DventasProductoDataGridView.Location = New System.Drawing.Point(37, 143)
+        Me.DventasProductoDataGridView.Location = New System.Drawing.Point(37, 138)
         Me.DventasProductoDataGridView.Name = "DventasProductoDataGridView"
         Me.DventasProductoDataGridView.ReadOnly = True
         Me.DventasProductoDataGridView.Size = New System.Drawing.Size(742, 220)
         Me.DventasProductoDataGridView.TabIndex = 12
+        '
+        'idDetpedidos
+        '
+        Me.idDetpedidos.DataPropertyName = "idDetpedidos"
+        Me.idDetpedidos.HeaderText = "idDetpedidos"
+        Me.idDetpedidos.Name = "idDetpedidos"
+        Me.idDetpedidos.ReadOnly = True
+        Me.idDetpedidos.Visible = False
+        '
+        'idpedidos
+        '
+        Me.idpedidos.DataPropertyName = "idpedidos"
+        Me.idpedidos.HeaderText = "idpedidos"
+        Me.idpedidos.Name = "idpedidos"
+        Me.idpedidos.ReadOnly = True
+        Me.idpedidos.Visible = False
+        '
+        'idproducto
+        '
+        Me.idproducto.DataPropertyName = "idproducto"
+        Me.idproducto.HeaderText = "idproducto"
+        Me.idproducto.Name = "idproducto"
+        Me.idproducto.ReadOnly = True
+        Me.idproducto.Visible = False
+        '
+        'codigo
+        '
+        Me.codigo.DataPropertyName = "codigo"
+        Me.codigo.HeaderText = "CODIGO"
+        Me.codigo.Name = "codigo"
+        Me.codigo.ReadOnly = True
+        Me.codigo.Width = 150
+        '
+        'nombre
+        '
+        Me.nombre.DataPropertyName = "nombre"
+        Me.nombre.HeaderText = "NOMBRE"
+        Me.nombre.Name = "nombre"
+        Me.nombre.ReadOnly = True
+        Me.nombre.Width = 250
+        '
+        'cantidad
+        '
+        Me.cantidad.DataPropertyName = "Cantidad"
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.cantidad.DefaultCellStyle = DataGridViewCellStyle1
+        Me.cantidad.HeaderText = "CANTIDAD"
+        Me.cantidad.Name = "cantidad"
+        Me.cantidad.ReadOnly = True
+        '
+        'precio
+        '
+        Me.precio.DataPropertyName = "Precio"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.precio.DefaultCellStyle = DataGridViewCellStyle2
+        Me.precio.HeaderText = "PRECIO"
+        Me.precio.Name = "precio"
+        Me.precio.ReadOnly = True
+        '
+        'subtotal
+        '
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.subtotal.DefaultCellStyle = DataGridViewCellStyle3
+        Me.subtotal.HeaderText = "SUBTOTAL"
+        Me.subtotal.Name = "subtotal"
+        Me.subtotal.ReadOnly = True
+        '
+        'marca
+        '
+        Me.marca.DataPropertyName = "marca"
+        Me.marca.HeaderText = "marca"
+        Me.marca.Name = "marca"
+        Me.marca.ReadOnly = True
+        Me.marca.Visible = False
+        '
+        'medidas
+        '
+        Me.medidas.DataPropertyName = "medidas"
+        Me.medidas.HeaderText = "medidas"
+        Me.medidas.Name = "medidas"
+        Me.medidas.ReadOnly = True
+        Me.medidas.Visible = False
         '
         'PedidosBindingSource1
         '
@@ -445,88 +529,6 @@ Partial Class frmPeddos
         Me.btnPrimeroPedidos.TabIndex = 0
         Me.btnPrimeroPedidos.Text = "|<"
         Me.btnPrimeroPedidos.UseVisualStyleBackColor = False
-        '
-        'idDetpedidos
-        '
-        Me.idDetpedidos.DataPropertyName = "idDetpedidos"
-        Me.idDetpedidos.HeaderText = "idDetpedidos"
-        Me.idDetpedidos.Name = "idDetpedidos"
-        Me.idDetpedidos.ReadOnly = True
-        Me.idDetpedidos.Visible = False
-        '
-        'idpedidos
-        '
-        Me.idpedidos.DataPropertyName = "idpedidos"
-        Me.idpedidos.HeaderText = "idpedidos"
-        Me.idpedidos.Name = "idpedidos"
-        Me.idpedidos.ReadOnly = True
-        Me.idpedidos.Visible = False
-        '
-        'idproducto
-        '
-        Me.idproducto.DataPropertyName = "idproducto"
-        Me.idproducto.HeaderText = "idproducto"
-        Me.idproducto.Name = "idproducto"
-        Me.idproducto.ReadOnly = True
-        Me.idproducto.Visible = False
-        '
-        'codigo
-        '
-        Me.codigo.DataPropertyName = "codigo"
-        Me.codigo.HeaderText = "CODIGO"
-        Me.codigo.Name = "codigo"
-        Me.codigo.ReadOnly = True
-        Me.codigo.Width = 150
-        '
-        'nombre
-        '
-        Me.nombre.DataPropertyName = "nombre"
-        Me.nombre.HeaderText = "NOMBRE"
-        Me.nombre.Name = "nombre"
-        Me.nombre.ReadOnly = True
-        Me.nombre.Width = 250
-        '
-        'cantidad
-        '
-        Me.cantidad.DataPropertyName = "Cantidad"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.cantidad.DefaultCellStyle = DataGridViewCellStyle1
-        Me.cantidad.HeaderText = "CANTIDAD"
-        Me.cantidad.Name = "cantidad"
-        Me.cantidad.ReadOnly = True
-        '
-        'precio
-        '
-        Me.precio.DataPropertyName = "Precio"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.precio.DefaultCellStyle = DataGridViewCellStyle2
-        Me.precio.HeaderText = "PRECIO"
-        Me.precio.Name = "precio"
-        Me.precio.ReadOnly = True
-        '
-        'subtotal
-        '
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.subtotal.DefaultCellStyle = DataGridViewCellStyle3
-        Me.subtotal.HeaderText = "SUBTOTAL"
-        Me.subtotal.Name = "subtotal"
-        Me.subtotal.ReadOnly = True
-        '
-        'marca
-        '
-        Me.marca.DataPropertyName = "marca"
-        Me.marca.HeaderText = "marca"
-        Me.marca.Name = "marca"
-        Me.marca.ReadOnly = True
-        Me.marca.Visible = False
-        '
-        'medidas
-        '
-        Me.medidas.DataPropertyName = "medidas"
-        Me.medidas.HeaderText = "medidas"
-        Me.medidas.Name = "medidas"
-        Me.medidas.ReadOnly = True
-        Me.medidas.Visible = False
         '
         'frmPeddos
         '

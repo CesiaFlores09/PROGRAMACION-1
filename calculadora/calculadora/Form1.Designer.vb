@@ -36,13 +36,15 @@ Partial Class Form1
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PedidosAProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturacionComprasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ComprasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ComprasToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -123,7 +125,7 @@ Partial Class Form1
         Me.CategoriaToolStripMenuItem.Name = "CategoriaToolStripMenuItem"
         Me.CategoriaToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Alt) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.CategoriaToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
         Me.CategoriaToolStripMenuItem.Text = "Categoria"
         '
         'ProductosToolStripMenuItem
@@ -132,7 +134,7 @@ Partial Class Form1
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
         Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'ComprasToolStripMenuItem
@@ -149,8 +151,25 @@ Partial Class Form1
         Me.PedidosAProveedoresToolStripMenuItem.Name = "PedidosAProveedoresToolStripMenuItem"
         Me.PedidosAProveedoresToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.PedidosAProveedoresToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.PedidosAProveedoresToolStripMenuItem.Size = New System.Drawing.Size(268, 22)
         Me.PedidosAProveedoresToolStripMenuItem.Text = "Facturacion Pedidos"
+        '
+        'ComprasToolStripMenuItem1
+        '
+        Me.ComprasToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FacturacionComprasToolStripMenuItem1})
+        Me.ComprasToolStripMenuItem1.Image = Global.calculadora.My.Resources.Resources.iconfinder__shopify_1249991__1_
+        Me.ComprasToolStripMenuItem1.Name = "ComprasToolStripMenuItem1"
+        Me.ComprasToolStripMenuItem1.Size = New System.Drawing.Size(87, 24)
+        Me.ComprasToolStripMenuItem1.Text = "Compras"
+        '
+        'FacturacionComprasToolStripMenuItem1
+        '
+        Me.FacturacionComprasToolStripMenuItem1.Image = Global.calculadora.My.Resources.Resources.iconfinder_635_Bill_excel_file_invoice_statement_4017677
+        Me.FacturacionComprasToolStripMenuItem1.Name = "FacturacionComprasToolStripMenuItem1"
+        Me.FacturacionComprasToolStripMenuItem1.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Alt) _
+            Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
+        Me.FacturacionComprasToolStripMenuItem1.Size = New System.Drawing.Size(252, 26)
+        Me.FacturacionComprasToolStripMenuItem1.Text = "Facturacion compras"
         '
         'Form1
         '
@@ -184,4 +203,6 @@ Partial Class Form1
     Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PedidosAProveedoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComprasToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents FacturacionComprasToolStripMenuItem1 As ToolStripMenuItem
 End Class
