@@ -262,6 +262,7 @@ Partial Class frmCompras
         Me.TableAdapterManager.pedidosTableAdapter = Nothing
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedoresTableAdapter = Nothing
+        Me.TableAdapterManager.puestoTableAdapter = Nothing
         Me.TableAdapterManager.TipoFacturaTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = calculadora.bd_empresaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuarioTableAdapter = Nothing
@@ -341,50 +342,50 @@ Partial Class frmCompras
         '
         'btnUltimoCompras
         '
-        Me.btnUltimoCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUltimoCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUltimoCompras.Location = New System.Drawing.Point(247, 25)
+        Me.btnUltimoCompras.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
+        Me.btnUltimoCompras.Location = New System.Drawing.Point(246, 19)
         Me.btnUltimoCompras.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoCompras.Name = "btnUltimoCompras"
-        Me.btnUltimoCompras.Size = New System.Drawing.Size(56, 41)
+        Me.btnUltimoCompras.Size = New System.Drawing.Size(56, 52)
         Me.btnUltimoCompras.TabIndex = 3
-        Me.btnUltimoCompras.Text = ">|"
         Me.btnUltimoCompras.UseVisualStyleBackColor = False
         '
         'btnSiguienteCompras
         '
-        Me.btnSiguienteCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSiguienteCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguienteCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguienteCompras.Location = New System.Drawing.Point(186, 25)
+        Me.btnSiguienteCompras.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
+        Me.btnSiguienteCompras.Location = New System.Drawing.Point(186, 19)
         Me.btnSiguienteCompras.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguienteCompras.Name = "btnSiguienteCompras"
-        Me.btnSiguienteCompras.Size = New System.Drawing.Size(56, 41)
+        Me.btnSiguienteCompras.Size = New System.Drawing.Size(56, 52)
         Me.btnSiguienteCompras.TabIndex = 2
-        Me.btnSiguienteCompras.Text = ">"
         Me.btnSiguienteCompras.UseVisualStyleBackColor = False
         '
         'btnAnteriorCompras
         '
-        Me.btnAnteriorCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAnteriorCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAnteriorCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnteriorCompras.Location = New System.Drawing.Point(65, 25)
+        Me.btnAnteriorCompras.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
+        Me.btnAnteriorCompras.Location = New System.Drawing.Point(65, 19)
         Me.btnAnteriorCompras.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnteriorCompras.Name = "btnAnteriorCompras"
-        Me.btnAnteriorCompras.Size = New System.Drawing.Size(56, 41)
+        Me.btnAnteriorCompras.Size = New System.Drawing.Size(56, 52)
         Me.btnAnteriorCompras.TabIndex = 1
-        Me.btnAnteriorCompras.Text = "<"
         Me.btnAnteriorCompras.UseVisualStyleBackColor = False
         '
         'btnPrimeroCompras
         '
-        Me.btnPrimeroCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrimeroCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPrimeroCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrimeroCompras.Location = New System.Drawing.Point(5, 25)
+        Me.btnPrimeroCompras.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
+        Me.btnPrimeroCompras.Location = New System.Drawing.Point(5, 19)
         Me.btnPrimeroCompras.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimeroCompras.Name = "btnPrimeroCompras"
-        Me.btnPrimeroCompras.Size = New System.Drawing.Size(56, 41)
+        Me.btnPrimeroCompras.Size = New System.Drawing.Size(56, 52)
         Me.btnPrimeroCompras.TabIndex = 0
-        Me.btnPrimeroCompras.Text = "|<"
         Me.btnPrimeroCompras.UseVisualStyleBackColor = False
         '
         'ClienteTableAdapter
@@ -497,7 +498,7 @@ Partial Class frmCompras
         '
         'btnBuscarCompras
         '
-        Me.btnBuscarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarCompras.Location = New System.Drawing.Point(273, 23)
         Me.btnBuscarCompras.Margin = New System.Windows.Forms.Padding(2)
@@ -509,7 +510,7 @@ Partial Class frmCompras
         '
         'btnEliminarCompras
         '
-        Me.btnEliminarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarCompras.Location = New System.Drawing.Point(181, 23)
         Me.btnEliminarCompras.Margin = New System.Windows.Forms.Padding(2)
@@ -521,7 +522,7 @@ Partial Class frmCompras
         '
         'btnModificarCompras
         '
-        Me.btnModificarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarCompras.Location = New System.Drawing.Point(87, 23)
         Me.btnModificarCompras.Margin = New System.Windows.Forms.Padding(2)
@@ -533,7 +534,7 @@ Partial Class frmCompras
         '
         'btnAgregarCompras
         '
-        Me.btnAgregarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarCompras.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarCompras.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarCompras.Location = New System.Drawing.Point(5, 23)
         Me.btnAgregarCompras.Margin = New System.Windows.Forms.Padding(2)
@@ -547,37 +548,37 @@ Partial Class frmCompras
         '
         Me.grbdComprasProductos.Controls.Add(Me.btnQuitarProducto)
         Me.grbdComprasProductos.Controls.Add(Me.btnAgregarProducto)
-        Me.grbdComprasProductos.Location = New System.Drawing.Point(395, 342)
+        Me.grbdComprasProductos.Location = New System.Drawing.Point(437, 342)
         Me.grbdComprasProductos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbdComprasProductos.Name = "grbdComprasProductos"
         Me.grbdComprasProductos.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbdComprasProductos.Size = New System.Drawing.Size(348, 81)
+        Me.grbdComprasProductos.Size = New System.Drawing.Size(306, 81)
         Me.grbdComprasProductos.TabIndex = 18
         Me.grbdComprasProductos.TabStop = False
         Me.grbdComprasProductos.Visible = False
         '
         'btnQuitarProducto
         '
-        Me.btnQuitarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnQuitarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnQuitarProducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnQuitarProducto.Location = New System.Drawing.Point(179, 25)
+        Me.btnQuitarProducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_ecommerce_30_4707191
+        Me.btnQuitarProducto.Location = New System.Drawing.Point(206, 19)
         Me.btnQuitarProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQuitarProducto.Name = "btnQuitarProducto"
-        Me.btnQuitarProducto.Size = New System.Drawing.Size(153, 35)
+        Me.btnQuitarProducto.Size = New System.Drawing.Size(68, 52)
         Me.btnQuitarProducto.TabIndex = 3
-        Me.btnQuitarProducto.Text = "Quitar Productos"
         Me.btnQuitarProducto.UseVisualStyleBackColor = False
         '
         'btnAgregarProducto
         '
-        Me.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarProducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarProducto.Location = New System.Drawing.Point(19, 25)
+        Me.btnAgregarProducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_add_shopping_cart_48px_3669464
+        Me.btnAgregarProducto.Location = New System.Drawing.Point(74, 19)
         Me.btnAgregarProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarProducto.Name = "btnAgregarProducto"
-        Me.btnAgregarProducto.Size = New System.Drawing.Size(153, 35)
+        Me.btnAgregarProducto.Size = New System.Drawing.Size(70, 52)
         Me.btnAgregarProducto.TabIndex = 2
-        Me.btnAgregarProducto.Text = "Agregar Productos"
         Me.btnAgregarProducto.UseVisualStyleBackColor = False
         '
         'btnAgregarCliente

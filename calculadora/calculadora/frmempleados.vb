@@ -6,10 +6,10 @@
 
     Private Sub frmempleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         posicion = 0
-        obtenerDatosEmpleados()
+        obtenerDatos()
     End Sub
 
-    Sub obtenerDatosEmpleados()
+    Sub obtenerDatos()
         dataTable = objconexion.obtenerDatos().Tables("empleados")
         dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idempleados")}
 
@@ -83,7 +83,7 @@
             accion = "modificar"
             habDescontroles(False)
         Else
-            obtenerDatosEmpleados()
+            obtenerDatos()
 
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
@@ -99,7 +99,7 @@
                 posicion -= 1
             End If
 
-            obtenerDatosEmpleados()
+            obtenerDatos()
         End If
     End Sub
 
@@ -134,7 +134,7 @@
                  Me.Tag, cbopuestolaboral.SelectedValue, txtCodigo.Text, txtNombre.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text
             }, accion)
 
-            obtenerDatosEmpleados()
+            obtenerDatos()
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
             btnModificar.Text = "Modificar"

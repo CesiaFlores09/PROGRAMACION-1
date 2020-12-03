@@ -22,13 +22,14 @@ Partial Class frmBuscarPuestoLaboral
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuscarPuestoLaboral))
         Me.txtBuscarPuesto = New System.Windows.Forms.TextBox()
         Me.lblBuscarPuesto = New System.Windows.Forms.Label()
         Me.grbBuscarPuesto = New System.Windows.Forms.DataGridView()
-        Me.idpuestolaboral = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.puesto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnCancelarPuesto = New System.Windows.Forms.Button()
         Me.btnSeleccionarPuesto = New System.Windows.Forms.Button()
+        Me.idpuestolaboral = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.puesto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.grbBuscarPuesto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,20 +37,19 @@ Partial Class frmBuscarPuestoLaboral
         '
         Me.txtBuscarPuesto.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscarPuesto.Location = New System.Drawing.Point(151, 42)
+        Me.txtBuscarPuesto.Location = New System.Drawing.Point(126, 37)
         Me.txtBuscarPuesto.Name = "txtBuscarPuesto"
-        Me.txtBuscarPuesto.Size = New System.Drawing.Size(507, 20)
+        Me.txtBuscarPuesto.Size = New System.Drawing.Size(452, 20)
         Me.txtBuscarPuesto.TabIndex = 23
         '
         'lblBuscarPuesto
         '
-        Me.lblBuscarPuesto.AutoSize = True
         Me.lblBuscarPuesto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarPuesto.Location = New System.Drawing.Point(78, 41)
+        Me.lblBuscarPuesto.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Interface_25_2044263
+        Me.lblBuscarPuesto.Location = New System.Drawing.Point(65, 28)
         Me.lblBuscarPuesto.Name = "lblBuscarPuesto"
-        Me.lblBuscarPuesto.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarPuesto.Size = New System.Drawing.Size(55, 39)
         Me.lblBuscarPuesto.TabIndex = 22
-        Me.lblBuscarPuesto.Text = "Buscar:"
         '
         'grbBuscarPuesto
         '
@@ -58,12 +58,36 @@ Partial Class frmBuscarPuestoLaboral
         Me.grbBuscarPuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grbBuscarPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grbBuscarPuesto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idpuestolaboral, Me.puesto})
-        Me.grbBuscarPuesto.Location = New System.Drawing.Point(151, 82)
+        Me.grbBuscarPuesto.Location = New System.Drawing.Point(81, 79)
         Me.grbBuscarPuesto.Name = "grbBuscarPuesto"
         Me.grbBuscarPuesto.ReadOnly = True
         Me.grbBuscarPuesto.RowHeadersWidth = 51
-        Me.grbBuscarPuesto.Size = New System.Drawing.Size(507, 284)
+        Me.grbBuscarPuesto.Size = New System.Drawing.Size(497, 284)
         Me.grbBuscarPuesto.TabIndex = 21
+        '
+        'btnCancelarPuesto
+        '
+        Me.btnCancelarPuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCancelarPuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnCancelarPuesto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelarPuesto.Image = Global.calculadora.My.Resources.Resources.iconfinder_cancel_2467375
+        Me.btnCancelarPuesto.Location = New System.Drawing.Point(161, 384)
+        Me.btnCancelarPuesto.Name = "btnCancelarPuesto"
+        Me.btnCancelarPuesto.Size = New System.Drawing.Size(70, 43)
+        Me.btnCancelarPuesto.TabIndex = 25
+        Me.btnCancelarPuesto.UseVisualStyleBackColor = False
+        '
+        'btnSeleccionarPuesto
+        '
+        Me.btnSeleccionarPuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSeleccionarPuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSeleccionarPuesto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSeleccionarPuesto.Image = Global.calculadora.My.Resources.Resources.iconfinder_cursor_309088__1_
+        Me.btnSeleccionarPuesto.Location = New System.Drawing.Point(81, 384)
+        Me.btnSeleccionarPuesto.Name = "btnSeleccionarPuesto"
+        Me.btnSeleccionarPuesto.Size = New System.Drawing.Size(74, 43)
+        Me.btnSeleccionarPuesto.TabIndex = 24
+        Me.btnSeleccionarPuesto.UseVisualStyleBackColor = False
         '
         'idpuestolaboral
         '
@@ -80,34 +104,10 @@ Partial Class frmBuscarPuestoLaboral
         '
         Me.puesto.DataPropertyName = "puesto"
         Me.puesto.FillWeight = 250.0!
-        Me.puesto.HeaderText = "PUESTO"
+        Me.puesto.HeaderText = "PUESTO LABORAL"
         Me.puesto.Name = "puesto"
         Me.puesto.ReadOnly = True
         Me.puesto.Width = 450
-        '
-        'btnCancelarPuesto
-        '
-        Me.btnCancelarPuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCancelarPuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnCancelarPuesto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarPuesto.Location = New System.Drawing.Point(425, 399)
-        Me.btnCancelarPuesto.Name = "btnCancelarPuesto"
-        Me.btnCancelarPuesto.Size = New System.Drawing.Size(196, 28)
-        Me.btnCancelarPuesto.TabIndex = 25
-        Me.btnCancelarPuesto.Text = "Cancelar"
-        Me.btnCancelarPuesto.UseVisualStyleBackColor = False
-        '
-        'btnSeleccionarPuesto
-        '
-        Me.btnSeleccionarPuesto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSeleccionarPuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnSeleccionarPuesto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarPuesto.Location = New System.Drawing.Point(151, 399)
-        Me.btnSeleccionarPuesto.Name = "btnSeleccionarPuesto"
-        Me.btnSeleccionarPuesto.Size = New System.Drawing.Size(196, 24)
-        Me.btnSeleccionarPuesto.TabIndex = 24
-        Me.btnSeleccionarPuesto.Text = "Seleccionar Puesto"
-        Me.btnSeleccionarPuesto.UseVisualStyleBackColor = False
         '
         'frmBuscarPuestoLaboral
         '
@@ -120,6 +120,7 @@ Partial Class frmBuscarPuestoLaboral
         Me.Controls.Add(Me.txtBuscarPuesto)
         Me.Controls.Add(Me.lblBuscarPuesto)
         Me.Controls.Add(Me.grbBuscarPuesto)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBuscarPuestoLaboral"
         Me.Text = "Busqueda de Puesto Laboral"
         CType(Me.grbBuscarPuesto, System.ComponentModel.ISupportInitialize).EndInit()
@@ -131,8 +132,8 @@ Partial Class frmBuscarPuestoLaboral
     Friend WithEvents txtBuscarPuesto As TextBox
     Friend WithEvents lblBuscarPuesto As Label
     Friend WithEvents grbBuscarPuesto As DataGridView
-    Friend WithEvents idpuestolaboral As DataGridViewTextBoxColumn
-    Friend WithEvents puesto As DataGridViewTextBoxColumn
     Friend WithEvents btnCancelarPuesto As Button
     Friend WithEvents btnSeleccionarPuesto As Button
+    Friend WithEvents idpuestolaboral As DataGridViewTextBoxColumn
+    Friend WithEvents puesto As DataGridViewTextBoxColumn
 End Class

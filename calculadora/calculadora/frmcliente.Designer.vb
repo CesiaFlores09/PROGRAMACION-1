@@ -30,10 +30,6 @@ Partial Class frmcliente
         Me.btnAgregarCliente = New System.Windows.Forms.Button()
         Me.grbNavegacionCliente = New System.Windows.Forms.GroupBox()
         Me.lblRegistroCliente = New System.Windows.Forms.Label()
-        Me.btnUltimoCliente = New System.Windows.Forms.Button()
-        Me.btnSiguienteCliente = New System.Windows.Forms.Button()
-        Me.btnAnteriorCliente = New System.Windows.Forms.Button()
-        Me.btnPrimeroCliente = New System.Windows.Forms.Button()
         Me.grbDatos = New System.Windows.Forms.GroupBox()
         Me.txtEmailCliente = New System.Windows.Forms.TextBox()
         Me.txtTelefonoCliente = New System.Windows.Forms.TextBox()
@@ -46,6 +42,10 @@ Partial Class frmcliente
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblNombreCliente = New System.Windows.Forms.Label()
         Me.lblCodigoCliente = New System.Windows.Forms.Label()
+        Me.btnUltimoCliente = New System.Windows.Forms.Button()
+        Me.btnSiguienteCliente = New System.Windows.Forms.Button()
+        Me.btnAnteriorCliente = New System.Windows.Forms.Button()
+        Me.btnPrimeroCliente = New System.Windows.Forms.Button()
         Me.grbEdicionCliente.SuspendLayout()
         Me.grbNavegacionCliente.SuspendLayout()
         Me.grbDatos.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class frmcliente
         '
         'btnBuscarCliente
         '
-        Me.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarCliente.Location = New System.Drawing.Point(358, 17)
         Me.btnBuscarCliente.Margin = New System.Windows.Forms.Padding(2)
@@ -80,7 +80,7 @@ Partial Class frmcliente
         '
         'btnEliminarCliente
         '
-        Me.btnEliminarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarCliente.Location = New System.Drawing.Point(237, 17)
         Me.btnEliminarCliente.Margin = New System.Windows.Forms.Padding(2)
@@ -92,7 +92,7 @@ Partial Class frmcliente
         '
         'btnModificarCliente
         '
-        Me.btnModificarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarCliente.Location = New System.Drawing.Point(124, 17)
         Me.btnModificarCliente.Margin = New System.Windows.Forms.Padding(2)
@@ -104,7 +104,7 @@ Partial Class frmcliente
         '
         'btnAgregarCliente
         '
-        Me.btnAgregarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarCliente.Location = New System.Drawing.Point(14, 17)
         Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(2)
@@ -139,54 +139,6 @@ Partial Class frmcliente
         Me.lblRegistroCliente.Size = New System.Drawing.Size(36, 13)
         Me.lblRegistroCliente.TabIndex = 4
         Me.lblRegistroCliente.Text = "x de n"
-        '
-        'btnUltimoCliente
-        '
-        Me.btnUltimoCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnUltimoCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUltimoCliente.Location = New System.Drawing.Point(281, 17)
-        Me.btnUltimoCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnUltimoCliente.Name = "btnUltimoCliente"
-        Me.btnUltimoCliente.Size = New System.Drawing.Size(56, 49)
-        Me.btnUltimoCliente.TabIndex = 3
-        Me.btnUltimoCliente.Text = ">|"
-        Me.btnUltimoCliente.UseVisualStyleBackColor = False
-        '
-        'btnSiguienteCliente
-        '
-        Me.btnSiguienteCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnSiguienteCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguienteCliente.Location = New System.Drawing.Point(220, 17)
-        Me.btnSiguienteCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSiguienteCliente.Name = "btnSiguienteCliente"
-        Me.btnSiguienteCliente.Size = New System.Drawing.Size(56, 49)
-        Me.btnSiguienteCliente.TabIndex = 2
-        Me.btnSiguienteCliente.Text = ">"
-        Me.btnSiguienteCliente.UseVisualStyleBackColor = False
-        '
-        'btnAnteriorCliente
-        '
-        Me.btnAnteriorCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnAnteriorCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnteriorCliente.Location = New System.Drawing.Point(65, 17)
-        Me.btnAnteriorCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAnteriorCliente.Name = "btnAnteriorCliente"
-        Me.btnAnteriorCliente.Size = New System.Drawing.Size(56, 49)
-        Me.btnAnteriorCliente.TabIndex = 1
-        Me.btnAnteriorCliente.Text = "<"
-        Me.btnAnteriorCliente.UseVisualStyleBackColor = False
-        '
-        'btnPrimeroCliente
-        '
-        Me.btnPrimeroCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnPrimeroCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrimeroCliente.Location = New System.Drawing.Point(4, 17)
-        Me.btnPrimeroCliente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnPrimeroCliente.Name = "btnPrimeroCliente"
-        Me.btnPrimeroCliente.Size = New System.Drawing.Size(56, 49)
-        Me.btnPrimeroCliente.TabIndex = 0
-        Me.btnPrimeroCliente.Text = "|<"
-        Me.btnPrimeroCliente.UseVisualStyleBackColor = False
         '
         'grbDatos
         '
@@ -316,6 +268,54 @@ Partial Class frmcliente
         Me.lblCodigoCliente.Size = New System.Drawing.Size(69, 16)
         Me.lblCodigoCliente.TabIndex = 0
         Me.lblCodigoCliente.Text = "CODIGO:"
+        '
+        'btnUltimoCliente
+        '
+        Me.btnUltimoCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnUltimoCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUltimoCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
+        Me.btnUltimoCliente.Location = New System.Drawing.Point(281, 17)
+        Me.btnUltimoCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUltimoCliente.Name = "btnUltimoCliente"
+        Me.btnUltimoCliente.Size = New System.Drawing.Size(56, 49)
+        Me.btnUltimoCliente.TabIndex = 3
+        Me.btnUltimoCliente.UseVisualStyleBackColor = False
+        '
+        'btnSiguienteCliente
+        '
+        Me.btnSiguienteCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSiguienteCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguienteCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
+        Me.btnSiguienteCliente.Location = New System.Drawing.Point(220, 17)
+        Me.btnSiguienteCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSiguienteCliente.Name = "btnSiguienteCliente"
+        Me.btnSiguienteCliente.Size = New System.Drawing.Size(56, 49)
+        Me.btnSiguienteCliente.TabIndex = 2
+        Me.btnSiguienteCliente.UseVisualStyleBackColor = False
+        '
+        'btnAnteriorCliente
+        '
+        Me.btnAnteriorCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAnteriorCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnteriorCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
+        Me.btnAnteriorCliente.Location = New System.Drawing.Point(65, 17)
+        Me.btnAnteriorCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAnteriorCliente.Name = "btnAnteriorCliente"
+        Me.btnAnteriorCliente.Size = New System.Drawing.Size(56, 49)
+        Me.btnAnteriorCliente.TabIndex = 1
+        Me.btnAnteriorCliente.UseVisualStyleBackColor = False
+        '
+        'btnPrimeroCliente
+        '
+        Me.btnPrimeroCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnPrimeroCliente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimeroCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
+        Me.btnPrimeroCliente.Location = New System.Drawing.Point(4, 17)
+        Me.btnPrimeroCliente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPrimeroCliente.Name = "btnPrimeroCliente"
+        Me.btnPrimeroCliente.Size = New System.Drawing.Size(56, 49)
+        Me.btnPrimeroCliente.TabIndex = 0
+        Me.btnPrimeroCliente.UseVisualStyleBackColor = False
         '
         'frmcliente
         '

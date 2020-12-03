@@ -41,33 +41,33 @@ Partial Class frmbuscarcliente
         '
         Me.btnCancelarCliente.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCancelarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnCancelarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnCancelarCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarCliente.Location = New System.Drawing.Point(553, 453)
+        Me.btnCancelarCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_cancel_2467375
+        Me.btnCancelarCliente.Location = New System.Drawing.Point(158, 444)
         Me.btnCancelarCliente.Name = "btnCancelarCliente"
-        Me.btnCancelarCliente.Size = New System.Drawing.Size(196, 36)
+        Me.btnCancelarCliente.Size = New System.Drawing.Size(93, 45)
         Me.btnCancelarCliente.TabIndex = 12
-        Me.btnCancelarCliente.Text = "Cancelar"
         Me.btnCancelarCliente.UseVisualStyleBackColor = False
         '
         'btnSeleccionarCliente
         '
         Me.btnSeleccionarCliente.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSeleccionarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSeleccionarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSeleccionarCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(326, 453)
+        Me.btnSeleccionarCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_cursor_309088__1_
+        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(47, 444)
         Me.btnSeleccionarCliente.Name = "btnSeleccionarCliente"
-        Me.btnSeleccionarCliente.Size = New System.Drawing.Size(196, 36)
+        Me.btnSeleccionarCliente.Size = New System.Drawing.Size(78, 45)
         Me.btnSeleccionarCliente.TabIndex = 11
-        Me.btnSeleccionarCliente.Text = "Seleccionar Cliente"
         Me.btnSeleccionarCliente.UseVisualStyleBackColor = False
         '
         'txtBuscarCliente
         '
         Me.txtBuscarCliente.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscarCliente.Location = New System.Drawing.Point(117, 43)
+        Me.txtBuscarCliente.Location = New System.Drawing.Point(105, 29)
         Me.txtBuscarCliente.Name = "txtBuscarCliente"
         Me.txtBuscarCliente.Size = New System.Drawing.Size(632, 20)
         Me.txtBuscarCliente.TabIndex = 10
@@ -76,13 +76,12 @@ Partial Class frmbuscarcliente
         '
         Me.lblBuscarCliente.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblBuscarCliente.AutoSize = True
         Me.lblBuscarCliente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarCliente.Location = New System.Drawing.Point(44, 47)
+        Me.lblBuscarCliente.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Interface_25_2044263
+        Me.lblBuscarCliente.Location = New System.Drawing.Point(44, 20)
         Me.lblBuscarCliente.Name = "lblBuscarCliente"
-        Me.lblBuscarCliente.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarCliente.Size = New System.Drawing.Size(55, 43)
         Me.lblBuscarCliente.TabIndex = 9
-        Me.lblBuscarCliente.Text = "Buscar:"
         '
         'grbBuscarCliente
         '

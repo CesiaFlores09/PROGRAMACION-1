@@ -181,6 +181,7 @@ Partial Class frmPeddos
         Me.TableAdapterManager.pedidosTableAdapter = Me.PedidosTableAdapter
         Me.TableAdapterManager.productoTableAdapter = Nothing
         Me.TableAdapterManager.proveedoresTableAdapter = Me.ProveedoresTableAdapter
+        Me.TableAdapterManager.puestoTableAdapter = Nothing
         Me.TableAdapterManager.TipoFacturaTableAdapter = Me.TipoFacturaTableAdapter
         Me.TableAdapterManager.UpdateOrder = calculadora.bd_empresaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuarioTableAdapter = Nothing
@@ -496,50 +497,50 @@ Partial Class frmPeddos
         '
         'btnUltimoPedidos
         '
-        Me.btnUltimoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUltimoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUltimoPedidos.Location = New System.Drawing.Point(182, 25)
+        Me.btnUltimoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
+        Me.btnUltimoPedidos.Location = New System.Drawing.Point(182, 17)
         Me.btnUltimoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoPedidos.Name = "btnUltimoPedidos"
-        Me.btnUltimoPedidos.Size = New System.Drawing.Size(56, 41)
+        Me.btnUltimoPedidos.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoPedidos.TabIndex = 3
-        Me.btnUltimoPedidos.Text = ">|"
         Me.btnUltimoPedidos.UseVisualStyleBackColor = False
         '
         'btnSiguientePedidos
         '
-        Me.btnSiguientePedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSiguientePedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguientePedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguientePedidos.Location = New System.Drawing.Point(122, 25)
+        Me.btnSiguientePedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
+        Me.btnSiguientePedidos.Location = New System.Drawing.Point(122, 17)
         Me.btnSiguientePedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguientePedidos.Name = "btnSiguientePedidos"
-        Me.btnSiguientePedidos.Size = New System.Drawing.Size(56, 41)
+        Me.btnSiguientePedidos.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguientePedidos.TabIndex = 2
-        Me.btnSiguientePedidos.Text = ">"
         Me.btnSiguientePedidos.UseVisualStyleBackColor = False
         '
         'btnAnteriorPedidos
         '
-        Me.btnAnteriorPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAnteriorPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAnteriorPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnteriorPedidos.Location = New System.Drawing.Point(62, 25)
+        Me.btnAnteriorPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
+        Me.btnAnteriorPedidos.Location = New System.Drawing.Point(62, 17)
         Me.btnAnteriorPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnteriorPedidos.Name = "btnAnteriorPedidos"
-        Me.btnAnteriorPedidos.Size = New System.Drawing.Size(56, 41)
+        Me.btnAnteriorPedidos.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorPedidos.TabIndex = 1
-        Me.btnAnteriorPedidos.Text = "<"
         Me.btnAnteriorPedidos.UseVisualStyleBackColor = False
         '
         'btnPrimeroPedidos
         '
-        Me.btnPrimeroPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrimeroPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPrimeroPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrimeroPedidos.Location = New System.Drawing.Point(4, 25)
+        Me.btnPrimeroPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
+        Me.btnPrimeroPedidos.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimeroPedidos.Name = "btnPrimeroPedidos"
-        Me.btnPrimeroPedidos.Size = New System.Drawing.Size(56, 41)
+        Me.btnPrimeroPedidos.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroPedidos.TabIndex = 0
-        Me.btnPrimeroPedidos.Text = "|<"
         Me.btnPrimeroPedidos.UseVisualStyleBackColor = False
         '
         'grbEdicionPedidos
@@ -548,7 +549,7 @@ Partial Class frmPeddos
         Me.grbEdicionPedidos.Controls.Add(Me.btnEliminarPedidos)
         Me.grbEdicionPedidos.Controls.Add(Me.btnModificarPedidos)
         Me.grbEdicionPedidos.Controls.Add(Me.btnAgregarPedidos)
-        Me.grbEdicionPedidos.Location = New System.Drawing.Point(400, 477)
+        Me.grbEdicionPedidos.Location = New System.Drawing.Point(381, 477)
         Me.grbEdicionPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbEdicionPedidos.Name = "grbEdicionPedidos"
         Me.grbEdicionPedidos.Padding = New System.Windows.Forms.Padding(2)
@@ -559,48 +560,48 @@ Partial Class frmPeddos
         '
         'btnBuscarPedidos
         '
-        Me.btnBuscarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscarPedidos.Location = New System.Drawing.Point(273, 23)
+        Me.btnBuscarPedidos.Location = New System.Drawing.Point(273, 25)
         Me.btnBuscarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscarPedidos.Name = "btnBuscarPedidos"
-        Me.btnBuscarPedidos.Size = New System.Drawing.Size(92, 34)
+        Me.btnBuscarPedidos.Size = New System.Drawing.Size(92, 37)
         Me.btnBuscarPedidos.TabIndex = 4
         Me.btnBuscarPedidos.Text = "Buscar"
         Me.btnBuscarPedidos.UseVisualStyleBackColor = False
         '
         'btnEliminarPedidos
         '
-        Me.btnEliminarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarPedidos.Location = New System.Drawing.Point(181, 23)
+        Me.btnEliminarPedidos.Location = New System.Drawing.Point(181, 25)
         Me.btnEliminarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEliminarPedidos.Name = "btnEliminarPedidos"
-        Me.btnEliminarPedidos.Size = New System.Drawing.Size(88, 34)
+        Me.btnEliminarPedidos.Size = New System.Drawing.Size(88, 37)
         Me.btnEliminarPedidos.TabIndex = 3
         Me.btnEliminarPedidos.Text = "Eliminar"
         Me.btnEliminarPedidos.UseVisualStyleBackColor = False
         '
         'btnModificarPedidos
         '
-        Me.btnModificarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarPedidos.Location = New System.Drawing.Point(87, 23)
+        Me.btnModificarPedidos.Location = New System.Drawing.Point(82, 25)
         Me.btnModificarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificarPedidos.Name = "btnModificarPedidos"
-        Me.btnModificarPedidos.Size = New System.Drawing.Size(90, 34)
+        Me.btnModificarPedidos.Size = New System.Drawing.Size(90, 37)
         Me.btnModificarPedidos.TabIndex = 2
         Me.btnModificarPedidos.Text = "Modificar"
         Me.btnModificarPedidos.UseVisualStyleBackColor = False
         '
         'btnAgregarPedidos
         '
-        Me.btnAgregarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarPedidos.Location = New System.Drawing.Point(5, 23)
+        Me.btnAgregarPedidos.Location = New System.Drawing.Point(0, 25)
         Me.btnAgregarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarPedidos.Name = "btnAgregarPedidos"
-        Me.btnAgregarPedidos.Size = New System.Drawing.Size(78, 34)
+        Me.btnAgregarPedidos.Size = New System.Drawing.Size(78, 37)
         Me.btnAgregarPedidos.TabIndex = 1
         Me.btnAgregarPedidos.Text = "Nuevo"
         Me.btnAgregarPedidos.UseVisualStyleBackColor = False
@@ -633,26 +634,26 @@ Partial Class frmPeddos
         '
         'btnQuitarProductoPedidos
         '
-        Me.btnQuitarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnQuitarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnQuitarProductoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnQuitarProductoPedidos.Location = New System.Drawing.Point(179, 25)
+        Me.btnQuitarProductoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ecommerce_30_4707191
+        Me.btnQuitarProductoPedidos.Location = New System.Drawing.Point(160, 15)
         Me.btnQuitarProductoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQuitarProductoPedidos.Name = "btnQuitarProductoPedidos"
-        Me.btnQuitarProductoPedidos.Size = New System.Drawing.Size(153, 35)
+        Me.btnQuitarProductoPedidos.Size = New System.Drawing.Size(71, 48)
         Me.btnQuitarProductoPedidos.TabIndex = 3
-        Me.btnQuitarProductoPedidos.Text = "Quitar Productos"
         Me.btnQuitarProductoPedidos.UseVisualStyleBackColor = False
         '
         'btnAgregarProductoPedidos
         '
-        Me.btnAgregarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarProductoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarProductoPedidos.Location = New System.Drawing.Point(19, 25)
+        Me.btnAgregarProductoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_add_shopping_cart_48px_3669464
+        Me.btnAgregarProductoPedidos.Location = New System.Drawing.Point(23, 15)
         Me.btnAgregarProductoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarProductoPedidos.Name = "btnAgregarProductoPedidos"
-        Me.btnAgregarProductoPedidos.Size = New System.Drawing.Size(153, 35)
+        Me.btnAgregarProductoPedidos.Size = New System.Drawing.Size(68, 48)
         Me.btnAgregarProductoPedidos.TabIndex = 2
-        Me.btnAgregarProductoPedidos.Text = "Agregar Productos"
         Me.btnAgregarProductoPedidos.UseVisualStyleBackColor = False
         '
         'frmPeddos

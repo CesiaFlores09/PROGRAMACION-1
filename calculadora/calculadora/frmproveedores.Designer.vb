@@ -253,50 +253,50 @@ Partial Class frmproveedores
         '
         'btnUltimoProveedores
         '
-        Me.btnUltimoProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUltimoProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUltimoProveedores.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
         Me.btnUltimoProveedores.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimoProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoProveedores.Name = "btnUltimoProveedores"
         Me.btnUltimoProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoProveedores.TabIndex = 3
-        Me.btnUltimoProveedores.Text = ">|"
         Me.btnUltimoProveedores.UseVisualStyleBackColor = False
         '
         'btnSiguienteProveedores
         '
-        Me.btnSiguienteProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSiguienteProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguienteProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguienteProveedores.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
         Me.btnSiguienteProveedores.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguienteProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguienteProveedores.Name = "btnSiguienteProveedores"
         Me.btnSiguienteProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguienteProveedores.TabIndex = 2
-        Me.btnSiguienteProveedores.Text = ">"
         Me.btnSiguienteProveedores.UseVisualStyleBackColor = False
         '
         'btnAnteriorProveedores
         '
-        Me.btnAnteriorProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAnteriorProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAnteriorProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnteriorProveedores.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
         Me.btnAnteriorProveedores.Location = New System.Drawing.Point(65, 17)
         Me.btnAnteriorProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnteriorProveedores.Name = "btnAnteriorProveedores"
         Me.btnAnteriorProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorProveedores.TabIndex = 1
-        Me.btnAnteriorProveedores.Text = "<"
         Me.btnAnteriorProveedores.UseVisualStyleBackColor = False
         '
         'btnPrimeroProveedores
         '
-        Me.btnPrimeroProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrimeroProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPrimeroProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimeroProveedores.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
         Me.btnPrimeroProveedores.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroProveedores.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimeroProveedores.Name = "btnPrimeroProveedores"
         Me.btnPrimeroProveedores.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroProveedores.TabIndex = 0
-        Me.btnPrimeroProveedores.Text = "|<"
         Me.btnPrimeroProveedores.UseVisualStyleBackColor = False
         '
         'grbEdicion
@@ -316,7 +316,7 @@ Partial Class frmproveedores
         '
         'btnBuscarProveedores
         '
-        Me.btnBuscarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarProveedores.Location = New System.Drawing.Point(307, 17)
         Me.btnBuscarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -328,7 +328,7 @@ Partial Class frmproveedores
         '
         'btnEliminarProveedores
         '
-        Me.btnEliminarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarProveedores.Location = New System.Drawing.Point(209, 18)
         Me.btnEliminarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -340,7 +340,7 @@ Partial Class frmproveedores
         '
         'btnModificarProveedores
         '
-        Me.btnModificarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarProveedores.Location = New System.Drawing.Point(96, 17)
         Me.btnModificarProveedores.Margin = New System.Windows.Forms.Padding(2)
@@ -352,7 +352,7 @@ Partial Class frmproveedores
         '
         'btnAgregarProveedores
         '
-        Me.btnAgregarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarProveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarProveedores.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarProveedores.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregarProveedores.Margin = New System.Windows.Forms.Padding(2)

@@ -41,24 +41,24 @@ Partial Class frmBuscarUsuarios
         '
         'btnCancelarUsuario
         '
-        Me.btnCancelarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnCancelarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnCancelarUsuario.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarUsuario.Location = New System.Drawing.Point(600, 398)
+        Me.btnCancelarUsuario.Image = Global.calculadora.My.Resources.Resources.iconfinder_cancel_2467375
+        Me.btnCancelarUsuario.Location = New System.Drawing.Point(116, 395)
         Me.btnCancelarUsuario.Name = "btnCancelarUsuario"
-        Me.btnCancelarUsuario.Size = New System.Drawing.Size(188, 40)
+        Me.btnCancelarUsuario.Size = New System.Drawing.Size(90, 47)
         Me.btnCancelarUsuario.TabIndex = 0
-        Me.btnCancelarUsuario.Text = "Cancelar"
         Me.btnCancelarUsuario.UseVisualStyleBackColor = False
         '
         'btnSeleccionarUsuario
         '
-        Me.btnSeleccionarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSeleccionarUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSeleccionarUsuario.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarUsuario.Location = New System.Drawing.Point(386, 398)
+        Me.btnSeleccionarUsuario.Image = Global.calculadora.My.Resources.Resources.iconfinder_cursor_309088__1_
+        Me.btnSeleccionarUsuario.Location = New System.Drawing.Point(29, 395)
         Me.btnSeleccionarUsuario.Name = "btnSeleccionarUsuario"
-        Me.btnSeleccionarUsuario.Size = New System.Drawing.Size(188, 40)
+        Me.btnSeleccionarUsuario.Size = New System.Drawing.Size(81, 47)
         Me.btnSeleccionarUsuario.TabIndex = 1
-        Me.btnSeleccionarUsuario.Text = "Seleccionar Usuario"
         Me.btnSeleccionarUsuario.UseVisualStyleBackColor = False
         '
         'grdBuscarUsuario
@@ -67,10 +67,10 @@ Partial Class frmBuscarUsuarios
         Me.grdBuscarUsuario.AllowUserToDeleteRows = False
         Me.grdBuscarUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdBuscarUsuario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idusuario, Me.nombres, Me.apellidos, Me.clave, Me.email, Me.direccion, Me.telefono, Me.privilegio})
-        Me.grdBuscarUsuario.Location = New System.Drawing.Point(28, 67)
+        Me.grdBuscarUsuario.Location = New System.Drawing.Point(29, 83)
         Me.grdBuscarUsuario.Name = "grdBuscarUsuario"
         Me.grdBuscarUsuario.ReadOnly = True
-        Me.grdBuscarUsuario.Size = New System.Drawing.Size(760, 325)
+        Me.grdBuscarUsuario.Size = New System.Drawing.Size(744, 289)
         Me.grdBuscarUsuario.TabIndex = 2
         '
         'idusuario
@@ -132,20 +132,19 @@ Partial Class frmBuscarUsuarios
         '
         'txtBuscarUsuario
         '
-        Me.txtBuscarUsuario.Location = New System.Drawing.Point(92, 29)
+        Me.txtBuscarUsuario.Location = New System.Drawing.Point(93, 27)
         Me.txtBuscarUsuario.Name = "txtBuscarUsuario"
-        Me.txtBuscarUsuario.Size = New System.Drawing.Size(696, 20)
+        Me.txtBuscarUsuario.Size = New System.Drawing.Size(680, 20)
         Me.txtBuscarUsuario.TabIndex = 3
         '
         'lblBuscarUsuario
         '
-        Me.lblBuscarUsuario.AutoSize = True
         Me.lblBuscarUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarUsuario.Location = New System.Drawing.Point(25, 32)
+        Me.lblBuscarUsuario.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Interface_25_2044263
+        Me.lblBuscarUsuario.Location = New System.Drawing.Point(26, 9)
         Me.lblBuscarUsuario.Name = "lblBuscarUsuario"
-        Me.lblBuscarUsuario.Size = New System.Drawing.Size(61, 13)
+        Me.lblBuscarUsuario.Size = New System.Drawing.Size(61, 55)
         Me.lblBuscarUsuario.TabIndex = 4
-        Me.lblBuscarUsuario.Text = "BUSCAR:"
         '
         'frmBuscarUsuarios
         '

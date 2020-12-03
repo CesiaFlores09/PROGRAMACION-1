@@ -41,58 +41,56 @@ Partial Class frmBuacarProductovb
         'btnCancelarProducto
         '
         Me.btnCancelarProducto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCancelarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnCancelarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnCancelarProducto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelarProducto.Location = New System.Drawing.Point(555, 453)
+        Me.btnCancelarProducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_cancel_2467375
+        Me.btnCancelarProducto.Location = New System.Drawing.Point(224, 409)
         Me.btnCancelarProducto.Name = "btnCancelarProducto"
-        Me.btnCancelarProducto.Size = New System.Drawing.Size(196, 28)
+        Me.btnCancelarProducto.Size = New System.Drawing.Size(81, 46)
         Me.btnCancelarProducto.TabIndex = 17
-        Me.btnCancelarProducto.Text = "Cancelar"
         Me.btnCancelarProducto.UseVisualStyleBackColor = False
         '
         'btnSeleccionarProducto
         '
         Me.btnSeleccionarProducto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSeleccionarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSeleccionarProducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSeleccionarProducto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarProducto.Location = New System.Drawing.Point(353, 457)
+        Me.btnSeleccionarProducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_cursor_309088__1_
+        Me.btnSeleccionarProducto.Location = New System.Drawing.Point(84, 409)
         Me.btnSeleccionarProducto.Name = "btnSeleccionarProducto"
-        Me.btnSeleccionarProducto.Size = New System.Drawing.Size(196, 24)
+        Me.btnSeleccionarProducto.Size = New System.Drawing.Size(72, 46)
         Me.btnSeleccionarProducto.TabIndex = 16
-        Me.btnSeleccionarProducto.Text = "Seleccionar Producto"
         Me.btnSeleccionarProducto.UseVisualStyleBackColor = False
         '
         'txtBuscarProducto
         '
         Me.txtBuscarProducto.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscarProducto.Location = New System.Drawing.Point(132, 8)
+        Me.txtBuscarProducto.Location = New System.Drawing.Point(132, 12)
         Me.txtBuscarProducto.Name = "txtBuscarProducto"
-        Me.txtBuscarProducto.Size = New System.Drawing.Size(619, 20)
+        Me.txtBuscarProducto.Size = New System.Drawing.Size(594, 20)
         Me.txtBuscarProducto.TabIndex = 15
         '
         'lblBuscarProducto
         '
-        Me.lblBuscarProducto.AutoSize = True
         Me.lblBuscarProducto.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarProducto.Location = New System.Drawing.Point(69, 9)
+        Me.lblBuscarProducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Interface_25_2044263
+        Me.lblBuscarProducto.Location = New System.Drawing.Point(71, 2)
         Me.lblBuscarProducto.Name = "lblBuscarProducto"
-        Me.lblBuscarProducto.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarProducto.Size = New System.Drawing.Size(55, 48)
         Me.lblBuscarProducto.TabIndex = 14
-        Me.lblBuscarProducto.Text = "Buscar:"
         '
         'grbBuscarProducto
         '
         Me.grbBuscarProducto.AllowUserToAddRows = False
         Me.grbBuscarProducto.AllowUserToDeleteRows = False
-        Me.grbBuscarProducto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grbBuscarProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grbBuscarProducto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idproducto, Me.idcategoria, Me.categoria, Me.codigo, Me.nombre, Me.marca, Me.medidas})
-        Me.grbBuscarProducto.Location = New System.Drawing.Point(131, 49)
+        Me.grbBuscarProducto.Location = New System.Drawing.Point(74, 53)
         Me.grbBuscarProducto.Name = "grbBuscarProducto"
         Me.grbBuscarProducto.ReadOnly = True
         Me.grbBuscarProducto.RowHeadersWidth = 51
-        Me.grbBuscarProducto.Size = New System.Drawing.Size(652, 398)
+        Me.grbBuscarProducto.Size = New System.Drawing.Size(652, 334)
         Me.grbBuscarProducto.TabIndex = 13
         '
         'idproducto

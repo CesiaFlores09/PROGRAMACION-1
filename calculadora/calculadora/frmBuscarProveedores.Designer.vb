@@ -22,6 +22,7 @@ Partial Class frmBuscarProveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuscarProveedores))
         Me.txtBuscarProveedores = New System.Windows.Forms.TextBox()
         Me.grbBuscarProveedores = New System.Windows.Forms.DataGridView()
         Me.idproveedores = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,7 +43,7 @@ Partial Class frmBuscarProveedores
         '
         Me.txtBuscarProveedores.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtBuscarProveedores.Location = New System.Drawing.Point(99, 12)
+        Me.txtBuscarProveedores.Location = New System.Drawing.Point(99, 25)
         Me.txtBuscarProveedores.Name = "txtBuscarProveedores"
         Me.txtBuscarProveedores.Size = New System.Drawing.Size(812, 20)
         Me.txtBuscarProveedores.TabIndex = 8
@@ -56,10 +57,10 @@ Partial Class frmBuscarProveedores
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grbBuscarProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grbBuscarProveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idproveedores, Me.codigo, Me.nombre, Me.nombre_empresa, Me.nombre_propietario, Me.direccion, Me.telefono, Me.email})
-        Me.grbBuscarProveedores.Location = New System.Drawing.Point(22, 38)
+        Me.grbBuscarProveedores.Location = New System.Drawing.Point(22, 92)
         Me.grbBuscarProveedores.Name = "grbBuscarProveedores"
         Me.grbBuscarProveedores.ReadOnly = True
-        Me.grbBuscarProveedores.Size = New System.Drawing.Size(889, 372)
+        Me.grbBuscarProveedores.Size = New System.Drawing.Size(889, 330)
         Me.grbBuscarProveedores.TabIndex = 9
         '
         'idproveedores
@@ -126,36 +127,35 @@ Partial Class frmBuscarProveedores
         '
         Me.lblBuscarProveedores.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblBuscarProveedores.AutoSize = True
         Me.lblBuscarProveedores.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscarProveedores.Location = New System.Drawing.Point(19, 13)
+        Me.lblBuscarProveedores.Image = Global.calculadora.My.Resources.Resources.iconfinder_User_Interface_25_2044263
+        Me.lblBuscarProveedores.Location = New System.Drawing.Point(28, 9)
         Me.lblBuscarProveedores.Name = "lblBuscarProveedores"
-        Me.lblBuscarProveedores.Size = New System.Drawing.Size(55, 16)
+        Me.lblBuscarProveedores.Size = New System.Drawing.Size(55, 52)
         Me.lblBuscarProveedores.TabIndex = 11
-        Me.lblBuscarProveedores.Text = "Buscar:"
         '
         'btnCancelar
         '
         Me.btnCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnCancelar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnCancelar.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.Location = New System.Drawing.Point(625, 428)
+        Me.btnCancelar.Image = Global.calculadora.My.Resources.Resources.iconfinder_cancel_2467375
+        Me.btnCancelar.Location = New System.Drawing.Point(135, 440)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(286, 37)
+        Me.btnCancelar.Size = New System.Drawing.Size(106, 44)
         Me.btnCancelar.TabIndex = 13
-        Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'btnSeleccionarProveedor
         '
         Me.btnSeleccionarProveedor.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSeleccionarProveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSeleccionarProveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSeleccionarProveedor.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarProveedor.Location = New System.Drawing.Point(319, 428)
+        Me.btnSeleccionarProveedor.Image = Global.calculadora.My.Resources.Resources.iconfinder_cursor_309088__1_
+        Me.btnSeleccionarProveedor.Location = New System.Drawing.Point(22, 440)
         Me.btnSeleccionarProveedor.Name = "btnSeleccionarProveedor"
-        Me.btnSeleccionarProveedor.Size = New System.Drawing.Size(286, 37)
+        Me.btnSeleccionarProveedor.Size = New System.Drawing.Size(94, 44)
         Me.btnSeleccionarProveedor.TabIndex = 12
-        Me.btnSeleccionarProveedor.Text = "Seleccionar Proveedor"
         Me.btnSeleccionarProveedor.UseVisualStyleBackColor = False
         '
         'frmBuscarProveedores
@@ -169,8 +169,9 @@ Partial Class frmBuscarProveedores
         Me.Controls.Add(Me.lblBuscarProveedores)
         Me.Controls.Add(Me.grbBuscarProveedores)
         Me.Controls.Add(Me.txtBuscarProveedores)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBuscarProveedores"
-        Me.Text = "frmBuscarProveedores"
+        Me.Text = "Buscaqueda de Proveedores"
         CType(Me.grbBuscarProveedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

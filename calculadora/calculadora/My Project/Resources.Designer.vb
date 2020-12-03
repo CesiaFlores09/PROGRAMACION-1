@@ -154,6 +154,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property iconfinder_cancel_2467375() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_cancel_2467375", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_cart_5_3338940() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_cart-5_3338940", resourceCulture)
@@ -214,9 +224,39 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property iconfinder_cursor_309088() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_cursor_309088", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_cursor_309088__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_cursor_309088 (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_cv_job_seeker_employee_unemployee_work_2620524__1_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_cv_job_seeker_employee_unemployee_work_2620524 (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_Delete_1493279() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_Delete_1493279", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -237,6 +277,16 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_deliverables_45506() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_deliverables_45506", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_ecommerce_30_4707191() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_ecommerce-30_4707191", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -317,6 +367,16 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_hierarchy_1931214__1_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_hierarchy_1931214 (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_ic_add_shopping_cart_48px_3669464() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_ic_add_shopping_cart_48px_3669464", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -467,6 +527,16 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_User_Customers_1218712() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_User_Customers_1218712", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_User_Interface_25_2044263() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_User_Interface-25_2044263", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

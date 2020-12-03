@@ -319,6 +319,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_ecommerce-30_4707191.png" />
+    <None Include="Resources\iconfinder_ic_add_shopping_cart_48px_3669464.png" />
+    <None Include="Resources\iconfinder_cursor_309088 %281%29.png" />
+    <None Include="Resources\iconfinder_cancel_2467375.png" />
+    <None Include="Resources\iconfinder_User_Interface-25_2044263.png" />
+    <None Include="Resources\iconfinder_cursor_309088.png" />
+    <None Include="Resources\iconfinder_Delete_1493279.png" />
     <None Include="Resources\iconfinder_cv_job_seeker_employee_unemployee_work_2620524 %281%29.png" />
     <None Include="Resources\iconfinder_front_office_job_seeker_employee_unemployee_work_2620521.png" />
     <None Include="Resources\iconfinder_ic_skip_previous_48px_3669228.png" />

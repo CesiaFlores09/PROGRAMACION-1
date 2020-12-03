@@ -68,7 +68,7 @@ Partial Class Frmproductos
         '
         'btnBuscarPoducto
         '
-        Me.btnBuscarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarPoducto.Location = New System.Drawing.Point(320, 17)
         Me.btnBuscarPoducto.Margin = New System.Windows.Forms.Padding(2)
@@ -80,7 +80,7 @@ Partial Class Frmproductos
         '
         'btnEliminarPoducto
         '
-        Me.btnEliminarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarPoducto.Location = New System.Drawing.Point(223, 18)
         Me.btnEliminarPoducto.Margin = New System.Windows.Forms.Padding(2)
@@ -92,7 +92,7 @@ Partial Class Frmproductos
         '
         'btnModificarPoducto
         '
-        Me.btnModificarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarPoducto.Location = New System.Drawing.Point(110, 17)
         Me.btnModificarPoducto.Margin = New System.Windows.Forms.Padding(2)
@@ -104,7 +104,7 @@ Partial Class Frmproductos
         '
         'btnAgregarPoducto
         '
-        Me.btnAgregarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarPoducto.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregarPoducto.Margin = New System.Windows.Forms.Padding(2)
@@ -142,50 +142,50 @@ Partial Class Frmproductos
         '
         'btnUltimoPoducto
         '
-        Me.btnUltimoPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUltimoPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUltimoPoducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
         Me.btnUltimoPoducto.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimoPoducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoPoducto.Name = "btnUltimoPoducto"
         Me.btnUltimoPoducto.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoPoducto.TabIndex = 3
-        Me.btnUltimoPoducto.Text = ">|"
         Me.btnUltimoPoducto.UseVisualStyleBackColor = False
         '
         'btnSiguientePoducto
         '
-        Me.btnSiguientePoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSiguientePoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguientePoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguientePoducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
         Me.btnSiguientePoducto.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguientePoducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguientePoducto.Name = "btnSiguientePoducto"
         Me.btnSiguientePoducto.Size = New System.Drawing.Size(56, 49)
         Me.btnSiguientePoducto.TabIndex = 2
-        Me.btnSiguientePoducto.Text = ">"
         Me.btnSiguientePoducto.UseVisualStyleBackColor = False
         '
         'btnAnteriorPoducto
         '
-        Me.btnAnteriorPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAnteriorPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAnteriorPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnteriorPoducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
         Me.btnAnteriorPoducto.Location = New System.Drawing.Point(65, 17)
         Me.btnAnteriorPoducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnteriorPoducto.Name = "btnAnteriorPoducto"
         Me.btnAnteriorPoducto.Size = New System.Drawing.Size(56, 49)
         Me.btnAnteriorPoducto.TabIndex = 1
-        Me.btnAnteriorPoducto.Text = "<"
         Me.btnAnteriorPoducto.UseVisualStyleBackColor = False
         '
         'btnPrimeroPoducto
         '
-        Me.btnPrimeroPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrimeroPoducto.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPrimeroPoducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimeroPoducto.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
         Me.btnPrimeroPoducto.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroPoducto.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimeroPoducto.Name = "btnPrimeroPoducto"
         Me.btnPrimeroPoducto.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroPoducto.TabIndex = 0
-        Me.btnPrimeroPoducto.Text = "|<"
         Me.btnPrimeroPoducto.UseVisualStyleBackColor = False
         '
         'grbDatos

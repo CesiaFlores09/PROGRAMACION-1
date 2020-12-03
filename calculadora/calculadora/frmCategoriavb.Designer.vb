@@ -59,7 +59,7 @@ Partial Class frmCategoriavb
         '
         'btnBuscarCategoria
         '
-        Me.btnBuscarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscarCategoria.Location = New System.Drawing.Point(320, 17)
         Me.btnBuscarCategoria.Margin = New System.Windows.Forms.Padding(2)
@@ -71,7 +71,7 @@ Partial Class frmCategoriavb
         '
         'btnEliminarCategoria
         '
-        Me.btnEliminarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminarCategoria.Location = New System.Drawing.Point(223, 18)
         Me.btnEliminarCategoria.Margin = New System.Windows.Forms.Padding(2)
@@ -83,7 +83,7 @@ Partial Class frmCategoriavb
         '
         'btnModificarCategoria
         '
-        Me.btnModificarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificarCategoria.Location = New System.Drawing.Point(110, 17)
         Me.btnModificarCategoria.Margin = New System.Windows.Forms.Padding(2)
@@ -95,7 +95,7 @@ Partial Class frmCategoriavb
         '
         'btnAgregarCategoria
         '
-        Me.btnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarCategoria.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregarCategoria.Margin = New System.Windows.Forms.Padding(2)
@@ -133,20 +133,21 @@ Partial Class frmCategoriavb
         '
         'btnUltimoCategoria
         '
-        Me.btnUltimoCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnUltimoCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUltimoCategoria.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
         Me.btnUltimoCategoria.Location = New System.Drawing.Point(281, 17)
         Me.btnUltimoCategoria.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoCategoria.Name = "btnUltimoCategoria"
         Me.btnUltimoCategoria.Size = New System.Drawing.Size(56, 49)
         Me.btnUltimoCategoria.TabIndex = 3
-        Me.btnUltimoCategoria.Text = ">|"
         Me.btnUltimoCategoria.UseVisualStyleBackColor = False
         '
         'btnSiguienteCategoria
         '
-        Me.btnSiguienteCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSiguienteCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguienteCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguienteCategoria.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
         Me.btnSiguienteCategoria.Location = New System.Drawing.Point(220, 17)
         Me.btnSiguienteCategoria.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguienteCategoria.Name = "btnSiguienteCategoria"
@@ -157,8 +158,9 @@ Partial Class frmCategoriavb
         '
         'btnAnteriorCategoria
         '
-        Me.btnAnteriorCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAnteriorCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAnteriorCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnteriorCategoria.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
         Me.btnAnteriorCategoria.Location = New System.Drawing.Point(65, 17)
         Me.btnAnteriorCategoria.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAnteriorCategoria.Name = "btnAnteriorCategoria"
@@ -169,14 +171,14 @@ Partial Class frmCategoriavb
         '
         'btnPrimeroCategoria
         '
-        Me.btnPrimeroCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrimeroCategoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnPrimeroCategoria.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimeroCategoria.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
         Me.btnPrimeroCategoria.Location = New System.Drawing.Point(4, 17)
         Me.btnPrimeroCategoria.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPrimeroCategoria.Name = "btnPrimeroCategoria"
         Me.btnPrimeroCategoria.Size = New System.Drawing.Size(56, 49)
         Me.btnPrimeroCategoria.TabIndex = 0
-        Me.btnPrimeroCategoria.Text = "|<"
         Me.btnPrimeroCategoria.UseVisualStyleBackColor = False
         '
         'grbDatosCategorias
