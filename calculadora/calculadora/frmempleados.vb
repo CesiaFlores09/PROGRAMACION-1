@@ -3,35 +3,47 @@
     Dim dataTable As New DataTable
     Dim posicion As Integer
     Dim accion As String = "Nuevo"
+
     Private Sub frmempleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         posicion = 0
-        obtenerDatos()
+        obtenerDatosEmpleados()
     End Sub
-    Sub obtenerDatos()
+
+    Sub obtenerDatosEmpleados()
         dataTable = objconexion.obtenerDatos().Tables("empleados")
         dataTable.PrimaryKey = New DataColumn() {dataTable.Columns("idempleados")}
+
+        cbopuestolaboral.DataSource = objconexion.obtenerDatos().Tables("puesto").Defaultview()
+        cbopuestolaboral.DisplayMember = "puesto"
+        cbopuestolaboral.ValueMember = "puesto.idpuestolaboral"
+
+        cbopuestolaboral.AutoCompleteMode = AutoCompleteMode.Suggest
+        cbopuestolaboral.AutoCompleteSource = AutoCompleteSource.ListItems
         mostrarDatos()
     End Sub
     Sub mostrarDatos()
         If dataTable.Rows.Count > 0 Then
             Me.Tag = dataTable.Rows(posicion).ItemArray(0).ToString()
-            txtCodigo.Text = dataTable.Rows(posicion).ItemArray(1)
-            txtNombre.Text = dataTable.Rows(posicion).ItemArray(2)
-            txtPuestoLaboral.Text = dataTable.Rows(posicion).ItemArray(3)
-            txtDireccion.Text = dataTable.Rows(posicion).ItemArray(4)
-            txtTelefono.Text = dataTable.Rows(posicion).ItemArray(5)
-            txtEmail.Text = dataTable.Rows(posicion).ItemArray(6)
-            lblRegistroEmpleados.Text = posicion + 1 & " de" & dataTable.Rows.Count
+
+            cbopuestolaboral.SelectedValue = dataTable.Rows(posicion).ItemArray(1).ToString()
+
+            txtCodigo.Text = dataTable.Rows(posicion).ItemArray(2).ToString()
+            txtNombre.Text = dataTable.Rows(posicion).ItemArray(3).ToString()
+            txtTelefono.Text = dataTable.Rows(posicion).ItemArray(4).ToString()
+            txtDireccion.Text = dataTable.Rows(posicion).ItemArray(5).ToString()
+            txtEmail.Text = dataTable.Rows(posicion).ItemArray(6).ToString()
+
+            lblRegistroEmpleados.Text = posicion + 1 & " de " & dataTable.Rows.Count
         Else
             limpiarDatosEmpleados()
-            MessageBox.Show("No hay Registros que mostrar", "Registro de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("No hay Registros que mostrar", "Registro de Empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         End If
     End Sub
     Private Sub limpiarDatosEmpleados()
         txtCodigo.Text = ""
         txtNombre.Text = ""
-        txtPuestoLaboral.Text = ""
+
         txtDireccion.Text = ""
         txtTelefono.Text = ""
         txtEmail.Text = ""
@@ -71,7 +83,7 @@
             accion = "modificar"
             habDescontroles(False)
         Else
-            obtenerDatos()
+            obtenerDatosEmpleados()
 
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
@@ -87,7 +99,7 @@
                 posicion -= 1
             End If
 
-            obtenerDatos()
+            obtenerDatosEmpleados()
         End If
     End Sub
 
@@ -119,18 +131,16 @@
             limpiarDatosEmpleados()
         Else
             Dim msg = objconexion.mantenimientoDatosEmpleados(New String() {
-                 Me.Tag, txtCodigo.Text, txtNombre.Text, txtPuestoLaboral.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text
+                 Me.Tag, cbopuestolaboral.SelectedValue, txtCodigo.Text, txtNombre.Text, txtDireccion.Text, txtTelefono.Text, txtEmail.Text
             }, accion)
 
-            obtenerDatos()
+            obtenerDatosEmpleados()
             habDescontroles(True)
             btnAgregar.Text = "Nuevo"
             btnModificar.Text = "Modificar"
-            MessageBox.Show(msg, "Registro de Productos", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show(msg, "Registro de Empleados", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
-    Private Sub grbDatos_Enter(sender As Object, e As EventArgs) Handles grbDatos.Enter
 
-    End Sub
 End Class

@@ -53,4 +53,10 @@
         objfacturacompras.MdiParent = Me
         objfacturacompras.Show()
     End Sub
+
+    Private Sub PuestoLaboralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PuestoLaboralToolStripMenuItem.Click
+        Dim objPuestoLaboral As New frmPuestoLaboral
+        objPuestoLaboral.MdiParent = Me
+        objPuestoLaboral.Show()
+    End Sub
 End Class

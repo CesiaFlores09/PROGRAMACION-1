@@ -17,9 +17,7 @@ Public Class db_conexion
         ds.Clear()
         micommand.Connection = miconexion
 
-        micommand.CommandText = "Select * from empleados"
-        miadapter.SelectCommand = micommand
-        miadapter.Fill(ds, "empleados")
+
 
         micommand.CommandText = "Select * from usuario"
         miadapter.SelectCommand = micommand
@@ -45,25 +43,22 @@ Public Class db_conexion
         miadapter.SelectCommand = micommand
         miadapter.Fill(ds, "producto")
 
+        micommand.CommandText = "Select * from puesto"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "puesto")
+
+        micommand.CommandText = "
+       Select empleados.idempleados,empleados.idpuestolaboral,empleados.codigo,empleados.nombre,empleados.direccion,
+       empleados.telefono,empleados.email,puesto.puesto
+        from empleados
+       inner join puesto on (puesto.idpuestolaboral=empleados.idpuestolaboral)"
+        miadapter.SelectCommand = micommand
+        miadapter.Fill(ds, "empleados")
+
+
         Return ds
     End Function
-    Public Function mantenimientoDatosEmpleados(ByVal datos As String(), ByVal accion As String)
-        Dim sql, msg As String
-        Select Case accion
-            Case "nuevo"
-                sql = "INSERT INTO empleados (codigo,nombre,puestolaboral,direccion,telefono,email) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
-            Case "modificar"
-                sql = "UPDATE empleados  SET codigo='" + datos(1) + "',nombre='" + datos(2) + "',puestolaboral='" + datos(3) + "',direccion='" + datos(4) + "',telefono='" + datos(5) + "',email='" + datos(6) + "'WHERE idempleados='" + datos(0) + "'"
-            Case "eliminar"
-                sql = "DELETE FROM empleados WHERE idempleados='" + datos(0) + "'"
-        End Select
-        If (excecuteSql(sql) > 0) Then
-            msg = "Accion realizada con exito"
-        Else
-            msg = "Fallo el proceso, por favor intentelo de nuevo"
-        End If
-        Return msg
-    End Function
+
 
     Public Function mantenimientoDatosUsuarios(ByVal datos As String(), ByVal accion As String)
         Dim sql, msg As String
@@ -143,6 +138,45 @@ Public Class db_conexion
             Case "eliminar"
                 If excecuteSql("select * from producto where idcategoria='" + datos(0) + "'") <= 0 Then
                     sql = "DELETE FROM categoria WHERE idcategoria='" + datos(0) + "'"
+                End If
+        End Select
+
+        If excecuteSql(sql) > 0 Then
+            msg = "Exito"
+        Else
+            msg = "error"
+        End If
+
+        Return msg
+    End Function
+
+    Public Function mantenimientoDatosEmpleados(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO empleados (idpuestolaboral,codigo,nombre,direccion,telefono,email) VALUES('" + datos(1) + "','" + datos(2) + "','" + datos(3) + "','" + datos(4) + "','" + datos(5) + "','" + datos(6) + "')"
+            Case "modificar"
+                sql = "UPDATE empleados  SET idpuestolaboral='" + datos(1) + "',codigo='" + datos(2) + "',nombre='" + datos(3) + "',direccion='" + datos(4) + "',telefono='" + datos(5) + "',email='" + datos(6) + "'WHERE idempleados='" + datos(0) + "'"
+            Case "eliminar"
+                sql = "DELETE FROM empleados WHERE idempleados='" + datos(0) + "'"
+        End Select
+        If excecuteSql(sql) > 0 Then
+            msg = "Accion realizada con exito"
+        Else
+            msg = "Fallo el proceso, por favor intentelo de nuevo"
+        End If
+        Return msg
+    End Function
+    Public Function mantenimientoDatosPuesto(ByVal datos As String(), ByVal accion As String)
+        Dim sql, msg As String
+        Select Case accion
+            Case "nuevo"
+                sql = "INSERT INTO puesto (puesto) VALUES('" + datos(1) + "')"
+            Case "modificar"
+                sql = "UPDATE puesto  SET puesto='" + datos(1) + "'WHERE idpuestolaboral='" + datos(0) + "'"
+            Case "eliminar"
+                If excecuteSql("select * from empleados where idpuestolaboral='" + datos(0) + "'") <= 0 Then
+                    sql = "DELETE FROM puesto WHERE idpuestolaboral='" + datos(0) + "'"
                 End If
         End Select
 

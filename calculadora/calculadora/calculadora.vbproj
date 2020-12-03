@@ -93,6 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bd_empresaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="bd_empresaDataSet.vb">
+      <DependentUpon>bd_empresaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="db_conexion.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -129,6 +132,12 @@
       <DependentUpon>frmBuscarProveedores.vb</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPuestoLaboral.Designer.vb">
+      <DependentUpon>frmBuscarPuestoLaboral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPuestoLaboral.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBuscarUsuarios.Designer.vb">
@@ -179,6 +188,12 @@
     <Compile Include="frmproveedores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPuestoLaboral.Designer.vb">
+      <DependentUpon>frmPuestoLaboral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuestoLaboral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmusuarios.Designer.vb">
       <DependentUpon>frmusuarios.vb</DependentUpon>
     </Compile>
@@ -221,6 +236,9 @@
     <EmbeddedResource Include="frmBuscarProveedores.resx">
       <DependentUpon>frmBuscarProveedores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPuestoLaboral.resx">
+      <DependentUpon>frmBuscarPuestoLaboral.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarUsuarios.resx">
       <DependentUpon>frmBuscarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmproveedores.resx">
       <DependentUpon>frmproveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuestoLaboral.resx">
+      <DependentUpon>frmPuestoLaboral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmusuarios.resx">
       <DependentUpon>frmusuarios.vb</DependentUpon>
@@ -298,6 +319,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_cv_job_seeker_employee_unemployee_work_2620524 %281%29.png" />
+    <None Include="Resources\iconfinder_front_office_job_seeker_employee_unemployee_work_2620521.png" />
+    <None Include="Resources\iconfinder_ic_skip_previous_48px_3669228.png" />
+    <None Include="Resources\iconfinder_ic_skip_next_48px_3669229.png" />
+    <None Include="Resources\iconfinder_next-right-arrow-botton_2203522.png" />
+    <None Include="Resources\iconfinder_left-fill_3017916.png" />
+    <None Include="Resources\iconfinder_ic_round_arrow_left_5760399.png" />
+    <None Include="Resources\iconfinder___Left_1904658.png" />
+    <None Include="Resources\iconfinder_right_arrow_476325.png" />
+    <None Include="Resources\iconfinder_001_-_play_2949747.png" />
     <None Include="Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png" />
     <None Include="Resources\iconfinder__shopify_1249991 %281%29.png" />
     <None Include="Resources\iconfinder__shopify_1249991.png" />

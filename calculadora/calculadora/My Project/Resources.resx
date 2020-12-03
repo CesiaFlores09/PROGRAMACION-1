@@ -121,17 +121,29 @@
   <data name="iconfinder_categories_465051 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_categories_465051 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_inventory-maintenance_49590" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_inventory-maintenance_49590.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_left-fill_3017916" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_left-fill_3017916.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="240_F_197135414_Hiy7mFFJQUBDoNm33L7i9sNUUtJNllXs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\240_F_197135414_Hiy7mFFJQUBDoNm33L7i9sNUUtJNllXs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_ic_round_arrow_left_5760399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_ic_round_arrow_left_5760399.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_001_-_play_2949747" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_001_-_play_2949747.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_right_arrow_476325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_right_arrow_476325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descarga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_categories_465051 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_categories_465051 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="240_F_197135414_Hiy7mFFJQUBDoNm33L7i9sNUUtJNllXs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\240_F_197135414_Hiy7mFFJQUBDoNm33L7i9sNUUtJNllXs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_front_office_job_seeker_employee_unemployee_work_2620521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_front_office_job_seeker_employee_unemployee_work_2620521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_user_61842" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_user_61842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +163,9 @@
   <data name="iconfinder_cart-5_3338940" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_cart-5_3338940.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconfinder_635_Bill_excel_file_invoice_statement_4017677" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconfinder_Folder_Paper_Files_File_Case_Browse_Folder_Archive_4265035 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_Folder_Paper_Files_File_Case_Browse_Folder_Archive_4265035 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +175,17 @@
   <data name="iconfinder_users_4172317" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_users_4172317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconfinder_ic_skip_next_48px_3669229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_ic_skip_next_48px_3669229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconfinder__shopify_1249991" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder__shopify_1249991.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder___Left_1904658" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder___Left_1904658.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_ic_skip_previous_48px_3669228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_ic_skip_previous_48px_3669228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_653_Company_employee_group_people_team_4017596" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_653_Company_employee_group_people_team_4017596.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,6 +208,9 @@
   <data name="iconfinder_DeleteRed_34218" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_DeleteRed_34218.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconfinder_next-right-arrow-botton_2203522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_next-right-arrow-botton_2203522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconfinder_Folder_Paper_Files_File_Case_Browse_Folder_Archive_4265035 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_Folder_Paper_Files_File_Case_Browse_Folder_Archive_4265035 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,6 +222,9 @@
   </data>
   <data name="diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala-exposicion-interior-plano-horizontal_48369-26072" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diferentes-electrodomesticos-equipos-casa-electrica-tienda-minorista-moderna-sala-exposicion-interior-plano-horizontal_48369-26072.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_inventory-maintenance_49590" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_inventory-maintenance_49590.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder_close_309090" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder_close_309090.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +241,7 @@
   <data name="iconfinder__shopify_1249991 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder__shopify_1249991 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconfinder_635_Bill_excel_file_invoice_statement_4017677" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_635_Bill_excel_file_invoice_statement_4017677.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfinder_cv_job_seeker_employee_unemployee_work_2620524 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_cv_job_seeker_employee_unemployee_work_2620524 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

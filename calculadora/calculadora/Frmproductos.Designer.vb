@@ -35,6 +35,8 @@ Partial Class Frmproductos
         Me.btnAnteriorPoducto = New System.Windows.Forms.Button()
         Me.btnPrimeroPoducto = New System.Windows.Forms.Button()
         Me.grbDatos = New System.Windows.Forms.GroupBox()
+        Me.cboCategoria = New System.Windows.Forms.ComboBox()
+        Me.lblCategoriaProducto = New System.Windows.Forms.Label()
         Me.txtMedidasProducto = New System.Windows.Forms.TextBox()
         Me.txtMarcaProducto = New System.Windows.Forms.TextBox()
         Me.txtNombreProducto = New System.Windows.Forms.TextBox()
@@ -44,8 +46,6 @@ Partial Class Frmproductos
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblNombreProducto = New System.Windows.Forms.Label()
         Me.lblCodigoProducto = New System.Windows.Forms.Label()
-        Me.lblCategoriaProducto = New System.Windows.Forms.Label()
-        Me.cboCategoria = New System.Windows.Forms.ComboBox()
         Me.grbEdicionProducto.SuspendLayout()
         Me.grbNavegacionProducto.SuspendLayout()
         Me.grbDatos.SuspendLayout()
@@ -211,6 +211,25 @@ Partial Class Frmproductos
         Me.grbDatos.TabStop = False
         Me.grbDatos.Text = "Datos de Productos"
         '
+        'cboCategoria
+        '
+        Me.cboCategoria.FormattingEnabled = True
+        Me.cboCategoria.Location = New System.Drawing.Point(160, 41)
+        Me.cboCategoria.Name = "cboCategoria"
+        Me.cboCategoria.Size = New System.Drawing.Size(277, 21)
+        Me.cboCategoria.TabIndex = 13
+        '
+        'lblCategoriaProducto
+        '
+        Me.lblCategoriaProducto.AutoSize = True
+        Me.lblCategoriaProducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCategoriaProducto.Location = New System.Drawing.Point(22, 41)
+        Me.lblCategoriaProducto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCategoriaProducto.Name = "lblCategoriaProducto"
+        Me.lblCategoriaProducto.Size = New System.Drawing.Size(92, 16)
+        Me.lblCategoriaProducto.TabIndex = 12
+        Me.lblCategoriaProducto.Text = "CATEGORIA:"
+        '
         'txtMedidasProducto
         '
         Me.txtMedidasProducto.Location = New System.Drawing.Point(169, 334)
@@ -297,25 +316,6 @@ Partial Class Frmproductos
         Me.lblCodigoProducto.Size = New System.Drawing.Size(69, 16)
         Me.lblCodigoProducto.TabIndex = 0
         Me.lblCodigoProducto.Text = "CODIGO:"
-        '
-        'lblCategoriaProducto
-        '
-        Me.lblCategoriaProducto.AutoSize = True
-        Me.lblCategoriaProducto.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCategoriaProducto.Location = New System.Drawing.Point(22, 41)
-        Me.lblCategoriaProducto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblCategoriaProducto.Name = "lblCategoriaProducto"
-        Me.lblCategoriaProducto.Size = New System.Drawing.Size(92, 16)
-        Me.lblCategoriaProducto.TabIndex = 12
-        Me.lblCategoriaProducto.Text = "CATEGORIA:"
-        '
-        'cboCategoria
-        '
-        Me.cboCategoria.FormattingEnabled = True
-        Me.cboCategoria.Location = New System.Drawing.Point(160, 41)
-        Me.cboCategoria.Name = "cboCategoria"
-        Me.cboCategoria.Size = New System.Drawing.Size(277, 21)
-        Me.cboCategoria.TabIndex = 13
         '
         'Frmproductos
         '

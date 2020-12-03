@@ -72,7 +72,7 @@ Partial Class frmBuscarcategorias
         Me.lblBuscarCategoria.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBuscarCategoria.Location = New System.Drawing.Point(43, 30)
         Me.lblBuscarCategoria.Name = "lblBuscarCategoria"
-        Me.lblBuscarCategoria.Size = New System.Drawing.Size(56, 16)
+        Me.lblBuscarCategoria.Size = New System.Drawing.Size(55, 16)
         Me.lblBuscarCategoria.TabIndex = 19
         Me.lblBuscarCategoria.Text = "Buscar:"
         '
@@ -87,7 +87,7 @@ Partial Class frmBuscarcategorias
         Me.grbBuscarCategoria.Name = "grbBuscarCategoria"
         Me.grbBuscarCategoria.ReadOnly = True
         Me.grbBuscarCategoria.RowHeadersWidth = 51
-        Me.grbBuscarCategoria.Size = New System.Drawing.Size(507, 398)
+        Me.grbBuscarCategoria.Size = New System.Drawing.Size(507, 356)
         Me.grbBuscarCategoria.TabIndex = 18
         '
         'idcategoria

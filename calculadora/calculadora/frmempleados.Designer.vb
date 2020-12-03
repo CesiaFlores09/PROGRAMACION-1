@@ -24,10 +24,10 @@ Partial Class frmempleados
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmempleados))
         Me.grbDatos = New System.Windows.Forms.GroupBox()
+        Me.cbopuestolaboral = New System.Windows.Forms.ComboBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
-        Me.txtPuestoLaboral = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.lblEmail = New System.Windows.Forms.Label()
@@ -39,15 +39,15 @@ Partial Class frmempleados
         Me.lblCodigo = New System.Windows.Forms.Label()
         Me.grbNavegacion = New System.Windows.Forms.GroupBox()
         Me.lblRegistroEmpleados = New System.Windows.Forms.Label()
-        Me.btnUltimo = New System.Windows.Forms.Button()
-        Me.btnSiguiente = New System.Windows.Forms.Button()
-        Me.btnAnterior = New System.Windows.Forms.Button()
-        Me.btnPrimero = New System.Windows.Forms.Button()
         Me.grbEdicion = New System.Windows.Forms.GroupBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnUltimo = New System.Windows.Forms.Button()
+        Me.btnSiguiente = New System.Windows.Forms.Button()
+        Me.btnAnterior = New System.Windows.Forms.Button()
+        Me.btnPrimero = New System.Windows.Forms.Button()
         Me.grbDatos.SuspendLayout()
         Me.grbNavegacion.SuspendLayout()
         Me.grbEdicion.SuspendLayout()
@@ -55,10 +55,10 @@ Partial Class frmempleados
         '
         'grbDatos
         '
+        Me.grbDatos.Controls.Add(Me.cbopuestolaboral)
         Me.grbDatos.Controls.Add(Me.txtEmail)
         Me.grbDatos.Controls.Add(Me.txtTelefono)
         Me.grbDatos.Controls.Add(Me.txtDireccion)
-        Me.grbDatos.Controls.Add(Me.txtPuestoLaboral)
         Me.grbDatos.Controls.Add(Me.txtNombre)
         Me.grbDatos.Controls.Add(Me.txtCodigo)
         Me.grbDatos.Controls.Add(Me.lblEmail)
@@ -77,6 +77,14 @@ Partial Class frmempleados
         Me.grbDatos.TabIndex = 0
         Me.grbDatos.TabStop = False
         Me.grbDatos.Text = "Datos de empleados"
+        '
+        'cbopuestolaboral
+        '
+        Me.cbopuestolaboral.FormattingEnabled = True
+        Me.cbopuestolaboral.Location = New System.Drawing.Point(160, 39)
+        Me.cbopuestolaboral.Name = "cbopuestolaboral"
+        Me.cbopuestolaboral.Size = New System.Drawing.Size(277, 21)
+        Me.cbopuestolaboral.TabIndex = 13
         '
         'txtEmail
         '
@@ -100,20 +108,12 @@ Partial Class frmempleados
         Me.txtDireccion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDireccion.Multiline = True
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(219, 66)
+        Me.txtDireccion.Size = New System.Drawing.Size(292, 66)
         Me.txtDireccion.TabIndex = 10
-        '
-        'txtPuestoLaboral
-        '
-        Me.txtPuestoLaboral.Location = New System.Drawing.Point(160, 124)
-        Me.txtPuestoLaboral.Margin = New System.Windows.Forms.Padding(2)
-        Me.txtPuestoLaboral.Name = "txtPuestoLaboral"
-        Me.txtPuestoLaboral.Size = New System.Drawing.Size(237, 20)
-        Me.txtPuestoLaboral.TabIndex = 9
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(160, 76)
+        Me.txtNombre.Location = New System.Drawing.Point(160, 140)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(277, 20)
@@ -121,7 +121,7 @@ Partial Class frmempleados
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(160, 34)
+        Me.txtCodigo.Location = New System.Drawing.Point(160, 84)
         Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(76, 20)
@@ -164,7 +164,7 @@ Partial Class frmempleados
         '
         Me.lblPuestoLaboral.AutoSize = True
         Me.lblPuestoLaboral.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPuestoLaboral.Location = New System.Drawing.Point(14, 123)
+        Me.lblPuestoLaboral.Location = New System.Drawing.Point(14, 39)
         Me.lblPuestoLaboral.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPuestoLaboral.Name = "lblPuestoLaboral"
         Me.lblPuestoLaboral.Size = New System.Drawing.Size(137, 16)
@@ -185,7 +185,7 @@ Partial Class frmempleados
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(14, 76)
+        Me.lblNombre.Location = New System.Drawing.Point(14, 144)
         Me.lblNombre.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(75, 16)
@@ -196,7 +196,7 @@ Partial Class frmempleados
         '
         Me.lblCodigo.AutoSize = True
         Me.lblCodigo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodigo.Location = New System.Drawing.Point(14, 34)
+        Me.lblCodigo.Location = New System.Drawing.Point(14, 88)
         Me.lblCodigo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCodigo.Name = "lblCodigo"
         Me.lblCodigo.Size = New System.Drawing.Size(69, 16)
@@ -229,54 +229,6 @@ Partial Class frmempleados
         Me.lblRegistroEmpleados.TabIndex = 4
         Me.lblRegistroEmpleados.Text = "x de n"
         '
-        'btnUltimo
-        '
-        Me.btnUltimo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnUltimo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUltimo.Location = New System.Drawing.Point(281, 17)
-        Me.btnUltimo.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnUltimo.Name = "btnUltimo"
-        Me.btnUltimo.Size = New System.Drawing.Size(56, 49)
-        Me.btnUltimo.TabIndex = 3
-        Me.btnUltimo.Text = ">|"
-        Me.btnUltimo.UseVisualStyleBackColor = False
-        '
-        'btnSiguiente
-        '
-        Me.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnSiguiente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguiente.Location = New System.Drawing.Point(220, 17)
-        Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnSiguiente.Name = "btnSiguiente"
-        Me.btnSiguiente.Size = New System.Drawing.Size(56, 49)
-        Me.btnSiguiente.TabIndex = 2
-        Me.btnSiguiente.Text = ">"
-        Me.btnSiguiente.UseVisualStyleBackColor = False
-        '
-        'btnAnterior
-        '
-        Me.btnAnterior.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnAnterior.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnterior.Location = New System.Drawing.Point(65, 17)
-        Me.btnAnterior.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAnterior.Name = "btnAnterior"
-        Me.btnAnterior.Size = New System.Drawing.Size(56, 49)
-        Me.btnAnterior.TabIndex = 1
-        Me.btnAnterior.Text = "<"
-        Me.btnAnterior.UseVisualStyleBackColor = False
-        '
-        'btnPrimero
-        '
-        Me.btnPrimero.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnPrimero.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrimero.Location = New System.Drawing.Point(4, 17)
-        Me.btnPrimero.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnPrimero.Name = "btnPrimero"
-        Me.btnPrimero.Size = New System.Drawing.Size(56, 49)
-        Me.btnPrimero.TabIndex = 0
-        Me.btnPrimero.Text = "|<"
-        Me.btnPrimero.UseVisualStyleBackColor = False
-        '
         'grbEdicion
         '
         Me.grbEdicion.Controls.Add(Me.btnBuscar)
@@ -294,7 +246,7 @@ Partial Class frmempleados
         '
         'btnBuscar
         '
-        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.Location = New System.Drawing.Point(320, 17)
         Me.btnBuscar.Margin = New System.Windows.Forms.Padding(2)
@@ -306,7 +258,7 @@ Partial Class frmempleados
         '
         'btnEliminar
         '
-        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.Location = New System.Drawing.Point(223, 18)
         Me.btnEliminar.Margin = New System.Windows.Forms.Padding(2)
@@ -318,7 +270,7 @@ Partial Class frmempleados
         '
         'btnModificar
         '
-        Me.btnModificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnModificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.Location = New System.Drawing.Point(110, 17)
         Me.btnModificar.Margin = New System.Windows.Forms.Padding(2)
@@ -330,7 +282,7 @@ Partial Class frmempleados
         '
         'btnAgregar
         '
-        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregar.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregar.Location = New System.Drawing.Point(11, 17)
         Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2)
@@ -339,6 +291,54 @@ Partial Class frmempleados
         Me.btnAgregar.TabIndex = 1
         Me.btnAgregar.Text = "Nuevo"
         Me.btnAgregar.UseVisualStyleBackColor = False
+        '
+        'btnUltimo
+        '
+        Me.btnUltimo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnUltimo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUltimo.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
+        Me.btnUltimo.Location = New System.Drawing.Point(259, 14)
+        Me.btnUltimo.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUltimo.Name = "btnUltimo"
+        Me.btnUltimo.Size = New System.Drawing.Size(56, 53)
+        Me.btnUltimo.TabIndex = 3
+        Me.btnUltimo.UseVisualStyleBackColor = False
+        '
+        'btnSiguiente
+        '
+        Me.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnSiguiente.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSiguiente.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
+        Me.btnSiguiente.Location = New System.Drawing.Point(181, 14)
+        Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSiguiente.Name = "btnSiguiente"
+        Me.btnSiguiente.Size = New System.Drawing.Size(55, 54)
+        Me.btnSiguiente.TabIndex = 2
+        Me.btnSiguiente.UseVisualStyleBackColor = False
+        '
+        'btnAnterior
+        '
+        Me.btnAnterior.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAnterior.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnterior.Image = Global.calculadora.My.Resources.Resources.iconfinder_left_fill_3017916
+        Me.btnAnterior.Location = New System.Drawing.Point(74, 13)
+        Me.btnAnterior.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAnterior.Name = "btnAnterior"
+        Me.btnAnterior.Size = New System.Drawing.Size(56, 54)
+        Me.btnAnterior.TabIndex = 1
+        Me.btnAnterior.UseVisualStyleBackColor = False
+        '
+        'btnPrimero
+        '
+        Me.btnPrimero.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnPrimero.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrimero.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_previous_48px_3669228
+        Me.btnPrimero.Location = New System.Drawing.Point(4, 13)
+        Me.btnPrimero.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPrimero.Name = "btnPrimero"
+        Me.btnPrimero.Size = New System.Drawing.Size(56, 53)
+        Me.btnPrimero.TabIndex = 0
+        Me.btnPrimero.UseVisualStyleBackColor = False
         '
         'frmempleados
         '
@@ -374,7 +374,6 @@ Partial Class frmempleados
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents txtDireccion As TextBox
-    Friend WithEvents txtPuestoLaboral As TextBox
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents grbNavegacion As GroupBox
     Friend WithEvents lblRegistroEmpleados As Label
@@ -387,4 +386,5 @@ Partial Class frmempleados
     Friend WithEvents btnEliminar As Button
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents cbopuestolaboral As ComboBox
 End Class
