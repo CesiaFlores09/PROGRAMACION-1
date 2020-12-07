@@ -69,6 +69,7 @@ Partial Class frmCompras
         Me.lblResS = New System.Windows.Forms.Label()
         Me.lblsuma = New System.Windows.Forms.Label()
         Me.grbEdicionCompras = New System.Windows.Forms.GroupBox()
+        Me.btnImprimir = New System.Windows.Forms.Button()
         Me.btnBuscarCompras = New System.Windows.Forms.Button()
         Me.btnEliminarCompras = New System.Windows.Forms.Button()
         Me.btnModificarCompras = New System.Windows.Forms.Button()
@@ -413,15 +414,15 @@ Partial Class frmCompras
         Me.Panel1.Controls.Add(Me.lblIva)
         Me.Panel1.Controls.Add(Me.lblResS)
         Me.Panel1.Controls.Add(Me.lblsuma)
-        Me.Panel1.Location = New System.Drawing.Point(478, 447)
+        Me.Panel1.Location = New System.Drawing.Point(528, 447)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(264, 100)
+        Me.Panel1.Size = New System.Drawing.Size(214, 100)
         Me.Panel1.TabIndex = 16
         '
         'lblResTotal
         '
         Me.lblResTotal.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResTotal.Location = New System.Drawing.Point(149, 71)
+        Me.lblResTotal.Location = New System.Drawing.Point(87, 71)
         Me.lblResTotal.Name = "lblResTotal"
         Me.lblResTotal.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblResTotal.Size = New System.Drawing.Size(100, 14)
@@ -442,7 +443,7 @@ Partial Class frmCompras
         'lblResI
         '
         Me.lblResI.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResI.Location = New System.Drawing.Point(149, 44)
+        Me.lblResI.Location = New System.Drawing.Point(87, 44)
         Me.lblResI.Name = "lblResI"
         Me.lblResI.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblResI.Size = New System.Drawing.Size(100, 14)
@@ -463,7 +464,7 @@ Partial Class frmCompras
         'lblResS
         '
         Me.lblResS.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResS.Location = New System.Drawing.Point(149, 14)
+        Me.lblResS.Location = New System.Drawing.Point(87, 14)
         Me.lblResS.Name = "lblResS"
         Me.lblResS.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblResS.Size = New System.Drawing.Size(100, 14)
@@ -483,6 +484,7 @@ Partial Class frmCompras
         '
         'grbEdicionCompras
         '
+        Me.grbEdicionCompras.Controls.Add(Me.btnImprimir)
         Me.grbEdicionCompras.Controls.Add(Me.btnBuscarCompras)
         Me.grbEdicionCompras.Controls.Add(Me.btnEliminarCompras)
         Me.grbEdicionCompras.Controls.Add(Me.btnModificarCompras)
@@ -491,10 +493,22 @@ Partial Class frmCompras
         Me.grbEdicionCompras.Margin = New System.Windows.Forms.Padding(2)
         Me.grbEdicionCompras.Name = "grbEdicionCompras"
         Me.grbEdicionCompras.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbEdicionCompras.Size = New System.Drawing.Size(379, 81)
+        Me.grbEdicionCompras.Size = New System.Drawing.Size(476, 81)
         Me.grbEdicionCompras.TabIndex = 17
         Me.grbEdicionCompras.TabStop = False
         Me.grbEdicionCompras.Text = "Edicion"
+        '
+        'btnImprimir
+        '
+        Me.btnImprimir.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnImprimir.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImprimir.Location = New System.Drawing.Point(368, 23)
+        Me.btnImprimir.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnImprimir.Name = "btnImprimir"
+        Me.btnImprimir.Size = New System.Drawing.Size(92, 34)
+        Me.btnImprimir.TabIndex = 5
+        Me.btnImprimir.Text = "Imprimir"
+        Me.btnImprimir.UseVisualStyleBackColor = False
         '
         'btnBuscarCompras
         '
@@ -812,4 +826,5 @@ Partial Class frmCompras
     Friend WithEvents subtotal As DataGridViewTextBoxColumn
     Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents medidas As DataGridViewTextBoxColumn
+    Friend WithEvents btnImprimir As Button
 End Class

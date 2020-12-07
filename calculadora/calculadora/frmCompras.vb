@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmCompras
+    Public _idCompras As Integer = 0
     Private Sub ComprasBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.ComprasBindingSource.EndEdit()
@@ -115,22 +116,20 @@ Public Class frmCompras
         Else 'Guardar
 
             Try
-                Dim _idCompras = Integer.Parse(lblIdCompras.Text)
+                _idCompras = Integer.Parse(lblIdCompras.Text)
                 Me.Validate()
                 ComprasBindingSource.EndEdit()
 
-                ComprasTableAdapter.Connection.Open()
-                Dim comando As New SqlCommand
-                comando.Connection = ComprasTableAdapter.Connection
-
                 If _idCompras > 0 Then 'Modificando
-                    comando.CommandText = "delete from dcompras where idcompra=" + _idCompras.ToString()
-                    comando.ExecuteNonQuery()
+                    eliminarCompra()
                 Else 'Agregando Nuevas Facturas
+                    ComprasTableAdapter.Connection.Open()
+                    Dim comando As New SqlCommand
+                    comando.Connection = ComprasTableAdapter.Connection
                     comando.CommandText = "SELECT ident_current('compras') + 1 As idcompra"
                     _idCompras = Integer.Parse(comando.ExecuteScalar().ToString())
+                    ComprasTableAdapter.Connection.Close()
                 End If
-                ComprasTableAdapter.Connection.Close()
 
                 Dim nfilas As Integer = DcomprasProductosDataGridView.Rows.Count
                 Dim valores(nfilas, 3) As String
@@ -164,6 +163,16 @@ Public Class frmCompras
                             "Registro de Facturas de Compras", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
+    End Sub
+
+    Private Sub eliminarCompra()
+        ComprasTableAdapter.Connection.Open()
+        Dim comando As New SqlCommand
+        comando.Connection = ComprasTableAdapter.Connection
+
+        comando.CommandText = "delete from dcompras where idcompra=" + _idCompras.ToString()
+        comando.ExecuteNonQuery()
+        ComprasTableAdapter.Connection.Close()
     End Sub
 
     Private Sub btnModificarCompras_Click(sender As Object, e As EventArgs) Handles btnModificarCompras.Click
@@ -221,5 +230,22 @@ Public Class frmCompras
     Private Sub btnAgregarCliente_Click(sender As Object, e As EventArgs) Handles btnAgregarCliente.Click
         Dim objClientes As New frmcliente
         objClientes.Show()
+    End Sub
+
+    Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+        Dim objImprimirCompras As New frmImpresionCompras
+        objImprimirCompras._idCompra = lblIdCompras.Text
+        objImprimirCompras.ShowDialog()
+    End Sub
+
+    Private Sub btnEliminarCompras_Click(sender As Object, e As EventArgs) Handles btnEliminarCompras.Click
+        _idCompras = Integer.Parse(lblIdCompras.Text)
+        eliminarCompra()
+
+        ComprasBindingSource.RemoveAt(ComprasBindingSource.Position)
+        ComprasBindingSource.EndEdit()
+        TableAdapterManager.UpdateAll(Bd_empresaDataSet)
+
+        actualizarDs()
     End Sub
 End Class
