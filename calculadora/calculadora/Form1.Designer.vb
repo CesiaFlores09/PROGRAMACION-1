@@ -39,13 +39,15 @@ Partial Class Form1
         Me.PedidosAProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturacionComprasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoDeClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ComprasToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ComprasToolStripMenuItem1, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -83,7 +85,7 @@ Partial Class Form1
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'EmpleadosToolStripMenuItem
@@ -92,7 +94,7 @@ Partial Class Form1
         Me.EmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_hierarchy_1931214__1_
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'PuestoLaboralToolStripMenuItem
@@ -100,7 +102,7 @@ Partial Class Form1
         Me.PuestoLaboralToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_cv_job_seeker_employee_unemployee_work_2620524__1_
         Me.PuestoLaboralToolStripMenuItem.Name = "PuestoLaboralToolStripMenuItem"
         Me.PuestoLaboralToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
-        Me.PuestoLaboralToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.PuestoLaboralToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
         Me.PuestoLaboralToolStripMenuItem.Text = "Puesto Laboral"
         '
         'UsuariosToolStripMenuItem
@@ -109,7 +111,7 @@ Partial Class Form1
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.U), System.Windows.Forms.Keys)
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
@@ -118,7 +120,7 @@ Partial Class Form1
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
         Me.ClientesToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'InventarioToolStripMenuItem
@@ -181,6 +183,21 @@ Partial Class Form1
         Me.FacturacionComprasToolStripMenuItem1.Size = New System.Drawing.Size(248, 22)
         Me.FacturacionComprasToolStripMenuItem1.Text = "Facturacion compras"
         '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_report_service_statistics_call_performance_3709732__1_
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
+        'ListadoDeClientesToolStripMenuItem
+        '
+        Me.ListadoDeClientesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_13_Clipboard_290137
+        Me.ListadoDeClientesToolStripMenuItem.Name = "ListadoDeClientesToolStripMenuItem"
+        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ListadoDeClientesToolStripMenuItem.Text = "Listado de Clientes"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -216,4 +233,6 @@ Partial Class Form1
     Friend WithEvents ComprasToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents FacturacionComprasToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PuestoLaboralToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListadoDeClientesToolStripMenuItem As ToolStripMenuItem
 End Class

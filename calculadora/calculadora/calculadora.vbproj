@@ -79,7 +79,7 @@
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -194,6 +194,12 @@
     <Compile Include="frmImpresionCompras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadoClientes.Designer.vb">
+      <DependentUpon>frmListadoClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPeddos.Designer.vb">
       <DependentUpon>frmPeddos.vb</DependentUpon>
     </Compile>
@@ -281,6 +287,9 @@
     <EmbeddedResource Include="frmImpresionCompras.resx">
       <DependentUpon>frmImpresionCompras.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoClientes.resx">
+      <DependentUpon>frmListadoClientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPeddos.resx">
       <DependentUpon>frmPeddos.vb</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +306,7 @@
       <DependentUpon>frmusuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfmCompras.rdlc" />
+    <EmbeddedResource Include="ListadoClientes.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -347,6 +357,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bd_empresa.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\iconfinder_report-service-statistics-call-performance_3709732 %281%29.png" />
+    <None Include="Resources\iconfinder_13.Clipboard_290137.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

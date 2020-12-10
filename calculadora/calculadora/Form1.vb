@@ -59,4 +59,10 @@
         objPuestoLaboral.MdiParent = Me
         objPuestoLaboral.Show()
     End Sub
+
+    Private Sub ListadoDeClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeClientesToolStripMenuItem.Click
+        Dim objListadoClientes As New frmListadoClientes
+        objListadoClientes.MdiParent = Me
+        objListadoClientes.Show()
+    End Sub
 End Class
