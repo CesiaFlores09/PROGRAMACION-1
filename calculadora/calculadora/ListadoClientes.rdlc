@@ -12,7 +12,7 @@
                 <Value>LISTADO DE CLIENTES</Value>
                 <Style>
                   <FontSize>20pt</FontSize>
-                  <Color>LimeGreen</Color>
+                  <Color>Blue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -401,7 +401,7 @@
         <Top>2.98662cm</Top>
         <Left>1.0287cm</Left>
         <Height>1.2cm</Height>
-        <Width>21.41646cm</Width>
+        <Width>21.41645cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

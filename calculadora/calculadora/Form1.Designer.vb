@@ -42,6 +42,7 @@ Partial Class Form1
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasPorClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoDeEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,7 +87,7 @@ Partial Class Form1
         Me.ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         Me.ProveedoresToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
+        Me.ProveedoresToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
         Me.ProveedoresToolStripMenuItem.Text = "Proveedores"
         '
         'EmpleadosToolStripMenuItem
@@ -95,7 +96,7 @@ Partial Class Form1
         Me.EmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_hierarchy_1931214__1_
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'PuestoLaboralToolStripMenuItem
@@ -112,7 +113,7 @@ Partial Class Form1
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.U), System.Windows.Forms.Keys)
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
@@ -121,7 +122,7 @@ Partial Class Form1
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
         Me.ClientesToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(226, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'InventarioToolStripMenuItem
@@ -186,7 +187,7 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem, Me.ListadoDeEmpleadosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_report_service_statistics_call_performance_3709732__1_
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
@@ -196,15 +197,22 @@ Partial Class Form1
         '
         Me.ListadoDeClientesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_13_Clipboard_290137
         Me.ListadoDeClientesToolStripMenuItem.Name = "ListadoDeClientesToolStripMenuItem"
-        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(187, 26)
+        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(193, 26)
         Me.ListadoDeClientesToolStripMenuItem.Text = "Listado de Clientes"
         '
         'ComprasPorClienteToolStripMenuItem
         '
         Me.ComprasPorClienteToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_00_ELASTOFONT_STORE_READY_invoice_2703075
         Me.ComprasPorClienteToolStripMenuItem.Name = "ComprasPorClienteToolStripMenuItem"
-        Me.ComprasPorClienteToolStripMenuItem.Size = New System.Drawing.Size(187, 26)
+        Me.ComprasPorClienteToolStripMenuItem.Size = New System.Drawing.Size(193, 26)
         Me.ComprasPorClienteToolStripMenuItem.Text = "Compras por Cliente"
+        '
+        'ListadoDeEmpleadosToolStripMenuItem
+        '
+        Me.ListadoDeEmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_preferences_contact_list_24249
+        Me.ListadoDeEmpleadosToolStripMenuItem.Name = "ListadoDeEmpleadosToolStripMenuItem"
+        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(193, 26)
+        Me.ListadoDeEmpleadosToolStripMenuItem.Text = "Listado de Empleados"
         '
         'Form1
         '
@@ -244,4 +252,5 @@ Partial Class Form1
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeClientesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ComprasPorClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListadoDeEmpleadosToolStripMenuItem As ToolStripMenuItem
 End Class
