@@ -926,6 +926,38 @@ WHERE        (compras.idcompra = @idCompra)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ComprasPorClienteTableAdapter" GeneratorDataComponentClassName="ComprasPorClienteTableAdapter" Name="ComprasPorCliente" UserDataComponentName="ComprasPorClienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_empresaConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillComprasPorCliente" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataComprasPorCliente" GeneratorSourceName="FillComprasPorCliente" GetMethodModifier="Public" GetMethodName="GetDataComprasPorCliente" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataComprasPorCliente" UserSourceName="FillComprasPorCliente">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SUM(dcompras.cantidad * dcompras.precio) AS subtotal, compras.idcompra, compras.nfactura, compras.fecha_compra, compras.idTipoF, compras.idPago, compras.idcliente, cliente.nombre, cliente.direccion, TipoFactura.tipo, pag.pago
+FROM            compras INNER JOIN
+                         cliente ON compras.idcliente = cliente.idcliente INNER JOIN
+                         TipoFactura ON compras.idTipoF = TipoFactura.idTipoF INNER JOIN
+                         pag ON compras.idPago = pag.idPago INNER JOIN
+                         dcompras ON compras.idcompra = dcompras.idcompra 
+GROUP BY compras.idcliente, compras.idTipoF, compras.idcompra, compras.nfactura, compras.fecha_compra, compras.idPago, cliente.nombre, cliente.direccion, TipoFactura.tipo, pag.pago</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idcompra" DataSetColumn="idcompra" />
+              <Mapping SourceColumn="nfactura" DataSetColumn="nfactura" />
+              <Mapping SourceColumn="fecha_compra" DataSetColumn="fecha_compra" />
+              <Mapping SourceColumn="idTipoF" DataSetColumn="idTipoF" />
+              <Mapping SourceColumn="idPago" DataSetColumn="idPago" />
+              <Mapping SourceColumn="idcliente" DataSetColumn="idcliente" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="direccion" DataSetColumn="direccion" />
+              <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
+              <Mapping SourceColumn="pago" DataSetColumn="pago" />
+              <Mapping SourceColumn="subtotal" DataSetColumn="subtotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -1439,6 +1471,53 @@ WHERE        (compras.idcompra = @idCompra)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="ComprasPorCliente" msprop:Generator_TableClassName="ComprasPorClienteDataTable" msprop:Generator_TableVarName="tableComprasPorCliente" msprop:Generator_TablePropName="ComprasPorCliente" msprop:Generator_RowDeletingName="ComprasPorClienteRowDeleting" msprop:Generator_RowChangingName="ComprasPorClienteRowChanging" msprop:Generator_RowEvHandlerName="ComprasPorClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="ComprasPorClienteRowDeleted" msprop:Generator_UserTableName="ComprasPorCliente" msprop:Generator_RowChangedName="ComprasPorClienteRowChanged" msprop:Generator_RowEvArgName="ComprasPorClienteRowChangeEvent" msprop:Generator_RowClassName="ComprasPorClienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idcompra" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidcompra" msprop:Generator_ColumnPropNameInRow="idcompra" msprop:Generator_ColumnPropNameInTable="idcompraColumn" msprop:Generator_UserColumnName="idcompra" type="xs:int" />
+              <xs:element name="nfactura" msprop:Generator_ColumnVarNameInTable="columnnfactura" msprop:Generator_ColumnPropNameInRow="nfactura" msprop:Generator_ColumnPropNameInTable="nfacturaColumn" msprop:Generator_UserColumnName="nfactura">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_compra" msprop:Generator_ColumnVarNameInTable="columnfecha_compra" msprop:Generator_ColumnPropNameInRow="fecha_compra" msprop:Generator_ColumnPropNameInTable="fecha_compraColumn" msprop:Generator_UserColumnName="fecha_compra" type="xs:dateTime" />
+              <xs:element name="idTipoF" msprop:Generator_ColumnVarNameInTable="columnidTipoF" msprop:Generator_ColumnPropNameInRow="idTipoF" msprop:Generator_ColumnPropNameInTable="idTipoFColumn" msprop:Generator_UserColumnName="idTipoF" type="xs:int" />
+              <xs:element name="idPago" msprop:Generator_ColumnVarNameInTable="columnidPago" msprop:Generator_ColumnPropNameInRow="idPago" msprop:Generator_ColumnPropNameInTable="idPagoColumn" msprop:Generator_UserColumnName="idPago" type="xs:int" />
+              <xs:element name="idcliente" msprop:Generator_ColumnVarNameInTable="columnidcliente" msprop:Generator_ColumnPropNameInRow="idcliente" msprop:Generator_ColumnPropNameInTable="idclienteColumn" msprop:Generator_UserColumnName="idcliente" type="xs:int" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="direccion" msprop:Generator_ColumnVarNameInTable="columndireccion" msprop:Generator_ColumnPropNameInRow="direccion" msprop:Generator_ColumnPropNameInTable="direccionColumn" msprop:Generator_UserColumnName="direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pago" msprop:Generator_ColumnVarNameInTable="columnpago" msprop:Generator_ColumnPropNameInRow="pago" msprop:Generator_ColumnPropNameInTable="pagoColumn" msprop:Generator_UserColumnName="pago">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subtotal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnsubtotal" msprop:Generator_ColumnPropNameInRow="subtotal" msprop:Generator_ColumnPropNameInTable="subtotalColumn" msprop:Generator_UserColumnName="subtotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -1500,6 +1579,10 @@ WHERE        (compras.idcompra = @idCompra)</CommandText>
     <xs:unique name="puesto_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:puesto" />
       <xs:field xpath="mstns:idpuestolaboral" />
+    </xs:unique>
+    <xs:unique name="ComprasPorCliente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ComprasPorCliente" />
+      <xs:field xpath="mstns:idcompra" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
