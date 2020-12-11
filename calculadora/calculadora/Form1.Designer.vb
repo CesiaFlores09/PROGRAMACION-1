@@ -41,6 +41,7 @@ Partial Class Form1
         Me.FacturacionComprasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComprasPorClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -185,7 +186,7 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_report_service_statistics_call_performance_3709732__1_
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
@@ -195,8 +196,15 @@ Partial Class Form1
         '
         Me.ListadoDeClientesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_13_Clipboard_290137
         Me.ListadoDeClientesToolStripMenuItem.Name = "ListadoDeClientesToolStripMenuItem"
-        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(187, 26)
         Me.ListadoDeClientesToolStripMenuItem.Text = "Listado de Clientes"
+        '
+        'ComprasPorClienteToolStripMenuItem
+        '
+        Me.ComprasPorClienteToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_00_ELASTOFONT_STORE_READY_invoice_2703075
+        Me.ComprasPorClienteToolStripMenuItem.Name = "ComprasPorClienteToolStripMenuItem"
+        Me.ComprasPorClienteToolStripMenuItem.Size = New System.Drawing.Size(187, 26)
+        Me.ComprasPorClienteToolStripMenuItem.Text = "Compras por Cliente"
         '
         'Form1
         '
@@ -235,4 +243,5 @@ Partial Class Form1
     Friend WithEvents PuestoLaboralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeClientesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComprasPorClienteToolStripMenuItem As ToolStripMenuItem
 End Class

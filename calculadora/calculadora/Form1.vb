@@ -65,4 +65,10 @@
         objListadoClientes.MdiParent = Me
         objListadoClientes.Show()
     End Sub
+
+    Private Sub ComprasPorClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ComprasPorClienteToolStripMenuItem.Click
+        Dim objComprasPorCliente As New frmComprasPorCliente
+        objComprasPorCliente.MdiParent = Me
+        objComprasPorCliente.Show()
+    End Sub
 End Class
