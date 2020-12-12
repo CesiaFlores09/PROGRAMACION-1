@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmPeddos
+    Public _idPedido As Integer = 0
     Private Sub PedidosBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.PedidosBindingSource.EndEdit()
@@ -23,13 +24,14 @@ Public Class frmPeddos
         Me.DventasProductoTableAdapter.FillDventasProducto(Me.Bd_empresaDataSet.DventasProducto)
         'TODO: esta línea de código carga datos en la tabla 'Bd_empresaDataSet.pedidos' Puede moverla o quitarla según sea necesario.
         Me.PedidosTableAdapter.Fillpedidos(Me.Bd_empresaDataSet.pedidos)
-        totalizar()
+
     End Sub
     Private Sub totalizar()
         Try
             Dim fila As DataGridViewRow
             Dim nfilas As Integer = DventasProductoDataGridView.Rows.Count - 1
             Dim subtotal, sumas, iva, total As Double
+
             For i As Integer = 0 To nfilas
                 fila = DventasProductoDataGridView.Rows(i)
                 subtotal = Double.Parse(fila.Cells("Cantidad").Value.ToString()) * Double.Parse(fila.Cells("Precio").Value.ToString())
@@ -40,18 +42,17 @@ Public Class frmPeddos
             Next
             iva = If(IdTipoFComboBox.SelectedValue = 2, sumas * 0.13, 0)
             total = sumas + iva
+
             lblResS.Text = "$ " + Math.Round(sumas, 2).ToString()
             lblResI.Text = "$ " + Math.Round(iva, 2).ToString()
             lblResTotal.Text = "$ " + Math.Round(total, 2).ToString()
+
             lblRegistroPedidos.Text = (PedidosBindingSource.Position + 1) & " de " & PedidosBindingSource.Count
 
         Catch ex As Exception
-            MessageBox.Show("Error " + ex.Message)
+            'MessageBox.Show("Error " + ex.Message)
         End Try
     End Sub
-
-
-
 
     Private Sub btnPrimeroPedidos_Click(sender As Object, e As EventArgs) Handles btnPrimeroPedidos.Click
         PedidosBindingSource.MoveFirst()
@@ -82,7 +83,7 @@ Public Class frmPeddos
             habdesh_controles(False)
             PedidosBindingSource.AddNew()
 
-            IdproveedoresComboBox.SelectedValue = 1 'CLiente por default Carlos Lopez
+            IdproveedoresComboBox.SelectedValue = 1 'Proveedor por default Alfonso Juarez
             IdTipoFComboBox.SelectedValue = 1 'Tipo de factura por default consumidor final 
             IdPagoComboBox.SelectedValue = 1 'Tipo de pago por default efectivo
             FechaDateTimePicker.Value = Date.Now
@@ -90,22 +91,20 @@ Public Class frmPeddos
         Else 'Guardar
 
             Try
-                Dim _idCompras = Integer.Parse(lblIdPedido.Text)
+                _idPedido = Integer.Parse(lblIdPedido.Text)
                 Me.Validate()
                 PedidosBindingSource.EndEdit()
 
-                PedidosTableAdapter.Connection.Open()
-                Dim comando As New SqlCommand
-                comando.Connection = PedidosTableAdapter.Connection
-
-                If _idCompras > 0 Then 'Modificando
-                    comando.CommandText = "delete from dcompras where idcompra=" + _idCompras.ToString()
-                    comando.ExecuteNonQuery()
+                If _idPedido > 0 Then 'Modificando
+                    eliminarPedido()
                 Else 'Agregando Nuevas Facturas
-                    comando.CommandText = "SELECT ident_current('compras') + 1 As idcompra"
-                    _idCompras = Integer.Parse(comando.ExecuteScalar().ToString())
+                    PedidosTableAdapter.Connection.Open()
+                    Dim comando As New SqlCommand
+                    comando.Connection = PedidosTableAdapter.Connection
+                    comando.CommandText = "SELECT ident_current('pedidos') + 1 As idpedidos"
+                    _idPedido = Integer.Parse(comando.ExecuteScalar().ToString())
+                    PedidosTableAdapter.Connection.Close()
                 End If
-                PedidosTableAdapter.Connection.Close()
 
                 Dim nfilas As Integer = DventasProductoDataGridView.Rows.Count
                 Dim valores(nfilas, 3) As String
@@ -121,7 +120,7 @@ Public Class frmPeddos
 
                 For i = 0 To nfilas - 1
                     DpedidosTableAdapter1.Insert(
-                        _idCompras,
+                        _idPedido,
                         valores(i, 0),
                         valores(i, 1),
                         valores(i, 2)
@@ -139,6 +138,16 @@ Public Class frmPeddos
                             "Registro de Facturas de Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         End If
+    End Sub
+
+    Private Sub eliminarPedido()
+        PedidosTableAdapter.Connection.Open()
+        Dim comando As New SqlCommand
+        comando.Connection = PedidosTableAdapter.Connection
+
+        comando.CommandText = "delete from dpedidos where idpedidos=" + _idPedido.ToString()
+        comando.ExecuteNonQuery()
+        PedidosTableAdapter.Connection.Close()
     End Sub
 
     Private Sub btnModificarPedidos_Click(sender As Object, e As EventArgs) Handles btnModificarPedidos.Click
@@ -206,5 +215,22 @@ Public Class frmPeddos
         Catch ex As Exception
             MessageBox.Show("Error al intentar quitar la fila: " + ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnEliminarPedidos_Click(sender As Object, e As EventArgs) Handles btnEliminarPedidos.Click
+        _idPedido = Integer.Parse(lblIdPedido.Text)
+        eliminarPedido()
+
+        PedidosBindingSource.RemoveAt(PedidosBindingSource.Position)
+        PedidosBindingSource.EndEdit()
+        TableAdapterManager.UpdateAll(Bd_empresaDataSet)
+
+        actualizarDs()
+    End Sub
+
+    Private Sub btnImprimirPedido_Click(sender As Object, e As EventArgs) Handles btnImprimirPedido.Click
+        Dim objImprimirPedidos As New frmImpresionPedidos
+        objImprimirPedidos._idPedido = lblIdPedido.Text
+        objImprimirPedidos.ShowDialog()
     End Sub
 End Class

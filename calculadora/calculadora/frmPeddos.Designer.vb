@@ -50,7 +50,6 @@ Partial Class frmPeddos
         Me.DventasProductoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DventasProductoTableAdapter = New calculadora.bd_empresaDataSetTableAdapters.DventasProductoTableAdapter()
         Me.DventasProductoDataGridView = New System.Windows.Forms.DataGridView()
-        Me.idDetpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idpedidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.idproducto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.codigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -78,10 +77,11 @@ Partial Class frmPeddos
         Me.btnAnteriorPedidos = New System.Windows.Forms.Button()
         Me.btnPrimeroPedidos = New System.Windows.Forms.Button()
         Me.grbEdicionPedidos = New System.Windows.Forms.GroupBox()
+        Me.btnAgregarPedidos = New System.Windows.Forms.Button()
+        Me.btnImprimirPedido = New System.Windows.Forms.Button()
         Me.btnBuscarPedidos = New System.Windows.Forms.Button()
         Me.btnEliminarPedidos = New System.Windows.Forms.Button()
         Me.btnModificarPedidos = New System.Windows.Forms.Button()
-        Me.btnAgregarPedidos = New System.Windows.Forms.Button()
         Me.DpedidosTableAdapter1 = New calculadora.bd_empresaDataSetTableAdapters.dpedidosTableAdapter()
         Me.lblIdPedido = New System.Windows.Forms.Label()
         Me.grbdPedidosProductos = New System.Windows.Forms.GroupBox()
@@ -204,6 +204,7 @@ Partial Class frmPeddos
         Me.IdproveedoresComboBox.DataSource = Me.ProveedoresBindingSource
         Me.IdproveedoresComboBox.DisplayMember = "nombre"
         Me.IdproveedoresComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.IdproveedoresComboBox.Enabled = False
         Me.IdproveedoresComboBox.FormattingEnabled = True
         Me.IdproveedoresComboBox.Location = New System.Drawing.Point(99, 12)
         Me.IdproveedoresComboBox.Name = "IdproveedoresComboBox"
@@ -227,6 +228,7 @@ Partial Class frmPeddos
         'FechaDateTimePicker
         '
         Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.PedidosBindingSource, "fecha", True))
+        Me.FechaDateTimePicker.Enabled = False
         Me.FechaDateTimePicker.Location = New System.Drawing.Point(121, 63)
         Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
         Me.FechaDateTimePicker.Size = New System.Drawing.Size(200, 20)
@@ -238,6 +240,7 @@ Partial Class frmPeddos
         Me.IdTipoFComboBox.DataSource = Me.TipoFacturaBindingSource
         Me.IdTipoFComboBox.DisplayMember = "tipo"
         Me.IdTipoFComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.IdTipoFComboBox.Enabled = False
         Me.IdTipoFComboBox.FormattingEnabled = True
         Me.IdTipoFComboBox.Location = New System.Drawing.Point(403, 62)
         Me.IdTipoFComboBox.Name = "IdTipoFComboBox"
@@ -256,6 +259,7 @@ Partial Class frmPeddos
         Me.IdPagoComboBox.DataSource = Me.PagBindingSource
         Me.IdPagoComboBox.DisplayMember = "pago"
         Me.IdPagoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.IdPagoComboBox.Enabled = False
         Me.IdPagoComboBox.FormattingEnabled = True
         Me.IdPagoComboBox.Location = New System.Drawing.Point(645, 62)
         Me.IdPagoComboBox.Name = "IdPagoComboBox"
@@ -283,21 +287,13 @@ Partial Class frmPeddos
         Me.DventasProductoDataGridView.AllowUserToDeleteRows = False
         Me.DventasProductoDataGridView.AutoGenerateColumns = False
         Me.DventasProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DventasProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idDetpedidos, Me.idpedidos, Me.idproducto, Me.codigo, Me.nombre, Me.cantidad, Me.precio, Me.subtotal, Me.marca, Me.medidas})
+        Me.DventasProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idpedidos, Me.idproducto, Me.codigo, Me.nombre, Me.cantidad, Me.precio, Me.subtotal, Me.marca, Me.medidas})
         Me.DventasProductoDataGridView.DataSource = Me.DventasProductoBindingSource
-        Me.DventasProductoDataGridView.Location = New System.Drawing.Point(37, 138)
+        Me.DventasProductoDataGridView.Location = New System.Drawing.Point(37, 111)
         Me.DventasProductoDataGridView.Name = "DventasProductoDataGridView"
         Me.DventasProductoDataGridView.ReadOnly = True
         Me.DventasProductoDataGridView.Size = New System.Drawing.Size(742, 220)
         Me.DventasProductoDataGridView.TabIndex = 12
-        '
-        'idDetpedidos
-        '
-        Me.idDetpedidos.DataPropertyName = "idDetpedidos"
-        Me.idDetpedidos.HeaderText = "idDetpedidos"
-        Me.idDetpedidos.Name = "idDetpedidos"
-        Me.idDetpedidos.ReadOnly = True
-        Me.idDetpedidos.Visible = False
         '
         'idpedidos
         '
@@ -396,7 +392,7 @@ Partial Class frmPeddos
         Me.Panel1.Controls.Add(Me.lblIva)
         Me.Panel1.Controls.Add(Me.lblResS)
         Me.Panel1.Controls.Add(Me.lblsuma)
-        Me.Panel1.Location = New System.Drawing.Point(568, 381)
+        Me.Panel1.Location = New System.Drawing.Point(568, 461)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(211, 91)
         Me.Panel1.TabIndex = 13
@@ -476,11 +472,11 @@ Partial Class frmPeddos
         Me.grbNavegacionPedidos.Controls.Add(Me.btnSiguientePedidos)
         Me.grbNavegacionPedidos.Controls.Add(Me.btnAnteriorPedidos)
         Me.grbNavegacionPedidos.Controls.Add(Me.btnPrimeroPedidos)
-        Me.grbNavegacionPedidos.Location = New System.Drawing.Point(49, 477)
+        Me.grbNavegacionPedidos.Location = New System.Drawing.Point(37, 363)
         Me.grbNavegacionPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbNavegacionPedidos.Name = "grbNavegacionPedidos"
         Me.grbNavegacionPedidos.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbNavegacionPedidos.Size = New System.Drawing.Size(249, 93)
+        Me.grbNavegacionPedidos.Size = New System.Drawing.Size(324, 81)
         Me.grbNavegacionPedidos.TabIndex = 14
         Me.grbNavegacionPedidos.TabStop = False
         Me.grbNavegacionPedidos.Text = " Navegacion"
@@ -488,7 +484,7 @@ Partial Class frmPeddos
         'lblRegistroPedidos
         '
         Me.lblRegistroPedidos.AutoSize = True
-        Me.lblRegistroPedidos.Location = New System.Drawing.Point(20, 68)
+        Me.lblRegistroPedidos.Location = New System.Drawing.Point(134, 35)
         Me.lblRegistroPedidos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRegistroPedidos.Name = "lblRegistroPedidos"
         Me.lblRegistroPedidos.Size = New System.Drawing.Size(36, 13)
@@ -500,7 +496,7 @@ Partial Class frmPeddos
         Me.btnUltimoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnUltimoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUltimoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_skip_next_48px_3669229
-        Me.btnUltimoPedidos.Location = New System.Drawing.Point(182, 17)
+        Me.btnUltimoPedidos.Location = New System.Drawing.Point(247, 17)
         Me.btnUltimoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUltimoPedidos.Name = "btnUltimoPedidos"
         Me.btnUltimoPedidos.Size = New System.Drawing.Size(56, 49)
@@ -512,7 +508,7 @@ Partial Class frmPeddos
         Me.btnSiguientePedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSiguientePedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSiguientePedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_next_right_arrow_botton_2203522
-        Me.btnSiguientePedidos.Location = New System.Drawing.Point(122, 17)
+        Me.btnSiguientePedidos.Location = New System.Drawing.Point(187, 17)
         Me.btnSiguientePedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSiguientePedidos.Name = "btnSiguientePedidos"
         Me.btnSiguientePedidos.Size = New System.Drawing.Size(56, 49)
@@ -545,24 +541,49 @@ Partial Class frmPeddos
         '
         'grbEdicionPedidos
         '
+        Me.grbEdicionPedidos.Controls.Add(Me.btnAgregarPedidos)
+        Me.grbEdicionPedidos.Controls.Add(Me.btnImprimirPedido)
         Me.grbEdicionPedidos.Controls.Add(Me.btnBuscarPedidos)
         Me.grbEdicionPedidos.Controls.Add(Me.btnEliminarPedidos)
         Me.grbEdicionPedidos.Controls.Add(Me.btnModificarPedidos)
-        Me.grbEdicionPedidos.Controls.Add(Me.btnAgregarPedidos)
-        Me.grbEdicionPedidos.Location = New System.Drawing.Point(381, 477)
+        Me.grbEdicionPedidos.Location = New System.Drawing.Point(37, 471)
         Me.grbEdicionPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbEdicionPedidos.Name = "grbEdicionPedidos"
         Me.grbEdicionPedidos.Padding = New System.Windows.Forms.Padding(2)
-        Me.grbEdicionPedidos.Size = New System.Drawing.Size(379, 81)
+        Me.grbEdicionPedidos.Size = New System.Drawing.Size(486, 81)
         Me.grbEdicionPedidos.TabIndex = 18
         Me.grbEdicionPedidos.TabStop = False
         Me.grbEdicionPedidos.Text = "Edicion"
+        '
+        'btnAgregarPedidos
+        '
+        Me.btnAgregarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAgregarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarPedidos.Location = New System.Drawing.Point(10, 23)
+        Me.btnAgregarPedidos.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAgregarPedidos.Name = "btnAgregarPedidos"
+        Me.btnAgregarPedidos.Size = New System.Drawing.Size(88, 37)
+        Me.btnAgregarPedidos.TabIndex = 1
+        Me.btnAgregarPedidos.Text = "Nuevo"
+        Me.btnAgregarPedidos.UseVisualStyleBackColor = False
+        '
+        'btnImprimirPedido
+        '
+        Me.btnImprimirPedido.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnImprimirPedido.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnImprimirPedido.Location = New System.Drawing.Point(384, 23)
+        Me.btnImprimirPedido.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnImprimirPedido.Name = "btnImprimirPedido"
+        Me.btnImprimirPedido.Size = New System.Drawing.Size(92, 37)
+        Me.btnImprimirPedido.TabIndex = 5
+        Me.btnImprimirPedido.Text = "Imprimir"
+        Me.btnImprimirPedido.UseVisualStyleBackColor = False
         '
         'btnBuscarPedidos
         '
         Me.btnBuscarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnBuscarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscarPedidos.Location = New System.Drawing.Point(273, 25)
+        Me.btnBuscarPedidos.Location = New System.Drawing.Point(288, 23)
         Me.btnBuscarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBuscarPedidos.Name = "btnBuscarPedidos"
         Me.btnBuscarPedidos.Size = New System.Drawing.Size(92, 37)
@@ -574,7 +595,7 @@ Partial Class frmPeddos
         '
         Me.btnEliminarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEliminarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarPedidos.Location = New System.Drawing.Point(181, 25)
+        Me.btnEliminarPedidos.Location = New System.Drawing.Point(196, 23)
         Me.btnEliminarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEliminarPedidos.Name = "btnEliminarPedidos"
         Me.btnEliminarPedidos.Size = New System.Drawing.Size(88, 37)
@@ -586,25 +607,13 @@ Partial Class frmPeddos
         '
         Me.btnModificarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnModificarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarPedidos.Location = New System.Drawing.Point(82, 25)
+        Me.btnModificarPedidos.Location = New System.Drawing.Point(102, 23)
         Me.btnModificarPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnModificarPedidos.Name = "btnModificarPedidos"
         Me.btnModificarPedidos.Size = New System.Drawing.Size(90, 37)
         Me.btnModificarPedidos.TabIndex = 2
         Me.btnModificarPedidos.Text = "Modificar"
         Me.btnModificarPedidos.UseVisualStyleBackColor = False
-        '
-        'btnAgregarPedidos
-        '
-        Me.btnAgregarPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnAgregarPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarPedidos.Location = New System.Drawing.Point(0, 25)
-        Me.btnAgregarPedidos.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnAgregarPedidos.Name = "btnAgregarPedidos"
-        Me.btnAgregarPedidos.Size = New System.Drawing.Size(78, 37)
-        Me.btnAgregarPedidos.TabIndex = 1
-        Me.btnAgregarPedidos.Text = "Nuevo"
-        Me.btnAgregarPedidos.UseVisualStyleBackColor = False
         '
         'DpedidosTableAdapter1
         '
@@ -613,6 +622,7 @@ Partial Class frmPeddos
         'lblIdPedido
         '
         Me.lblIdPedido.AutoSize = True
+        Me.lblIdPedido.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidosBindingSource, "idpedidos", True))
         Me.lblIdPedido.Location = New System.Drawing.Point(484, 19)
         Me.lblIdPedido.Name = "lblIdPedido"
         Me.lblIdPedido.Size = New System.Drawing.Size(39, 13)
@@ -623,7 +633,7 @@ Partial Class frmPeddos
         '
         Me.grbdPedidosProductos.Controls.Add(Me.btnQuitarProductoPedidos)
         Me.grbdPedidosProductos.Controls.Add(Me.btnAgregarProductoPedidos)
-        Me.grbdPedidosProductos.Location = New System.Drawing.Point(49, 380)
+        Me.grbdPedidosProductos.Location = New System.Drawing.Point(431, 363)
         Me.grbdPedidosProductos.Margin = New System.Windows.Forms.Padding(2)
         Me.grbdPedidosProductos.Name = "grbdPedidosProductos"
         Me.grbdPedidosProductos.Padding = New System.Windows.Forms.Padding(2)
@@ -637,7 +647,7 @@ Partial Class frmPeddos
         Me.btnQuitarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnQuitarProductoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuitarProductoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ecommerce_30_4707191
-        Me.btnQuitarProductoPedidos.Location = New System.Drawing.Point(160, 15)
+        Me.btnQuitarProductoPedidos.Location = New System.Drawing.Point(207, 17)
         Me.btnQuitarProductoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQuitarProductoPedidos.Name = "btnQuitarProductoPedidos"
         Me.btnQuitarProductoPedidos.Size = New System.Drawing.Size(71, 48)
@@ -649,7 +659,7 @@ Partial Class frmPeddos
         Me.btnAgregarProductoPedidos.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnAgregarProductoPedidos.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAgregarProductoPedidos.Image = Global.calculadora.My.Resources.Resources.iconfinder_ic_add_shopping_cart_48px_3669464
-        Me.btnAgregarProductoPedidos.Location = New System.Drawing.Point(23, 15)
+        Me.btnAgregarProductoPedidos.Location = New System.Drawing.Point(70, 17)
         Me.btnAgregarProductoPedidos.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregarProductoPedidos.Name = "btnAgregarProductoPedidos"
         Me.btnAgregarProductoPedidos.Size = New System.Drawing.Size(68, 48)
@@ -661,7 +671,7 @@ Partial Class frmPeddos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(853, 569)
+        Me.ClientSize = New System.Drawing.Size(832, 569)
         Me.Controls.Add(Me.grbdPedidosProductos)
         Me.Controls.Add(Me.lblIdPedido)
         Me.Controls.Add(Me.grbEdicionPedidos)
@@ -739,7 +749,17 @@ Partial Class frmPeddos
     Friend WithEvents btnSiguientePedidos As Button
     Friend WithEvents btnAnteriorPedidos As Button
     Friend WithEvents btnPrimeroPedidos As Button
-    Friend WithEvents idDetpedidos As DataGridViewTextBoxColumn
+    Friend WithEvents grbEdicionPedidos As GroupBox
+    Friend WithEvents btnBuscarPedidos As Button
+    Friend WithEvents btnEliminarPedidos As Button
+    Friend WithEvents btnModificarPedidos As Button
+    Friend WithEvents DpedidosTableAdapter1 As bd_empresaDataSetTableAdapters.dpedidosTableAdapter
+    Friend WithEvents lblIdPedido As Label
+    Friend WithEvents grbdPedidosProductos As GroupBox
+    Friend WithEvents btnQuitarProductoPedidos As Button
+    Friend WithEvents btnAgregarProductoPedidos As Button
+    Friend WithEvents btnImprimirPedido As Button
+    Friend WithEvents btnAgregarPedidos As Button
     Friend WithEvents idpedidos As DataGridViewTextBoxColumn
     Friend WithEvents idproducto As DataGridViewTextBoxColumn
     Friend WithEvents codigo As DataGridViewTextBoxColumn
@@ -749,14 +769,4 @@ Partial Class frmPeddos
     Friend WithEvents subtotal As DataGridViewTextBoxColumn
     Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents medidas As DataGridViewTextBoxColumn
-    Friend WithEvents grbEdicionPedidos As GroupBox
-    Friend WithEvents btnBuscarPedidos As Button
-    Friend WithEvents btnEliminarPedidos As Button
-    Friend WithEvents btnModificarPedidos As Button
-    Friend WithEvents btnAgregarPedidos As Button
-    Friend WithEvents DpedidosTableAdapter1 As bd_empresaDataSetTableAdapters.dpedidosTableAdapter
-    Friend WithEvents lblIdPedido As Label
-    Friend WithEvents grbdPedidosProductos As GroupBox
-    Friend WithEvents btnQuitarProductoPedidos As Button
-    Friend WithEvents btnAgregarProductoPedidos As Button
 End Class
