@@ -218,6 +218,12 @@
     <Compile Include="frmListadoEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadoProveedores.Designer.vb">
+      <DependentUpon>frmListadoProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPeddos.Designer.vb">
       <DependentUpon>frmPeddos.vb</DependentUpon>
     </Compile>
@@ -318,6 +324,9 @@
     <EmbeddedResource Include="frmListadoEmpleados.resx">
       <DependentUpon>frmListadoEmpleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoProveedores.resx">
+      <DependentUpon>frmListadoProveedores.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPeddos.resx">
       <DependentUpon>frmPeddos.vb</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +346,7 @@
     <EmbeddedResource Include="InfmPedidos.rdlc" />
     <EmbeddedResource Include="ListadoClientes.rdlc" />
     <EmbeddedResource Include="ListadoEmpleados.rdlc" />
+    <EmbeddedResource Include="ListadoProveedores.rdlc" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
