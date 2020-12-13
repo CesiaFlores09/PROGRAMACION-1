@@ -83,4 +83,22 @@
         objListadoProveedores.MdiParent = Me
         objListadoProveedores.Show()
     End Sub
+
+    Private Sub ListadoDeCategoriasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeCategoriasToolStripMenuItem.Click
+        Dim objListadoCategorias As New frmListadoCategorias
+        objListadoCategorias.MdiParent = Me
+        objListadoCategorias.Show()
+    End Sub
+
+    Private Sub ListadoPuestoLaboralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoPuestoLaboralToolStripMenuItem.Click
+        Dim objListadoPuestoLaboral As New frmListadoPuestoLaboralvb
+        objListadoPuestoLaboral.MdiParent = Me
+        objListadoPuestoLaboral.Show()
+    End Sub
+
+    Private Sub ListadoDeUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListadoDeUsuariosToolStripMenuItem.Click
+        Dim objListadoUsuarios As New frmListadoUsuarios
+        objListadoUsuarios.MdiParent = Me
+        objListadoUsuarios.Show()
+    End Sub
 End Class
