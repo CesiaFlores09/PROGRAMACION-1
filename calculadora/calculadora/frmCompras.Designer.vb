@@ -257,6 +257,7 @@ Partial Class frmCompras
         Me.TableAdapterManager.comprasTableAdapter = Me.ComprasTableAdapter
         Me.TableAdapterManager.dcomprasTableAdapter = Me.DcomprasTableAdapter
         Me.TableAdapterManager.dpedidosTableAdapter = Nothing
+        Me.TableAdapterManager.dventasTableAdapter = Nothing
         Me.TableAdapterManager.empleadosTableAdapter = Nothing
         Me.TableAdapterManager.pagTableAdapter = Nothing
         Me.TableAdapterManager.pedidosTableAdapter = Nothing
@@ -266,6 +267,7 @@ Partial Class frmCompras
         Me.TableAdapterManager.TipoFacturaTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = calculadora.bd_empresaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.usuarioTableAdapter = Nothing
+        Me.TableAdapterManager.ventasTableAdapter = Nothing
         '
         'DcomprasTableAdapter
         '

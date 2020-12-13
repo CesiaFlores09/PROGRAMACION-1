@@ -1,5 +1,5 @@
 ﻿Public Class Frmproductos
-    Dim objconexion As New db_conexion
+    Dim objconexion As New db_conexion()
     Dim dataTable As New DataTable
     Dim posicion As Integer
     Dim accion As String = "Nuevo"
@@ -140,5 +140,7 @@
         End If
     End Sub
 
+    Private Sub grbDatos_Enter(sender As Object, e As EventArgs) Handles grbDatos.Enter
 
+    End Sub
 End Class
