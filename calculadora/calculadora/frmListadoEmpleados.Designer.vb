@@ -45,6 +45,9 @@ Partial Class frmListadoEmpleados
         '
         'ReportViewer1
         '
+        Me.ReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         ReportDataSource1.Name = "dsListadoEmpleados"
         ReportDataSource1.Value = Me.ListadoEmpleadosBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
@@ -52,7 +55,7 @@ Partial Class frmListadoEmpleados
         Me.ReportViewer1.Location = New System.Drawing.Point(12, 30)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(901, 359)
+        Me.ReportViewer1.Size = New System.Drawing.Size(901, 395)
         Me.ReportViewer1.TabIndex = 0
         '
         'ListadoEmpleadosTableAdapter

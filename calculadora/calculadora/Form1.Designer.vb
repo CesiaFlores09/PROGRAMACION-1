@@ -221,30 +221,35 @@ Partial Class Form1
         '
         'ListadoDeProvedoresToolStripMenuItem
         '
+        Me.ListadoDeProvedoresToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_list_job_seeker_employee_unemployee_work_2620512
         Me.ListadoDeProvedoresToolStripMenuItem.Name = "ListadoDeProvedoresToolStripMenuItem"
         Me.ListadoDeProvedoresToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoDeProvedoresToolStripMenuItem.Text = "Listado de Provedores"
         '
         'ListadoDeCategoriasToolStripMenuItem
         '
+        Me.ListadoDeCategoriasToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_document_03_1622833
         Me.ListadoDeCategoriasToolStripMenuItem.Name = "ListadoDeCategoriasToolStripMenuItem"
         Me.ListadoDeCategoriasToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoDeCategoriasToolStripMenuItem.Text = "Listado de Categorias"
         '
         'ListadoPuestoLaboralToolStripMenuItem
         '
+        Me.ListadoPuestoLaboralToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_checklist_job_seeker_employee_unemployee_work_2620529__1_
         Me.ListadoPuestoLaboralToolStripMenuItem.Name = "ListadoPuestoLaboralToolStripMenuItem"
         Me.ListadoPuestoLaboralToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoPuestoLaboralToolStripMenuItem.Text = "Listado Puesto Laboral"
         '
         'ListadoDeUsuariosToolStripMenuItem
         '
+        Me.ListadoDeUsuariosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_Tilda_Icons_1ed_list_3586362
         Me.ListadoDeUsuariosToolStripMenuItem.Name = "ListadoDeUsuariosToolStripMenuItem"
         Me.ListadoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoDeUsuariosToolStripMenuItem.Text = "Listado de Usuarios"
         '
         'ListadoDeProductosToolStripMenuItem
         '
+        Me.ListadoDeProductosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_paste_clipboard_copy_2931174
         Me.ListadoDeProductosToolStripMenuItem.Name = "ListadoDeProductosToolStripMenuItem"
         Me.ListadoDeProductosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoDeProductosToolStripMenuItem.Text = "Listado de Productos"

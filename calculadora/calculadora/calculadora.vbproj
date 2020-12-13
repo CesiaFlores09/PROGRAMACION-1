@@ -441,6 +441,14 @@
     <None Include="Resources\iconfinder_13.Clipboard_290137.png" />
     <None Include="Resources\iconfinder_00-ELASTOFONT-STORE-READY_invoice_2703075.png" />
     <None Include="Resources\iconfinder_preferences-contact-list_24249.png" />
+    <None Include="Resources\iconfinder_13-Shopping_Wish_list_2924826.png" />
+    <None Include="Resources\iconfinder_13-Shopping_Wish_list_2924826 %281%29.png" />
+    <None Include="Resources\iconfinder_list_job_seeker_employee_unemployee_work_2620512.png" />
+    <None Include="Resources\iconfinder_document-03_1622833.png" />
+    <None Include="Resources\iconfinder_Survey_2290855.png" />
+    <None Include="Resources\iconfinder_paste-clipboard-copy_2931174.png" />
+    <None Include="Resources\iconfinder_checklist_job_seeker_employee_unemployee_work_2620529 %281%29.png" />
+    <None Include="Resources\iconfinder_Tilda_Icons_1ed_list_3586362.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

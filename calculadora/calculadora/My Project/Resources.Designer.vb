@@ -154,6 +154,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property iconfinder_13_Shopping_Wish_list_2924826() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_13-Shopping_Wish_list_2924826", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_13_Shopping_Wish_list_2924826__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_13-Shopping_Wish_list_2924826 (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_635_Bill_excel_file_invoice_statement_4017677() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_635_Bill_excel_file_invoice_statement_4017677", resourceCulture)
@@ -234,6 +254,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property iconfinder_checklist_job_seeker_employee_unemployee_work_2620529__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_checklist_job_seeker_employee_unemployee_work_2620529 (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_close_309090() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_close_309090", resourceCulture)
@@ -297,6 +327,16 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_deliverables_45506() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_deliverables_45506", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_document_03_1622833() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_document-03_1622833", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -474,6 +514,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property iconfinder_list_job_seeker_employee_unemployee_work_2620512() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_list_job_seeker_employee_unemployee_work_2620512", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property iconfinder_Map___Location_Solid_Style_09_2216349() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_Map_-_Location_Solid_Style_09_2216349", resourceCulture)
@@ -487,6 +537,16 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_next_right_arrow_botton_2203522() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_next-right-arrow-botton_2203522", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_paste_clipboard_copy_2931174() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_paste-clipboard-copy_2931174", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -547,6 +607,26 @@ Namespace My.Resources
         Friend ReadOnly Property iconfinder_Streamline_22_185042() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iconfinder_Streamline-22_185042", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_Survey_2290855() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_Survey_2290855", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_Tilda_Icons_1ed_list_3586362() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_Tilda_Icons_1ed_list_3586362", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
