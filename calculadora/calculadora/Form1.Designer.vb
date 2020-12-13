@@ -47,6 +47,7 @@ Partial Class Form1
         Me.ListadoDeCategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoPuestoLaboralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListadoDeProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -191,7 +192,7 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem, Me.ListadoDeEmpleadosToolStripMenuItem, Me.ListadoDeProvedoresToolStripMenuItem, Me.ListadoDeCategoriasToolStripMenuItem, Me.ListadoPuestoLaboralToolStripMenuItem, Me.ListadoDeUsuariosToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem, Me.ListadoDeEmpleadosToolStripMenuItem, Me.ListadoDeProvedoresToolStripMenuItem, Me.ListadoDeCategoriasToolStripMenuItem, Me.ListadoPuestoLaboralToolStripMenuItem, Me.ListadoDeUsuariosToolStripMenuItem, Me.ListadoDeProductosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_report_service_statistics_call_performance_3709732__1_
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
@@ -242,6 +243,12 @@ Partial Class Form1
         Me.ListadoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
         Me.ListadoDeUsuariosToolStripMenuItem.Text = "Listado de Usuarios"
         '
+        'ListadoDeProductosToolStripMenuItem
+        '
+        Me.ListadoDeProductosToolStripMenuItem.Name = "ListadoDeProductosToolStripMenuItem"
+        Me.ListadoDeProductosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeProductosToolStripMenuItem.Text = "Listado de Productos"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -285,4 +292,5 @@ Partial Class Form1
     Friend WithEvents ListadoDeCategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoPuestoLaboralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeUsuariosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListadoDeProductosToolStripMenuItem As ToolStripMenuItem
 End Class

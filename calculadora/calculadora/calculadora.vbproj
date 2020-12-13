@@ -224,6 +224,12 @@
     <Compile Include="frmListadoEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmListadoProductos.Designer.vb">
+      <DependentUpon>frmListadoProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmListadoProveedores.Designer.vb">
       <DependentUpon>frmListadoProveedores.vb</DependentUpon>
     </Compile>
@@ -345,6 +351,9 @@
     <EmbeddedResource Include="frmListadoEmpleados.resx">
       <DependentUpon>frmListadoEmpleados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoProductos.resx">
+      <DependentUpon>frmListadoProductos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListadoProveedores.resx">
       <DependentUpon>frmListadoProveedores.vb</DependentUpon>
     </EmbeddedResource>
@@ -374,6 +383,7 @@
     <EmbeddedResource Include="ListadoCategorias.rdlc" />
     <EmbeddedResource Include="ListadoClientes.rdlc" />
     <EmbeddedResource Include="ListadoEmpleados.rdlc" />
+    <EmbeddedResource Include="ListadoProductos.rdlc" />
     <EmbeddedResource Include="ListadoProveedores.rdlc" />
     <EmbeddedResource Include="ListadoPuestoLaboral.rdlc" />
     <EmbeddedResource Include="ListadoUsuarios.rdlc" />
