@@ -254,6 +254,12 @@
     <Compile Include="frmPeddos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPedidosPorProveedores.Designer.vb">
+      <DependentUpon>frmPedidosPorProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidosPorProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frmproductos.Designer.vb">
       <DependentUpon>Frmproductos.vb</DependentUpon>
     </Compile>
@@ -366,6 +372,9 @@
     <EmbeddedResource Include="frmPeddos.resx">
       <DependentUpon>frmPeddos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosPorProveedores.resx">
+      <DependentUpon>frmPedidosPorProveedores.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmproductos.resx">
       <DependentUpon>Frmproductos.vb</DependentUpon>
     </EmbeddedResource>
@@ -393,6 +402,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PedidosPorProveedores.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bd_empresaDataSet.xsc">
@@ -449,6 +459,7 @@
     <None Include="Resources\iconfinder_paste-clipboard-copy_2931174.png" />
     <None Include="Resources\iconfinder_checklist_job_seeker_employee_unemployee_work_2620529 %281%29.png" />
     <None Include="Resources\iconfinder_Tilda_Icons_1ed_list_3586362.png" />
+    <None Include="Resources\iconfinder_resume_2795761.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
