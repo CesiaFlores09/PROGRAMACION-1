@@ -23,36 +23,40 @@ Partial Class frmListadoProveedores
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.bd_empresaDataSet = New calculadora.bd_empresaDataSet()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListadoProveedores))
         Me.proveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.bd_empresaDataSet = New calculadora.bd_empresaDataSet()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.proveedoresTableAdapter = New calculadora.bd_empresaDataSetTableAdapters.proveedoresTableAdapter()
-        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.proveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ReportViewer1
+        'proveedoresBindingSource
         '
-        ReportDataSource1.Name = "dsListadoProveedores"
-        ReportDataSource1.Value = Me.proveedoresBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "calculadora.ListadoProveedores.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 12)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(757, 345)
-        Me.ReportViewer1.TabIndex = 0
+        Me.proveedoresBindingSource.DataMember = "proveedores"
+        Me.proveedoresBindingSource.DataSource = Me.bd_empresaDataSet
         '
         'bd_empresaDataSet
         '
         Me.bd_empresaDataSet.DataSetName = "bd_empresaDataSet"
         Me.bd_empresaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'proveedoresBindingSource
+        'ReportViewer1
         '
-        Me.proveedoresBindingSource.DataMember = "proveedores"
-        Me.proveedoresBindingSource.DataSource = Me.bd_empresaDataSet
+        Me.ReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ReportDataSource2.Name = "dsListadoProveedores"
+        ReportDataSource2.Value = Me.proveedoresBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "calculadora.ListadoProveedores.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(12, 12)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(771, 426)
+        Me.ReportViewer1.TabIndex = 0
         '
         'proveedoresTableAdapter
         '
@@ -63,12 +67,13 @@ Partial Class frmListadoProveedores
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(795, 450)
         Me.Controls.Add(Me.ReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListadoProveedores"
         Me.Text = "Listado de Proveedores"
-        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.proveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

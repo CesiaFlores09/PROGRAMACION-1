@@ -24,35 +24,39 @@ Partial Class frmListadoProductos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.bd_empresaDataSet = New calculadora.bd_empresaDataSet()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListadoProductos))
         Me.ListadoProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.bd_empresaDataSet = New calculadora.bd_empresaDataSet()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.ListadoProductosTableAdapter = New calculadora.bd_empresaDataSetTableAdapters.ListadoProductosTableAdapter()
-        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ListadoProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ReportViewer1
+        'ListadoProductosBindingSource
         '
-        ReportDataSource1.Name = "dsListadoProductos"
-        ReportDataSource1.Value = Me.ListadoProductosBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "calculadora.ListadoProductos.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 35)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(776, 340)
-        Me.ReportViewer1.TabIndex = 0
+        Me.ListadoProductosBindingSource.DataMember = "ListadoProductos"
+        Me.ListadoProductosBindingSource.DataSource = Me.bd_empresaDataSet
         '
         'bd_empresaDataSet
         '
         Me.bd_empresaDataSet.DataSetName = "bd_empresaDataSet"
         Me.bd_empresaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ListadoProductosBindingSource
+        'ReportViewer1
         '
-        Me.ListadoProductosBindingSource.DataMember = "ListadoProductos"
-        Me.ListadoProductosBindingSource.DataSource = Me.bd_empresaDataSet
+        Me.ReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ReportDataSource1.Name = "dsListadoProductos"
+        ReportDataSource1.Value = Me.ListadoProductosBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "calculadora.ListadoProductos.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(12, 12)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(776, 426)
+        Me.ReportViewer1.TabIndex = 0
         '
         'ListadoProductosTableAdapter
         '
@@ -65,10 +69,11 @@ Partial Class frmListadoProductos
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListadoProductos"
         Me.Text = "Listado Productos"
-        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ListadoProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bd_empresaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
