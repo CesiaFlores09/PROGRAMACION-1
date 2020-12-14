@@ -233,4 +233,9 @@ Public Class frmPeddos
         objImprimirPedidos._idPedido = lblIdPedido.Text
         objImprimirPedidos.ShowDialog()
     End Sub
+
+    Private Sub btnNuevoProveedor_Click(sender As Object, e As EventArgs) Handles btnNuevoProveedor.Click
+        Dim objProveedores As New frmproveedores
+        objProveedores.Show()
+    End Sub
 End Class

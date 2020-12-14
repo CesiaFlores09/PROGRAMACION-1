@@ -87,6 +87,7 @@ Partial Class frmPeddos
         Me.grbdPedidosProductos = New System.Windows.Forms.GroupBox()
         Me.btnQuitarProductoPedidos = New System.Windows.Forms.Button()
         Me.btnAgregarProductoPedidos = New System.Windows.Forms.Button()
+        Me.btnNuevoProveedor = New System.Windows.Forms.Button()
         IdproveedoresLabel = New System.Windows.Forms.Label()
         NfacturaLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
@@ -121,7 +122,7 @@ Partial Class frmPeddos
         'NfacturaLabel
         '
         NfacturaLabel.AutoSize = True
-        NfacturaLabel.Location = New System.Drawing.Point(578, 19)
+        NfacturaLabel.Location = New System.Drawing.Point(596, 19)
         NfacturaLabel.Name = "NfacturaLabel"
         NfacturaLabel.Size = New System.Drawing.Size(61, 13)
         NfacturaLabel.TabIndex = 5
@@ -208,7 +209,7 @@ Partial Class frmPeddos
         Me.IdproveedoresComboBox.FormattingEnabled = True
         Me.IdproveedoresComboBox.Location = New System.Drawing.Point(99, 12)
         Me.IdproveedoresComboBox.Name = "IdproveedoresComboBox"
-        Me.IdproveedoresComboBox.Size = New System.Drawing.Size(369, 21)
+        Me.IdproveedoresComboBox.Size = New System.Drawing.Size(298, 21)
         Me.IdproveedoresComboBox.TabIndex = 4
         Me.IdproveedoresComboBox.ValueMember = "idproveedores"
         '
@@ -220,7 +221,7 @@ Partial Class frmPeddos
         'NfacturaTextBox
         '
         Me.NfacturaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidosBindingSource, "nfactura", True))
-        Me.NfacturaTextBox.Location = New System.Drawing.Point(652, 12)
+        Me.NfacturaTextBox.Location = New System.Drawing.Point(663, 16)
         Me.NfacturaTextBox.Name = "NfacturaTextBox"
         Me.NfacturaTextBox.Size = New System.Drawing.Size(127, 20)
         Me.NfacturaTextBox.TabIndex = 6
@@ -287,7 +288,7 @@ Partial Class frmPeddos
         Me.DventasProductoDataGridView.AllowUserToDeleteRows = False
         Me.DventasProductoDataGridView.AutoGenerateColumns = False
         Me.DventasProductoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DventasProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idpedidos, Me.idproducto, Me.codigo, Me.nombre, Me.cantidad, Me.precio, Me.subtotal, Me.marca, Me.medidas})
+        Me.DventasProductoDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idpedidos, Me.idproducto, Me.codigo, Me.nombre, Me.cantidad, Me.precio, Me.marca, Me.medidas, Me.subtotal})
         Me.DventasProductoDataGridView.DataSource = Me.DventasProductoBindingSource
         Me.DventasProductoDataGridView.Location = New System.Drawing.Point(37, 111)
         Me.DventasProductoDataGridView.Name = "DventasProductoDataGridView"
@@ -623,7 +624,7 @@ Partial Class frmPeddos
         '
         Me.lblIdPedido.AutoSize = True
         Me.lblIdPedido.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PedidosBindingSource, "idpedidos", True))
-        Me.lblIdPedido.Location = New System.Drawing.Point(484, 19)
+        Me.lblIdPedido.Location = New System.Drawing.Point(551, 20)
         Me.lblIdPedido.Name = "lblIdPedido"
         Me.lblIdPedido.Size = New System.Drawing.Size(39, 13)
         Me.lblIdPedido.TabIndex = 19
@@ -666,12 +667,23 @@ Partial Class frmPeddos
         Me.btnAgregarProductoPedidos.TabIndex = 2
         Me.btnAgregarProductoPedidos.UseVisualStyleBackColor = False
         '
+        'btnNuevoProveedor
+        '
+        Me.btnNuevoProveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnNuevoProveedor.Location = New System.Drawing.Point(431, 12)
+        Me.btnNuevoProveedor.Name = "btnNuevoProveedor"
+        Me.btnNuevoProveedor.Size = New System.Drawing.Size(75, 43)
+        Me.btnNuevoProveedor.TabIndex = 21
+        Me.btnNuevoProveedor.Text = "Nuevo Proveedor"
+        Me.btnNuevoProveedor.UseVisualStyleBackColor = False
+        '
         'frmPeddos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(832, 569)
+        Me.ClientSize = New System.Drawing.Size(932, 569)
+        Me.Controls.Add(Me.btnNuevoProveedor)
         Me.Controls.Add(Me.grbdPedidosProductos)
         Me.Controls.Add(Me.lblIdPedido)
         Me.Controls.Add(Me.grbEdicionPedidos)
@@ -769,4 +781,5 @@ Partial Class frmPeddos
     Friend WithEvents subtotal As DataGridViewTextBoxColumn
     Friend WithEvents marca As DataGridViewTextBoxColumn
     Friend WithEvents medidas As DataGridViewTextBoxColumn
+    Friend WithEvents btnNuevoProveedor As Button
 End Class
