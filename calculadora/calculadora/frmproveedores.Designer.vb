@@ -22,6 +22,7 @@ Partial Class frmproveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmproveedores))
         Me.grbDatosdeProveedores = New System.Windows.Forms.GroupBox()
         Me.txtNombrePropietario = New System.Windows.Forms.TextBox()
         Me.lblNombrePropietario = New System.Windows.Forms.Label()
@@ -79,7 +80,7 @@ Partial Class frmproveedores
         Me.grbDatosdeProveedores.Size = New System.Drawing.Size(753, 433)
         Me.grbDatosdeProveedores.TabIndex = 2
         Me.grbDatosdeProveedores.TabStop = False
-        Me.grbDatosdeProveedores.Text = "Registro de proveedores"
+        Me.grbDatosdeProveedores.Text = "Datos de proveedores"
         '
         'txtNombrePropietario
         '
@@ -371,8 +372,9 @@ Partial Class frmproveedores
         Me.Controls.Add(Me.grbEdicion)
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatosdeProveedores)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmproveedores"
-        Me.Text = "frmproveedores"
+        Me.Text = "Registro de Proveeedores"
         Me.grbDatosdeProveedores.ResumeLayout(False)
         Me.grbDatosdeProveedores.PerformLayout()
         Me.grbNavegacion.ResumeLayout(False)
