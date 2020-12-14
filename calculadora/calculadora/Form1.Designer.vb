@@ -48,6 +48,7 @@ Partial Class Form1
         Me.ListadoPuestoLaboralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PedidosPorProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -192,7 +193,7 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem, Me.ListadoDeEmpleadosToolStripMenuItem, Me.ListadoDeProvedoresToolStripMenuItem, Me.ListadoDeCategoriasToolStripMenuItem, Me.ListadoPuestoLaboralToolStripMenuItem, Me.ListadoDeUsuariosToolStripMenuItem, Me.ListadoDeProductosToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeClientesToolStripMenuItem, Me.ComprasPorClienteToolStripMenuItem, Me.PedidosPorProveedoresToolStripMenuItem, Me.ListadoDeEmpleadosToolStripMenuItem, Me.ListadoDeProvedoresToolStripMenuItem, Me.ListadoDeCategoriasToolStripMenuItem, Me.ListadoPuestoLaboralToolStripMenuItem, Me.ListadoDeUsuariosToolStripMenuItem, Me.ListadoDeProductosToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_report_service_statistics_call_performance_3709732__1_
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(85, 24)
@@ -202,57 +203,64 @@ Partial Class Form1
         '
         Me.ListadoDeClientesToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_13_Clipboard_290137
         Me.ListadoDeClientesToolStripMenuItem.Name = "ListadoDeClientesToolStripMenuItem"
-        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeClientesToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoDeClientesToolStripMenuItem.Text = "Listado de Clientes"
         '
         'ComprasPorClienteToolStripMenuItem
         '
         Me.ComprasPorClienteToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_00_ELASTOFONT_STORE_READY_invoice_2703075
         Me.ComprasPorClienteToolStripMenuItem.Name = "ComprasPorClienteToolStripMenuItem"
-        Me.ComprasPorClienteToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ComprasPorClienteToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ComprasPorClienteToolStripMenuItem.Text = "Compras por Cliente"
         '
         'ListadoDeEmpleadosToolStripMenuItem
         '
         Me.ListadoDeEmpleadosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_preferences_contact_list_24249
         Me.ListadoDeEmpleadosToolStripMenuItem.Name = "ListadoDeEmpleadosToolStripMenuItem"
-        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoDeEmpleadosToolStripMenuItem.Text = "Listado de Empleados"
         '
         'ListadoDeProvedoresToolStripMenuItem
         '
         Me.ListadoDeProvedoresToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_list_job_seeker_employee_unemployee_work_2620512
         Me.ListadoDeProvedoresToolStripMenuItem.Name = "ListadoDeProvedoresToolStripMenuItem"
-        Me.ListadoDeProvedoresToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
-        Me.ListadoDeProvedoresToolStripMenuItem.Text = "Listado de Provedores"
+        Me.ListadoDeProvedoresToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
+        Me.ListadoDeProvedoresToolStripMenuItem.Text = "Listado de Proveedores"
         '
         'ListadoDeCategoriasToolStripMenuItem
         '
         Me.ListadoDeCategoriasToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_document_03_1622833
         Me.ListadoDeCategoriasToolStripMenuItem.Name = "ListadoDeCategoriasToolStripMenuItem"
-        Me.ListadoDeCategoriasToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeCategoriasToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoDeCategoriasToolStripMenuItem.Text = "Listado de Categorias"
         '
         'ListadoPuestoLaboralToolStripMenuItem
         '
         Me.ListadoPuestoLaboralToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_checklist_job_seeker_employee_unemployee_work_2620529__1_
         Me.ListadoPuestoLaboralToolStripMenuItem.Name = "ListadoPuestoLaboralToolStripMenuItem"
-        Me.ListadoPuestoLaboralToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoPuestoLaboralToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoPuestoLaboralToolStripMenuItem.Text = "Listado Puesto Laboral"
         '
         'ListadoDeUsuariosToolStripMenuItem
         '
         Me.ListadoDeUsuariosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_Tilda_Icons_1ed_list_3586362
         Me.ListadoDeUsuariosToolStripMenuItem.Name = "ListadoDeUsuariosToolStripMenuItem"
-        Me.ListadoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoDeUsuariosToolStripMenuItem.Text = "Listado de Usuarios"
         '
         'ListadoDeProductosToolStripMenuItem
         '
         Me.ListadoDeProductosToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_paste_clipboard_copy_2931174
         Me.ListadoDeProductosToolStripMenuItem.Name = "ListadoDeProductosToolStripMenuItem"
-        Me.ListadoDeProductosToolStripMenuItem.Size = New System.Drawing.Size(197, 26)
+        Me.ListadoDeProductosToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
         Me.ListadoDeProductosToolStripMenuItem.Text = "Listado de Productos"
+        '
+        'PedidosPorProveedoresToolStripMenuItem
+        '
+        Me.PedidosPorProveedoresToolStripMenuItem.Image = Global.calculadora.My.Resources.Resources.iconfinder_resume_2795761
+        Me.PedidosPorProveedoresToolStripMenuItem.Name = "PedidosPorProveedoresToolStripMenuItem"
+        Me.PedidosPorProveedoresToolStripMenuItem.Size = New System.Drawing.Size(209, 26)
+        Me.PedidosPorProveedoresToolStripMenuItem.Text = "Pedidos por Proveedores"
         '
         'Form1
         '
@@ -298,4 +306,5 @@ Partial Class Form1
     Friend WithEvents ListadoPuestoLaboralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeUsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeProductosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PedidosPorProveedoresToolStripMenuItem As ToolStripMenuItem
 End Class

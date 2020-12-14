@@ -107,4 +107,10 @@
         objListadoProductos.MdiParent = Me
         objListadoProductos.Show()
     End Sub
+
+    Private Sub PedidosPorProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PedidosPorProveedoresToolStripMenuItem.Click
+        Dim objPedidosPorProveedores As New frmPedidosPorProveedores
+        objPedidosPorProveedores.MdiParent = Me
+        objPedidosPorProveedores.Show()
+    End Sub
 End Class
